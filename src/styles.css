@@ -663,6 +663,7 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 @media (prefers-reduced-motion: reduce) { .brunei-story .bs-svg, .bs-tanker, .bs-sun { transition: none; } .bs-taxi { animation: none; } }
 .bs-plane { animation: bs-plane 4s ease-in-out infinite; }
 @keyframes bs-plane { 50% { translate: 0 -10px; } }
+.bs-plane-link { outline: none; }
 .bs-link { display: inline-block; margin-bottom: .5rem; color: var(--maroon); }
 @media (prefers-reduced-motion: reduce) { .bs-plane { animation: none; } }
 .bs-src { font-size: .72rem; color: var(--maroon); margin-top: .15rem; }
@@ -737,3 +738,7 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   42%, 78% { transform: rotateY(-80deg); }
   94%, 100% { transform: rotateY(0); }
 }
+.bs-plane-link, .bs-plane-link * { cursor: pointer !important; }
+.bs-plane-link:hover .bs-plane, .bs-plane-link:focus-visible .bs-plane { filter: drop-shadow(0 4px 8px rgba(98,22,13,.35)); }
+.bs-plane-hint { animation: bs-hint 2s ease-in-out infinite; }
+@keyframes bs-hint { 50% { opacity: .55; } }

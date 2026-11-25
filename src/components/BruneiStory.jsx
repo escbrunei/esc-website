@@ -186,13 +186,17 @@ function Scene({ sunX, sunY, tankerIn }) {
       {/* Visit Brunei 2027 banner plane */}
       <a href="https://www.bruneitourism.com/vby2027/" target="_blank" rel="noopener noreferrer" className="bs-plane-link" aria-label="Visit Brunei Year 2027 official website">
       <title>Open the Visit Brunei Year 2027 website</title>
-      <g className="bs-plane">
+      <g className="bs-plane" transform="translate(230 0)">
         <line x1="940" y1="150" x2="1000" y2="150" stroke="#8a6a5c" strokeWidth="2" />
         <rect x="700" y="128" width="240" height="44" rx="6" fill="#62160d" />
         <text x="820" y="157" textAnchor="middle" fontFamily="Georgia, serif" fontSize="22" fill="#FFC549" letterSpacing="2">VISIT BRUNEI 2027</text>
         <path d="M1000 150 l30 -10 h40 q14 0 14 10 q0 10 -14 10 h-40 z" fill="#fff6e6" stroke="#62160d" strokeWidth="2.5" />
         <path d="M1040 140 l-14 -22 h14 l18 22 z M1040 160 l-14 22 h14 l18 -22 z" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
         <path d="M1002 142 l-8 -12 h8 l8 12 z" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
+        <g className="bs-plane-hint">
+          <rect x="740" y="180" width="160" height="30" rx="15" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
+          <text x="820" y="200" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="15" fill="#62160d">Open website ↗</text>
+        </g>
       </g>
       </a>
 
