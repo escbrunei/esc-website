@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 // Shows the latest posts of an Instagram account from a Behold JSON feed
 // (behold.so). Re-checks every 5 minutes while the page is open.
 // Without a feed URL (or if the feed fails) it shows a "Follow" card instead.
-export default function InstagramFeed({ feedUrl, handle, url, title }) {
+export default function InstagramFeed({ feedUrl, handle, url, title, avatar, cover }) {
   const [posts, setPosts] = useState(null);
   const [profile, setProfile] = useState(null);
   const [failed, setFailed] = useState(false);
@@ -28,9 +28,11 @@ export default function InstagramFeed({ feedUrl, handle, url, title }) {
   }, [feedUrl]);
 
   const header = (
+    <>
+    {cover && <a className="ig-cover" href={url} target="_blank" rel="noopener noreferrer" aria-hidden="true" tabIndex={-1}><img src={cover} alt="" /></a>}
     <a className="ig-head" href={url} target="_blank" rel="noopener noreferrer">
-      {profile?.profilePictureUrl ? (
-        <img className="ig-avatar" src={profile.profilePictureUrl} alt="" />
+      {profile?.profilePictureUrl || avatar ? (
+        <img className="ig-avatar" src={profile?.profilePictureUrl || avatar} alt="" />
       ) : (
         <span className="ig-icon small" aria-hidden="true"><IgGlyph size={22} /></span>
       )}
@@ -40,6 +42,7 @@ export default function InstagramFeed({ feedUrl, handle, url, title }) {
       </span>
       <span className="btn btn-small ig-follow">Follow</span>
     </a>
+    </>
   );
 
   if (!feedUrl || failed || (posts && posts.length === 0)) {
