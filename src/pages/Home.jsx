@@ -28,7 +28,7 @@ export default function Home() {
             </p>
           </div>
           <div className="hero-art">
-            <img className="hero-crest" src="images/esc-crest.png" alt="Economic Students’ Chamber crest — Dewan Pelajar Ekonomi" width="320" height="320" />
+            <img className="hero-crest" src="images/esc-crest-v2.png" alt="Economic Students’ Chamber crest — Dewan Pelajar Ekonomi" width="320" height="320" />
           </div>
         </div>
       </section>
