@@ -1,4 +1,5 @@
 import React from 'react';
+import HeroVideo from '../components/HeroVideo.jsx';
 import { CONFIG } from '../config.js';
 import { LinkedInLink } from '../components/Footer.jsx';
 import EmailChooser from '../components/EmailChooser.jsx';
@@ -7,7 +8,8 @@ import InstagramFeed from '../components/InstagramFeed.jsx';
 export default function Contact() {
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero video-hero">
+        <HeroVideo name="contact" />
         <div className="container">
           <p className="eyebrow">Contact Us</p>
           <h1>Get in touch</h1>
