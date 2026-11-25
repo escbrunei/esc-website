@@ -361,3 +361,6 @@ h1, h2, h3, .brand-mark, .brand-text, .footer-title, .avatar-initials, .thumb-fa
 .hero-crest { width: min(320px, 100%); height: auto; filter: drop-shadow(0 14px 28px rgba(0,0,0,.35)); }
 @media (max-width: 760px) { .hero-crest { width: 170px; } }
 .feature.as-button { display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch; }
+
+/* Solid maroon hero backgrounds (no gradient) */
+.hero, .page-hero { background: var(--maroon); }

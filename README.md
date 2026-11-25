@@ -16,7 +16,7 @@ The ESC website, built with React and Vite and published free on GitHub Pages.
 4. [Update the dashboard data](#update-the-dashboard-data)
 5. [News & releases: add or change sources](#news--releases-add-or-change-sources)
 6. [Connect the membership form](#connect-the-membership-form)
-7. [ESynC: voice greeting and AI backend](#esync-voice-greeting-and-ai-backend)
+7. [ESynC: AI backend](#esync-ai-backend)
 8. [Brand fonts](#brand-fonts)
 9. [Testing checklist](#testing-checklist)
 10. [Where things live](#where-things-live)
@@ -241,11 +241,7 @@ How the form behaves:
 
 ---
 
-## ESynC: voice greeting and AI backend
-
-### Add the voice recording
-
-Upload your recording to `public/audio/` with the name **`esync-greeting.mp3`** (**Add file → Upload files**). It plays the **first time** a visitor taps any *Ask ESynC* button during a visit. The chat also has a **Replay greeting** button. If the file is missing or the browser blocks audio, the text greeting “Hello, I am ESynC.” still shows and the chat works normally. The recording is only used for the greeting; AI answers are text.
+## ESynC: AI backend
 
 ### Set up the AI backend
 
@@ -285,14 +281,13 @@ The first version was tested in a browser at phone (iPhone 13), iPad and desktop
 - [x] Year filter, chart tooltips (hover, tap and arrow keys), CSV downloads filtered by year and labelled as sample
 - [x] Simulator: demand and supply shifts, original and new equilibrium, reset; CPI exercise answer check
 - [x] Chart, simulator and news context passed into ESynC, with matching starter questions
-- [x] First-tap greeting plays once per visit; Replay works; missing audio shows a note and the chat keeps working
 - [x] Registration: validation, failure message with email, success message only after success, email fallback when not connected
 - [x] Events: upcoming/past split, empty state linking @escbrunei, Events → series page navigation
 - [x] Members: current term, founders, past committees appear automatically after a term switch, initials when no photo
 - [x] Footer stacks on phones; email opens a new email; Instagram link; LinkedIn name and configurable link
 - [x] News fetcher: duplicate removal and keeping the last successful items when a source fails
 
-After going live, re-check on a real phone: tap Ask ESynC once (you should hear the greeting), submit a test registration, and confirm the Actions news run shows ✓ for the sources.
+After going live, re-check on a real phone: open Ask ESynC, open the membership form, and confirm the Actions news run shows ✓ for the sources.
 
 ---
 
@@ -303,7 +298,8 @@ After going live, re-check on a real phone: tap Ask ESynC once (you should hear 
 public/data/*.csv              dashboard datasets (one per indicator)
 public/data/indicators.json    source, unit, status for each dataset
 public/data/news.json          news feed (written by the workflow)
-public/audio/                  esync-greeting.mp3
+public/images/esync.png        ESynC cat mascot
+public/images/esc-crest.png    ESC crest (homepage)
 public/fonts/                  brand font files
 public/images/committee/       committee photos
 public/images/events/          event photos

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { CONFIG } from '../config.js';
-import { getContext, onContextChange, playGreeting } from '../lib/esync.js';
+import { getContext, onContextChange } from '../lib/esync.js';
 import { loadIndicators } from '../lib/data.js';
 import ESynCCharacter from '../components/ESynCCharacter.jsx';
 
@@ -59,20 +59,13 @@ function RichText({ text }) {
 
 export default function ESynC() {
   const [ctx, setCtx] = useState(getContext());
-  const [messages, setMessages] = useState([{ role: 'assistant', content: CONFIG.GREETING_TEXT, greeting: true }]);
+  const [messages, setMessages] = useState([]);
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
-  const [audioNote, setAudioNote] = useState('');
   const listRef = useRef(null);
 
   useEffect(() => onContextChange(setCtx), []);
   useEffect(() => { listRef.current?.lastElementChild?.scrollIntoView({ block: 'end', behavior: 'smooth' }); }, [messages, busy]);
-
-  const replay = async () => {
-    setAudioNote('');
-    const ok = await playGreeting();
-    if (!ok) setAudioNote('The recorded greeting isn’t available right now.');
-  };
 
   const send = async (text) => {
     const q = text.trim();
@@ -102,7 +95,7 @@ export default function ESynC() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          messages: next.filter((m) => !m.system && !m.greeting).map(({ role, content }) => ({ role, content })),
+          messages: next.filter((m) => !m.system).map(({ role, content }) => ({ role, content })),
           context: ctx,
           datasets,
         }),
@@ -122,14 +115,12 @@ export default function ESynC() {
     <section className="chat-page">
       <div className="container chat-wrap">
         <header className="chat-header">
-          <ESynCCharacter size={64} badge />
+          <ESynCCharacter size={64} />
           <div>
             <h1>ESynC</h1>
             <p className="muted">ESC’s economics assistant</p>
           </div>
-          <button className="btn btn-ghost btn-small replay" onClick={replay}>▶ Replay greeting</button>
         </header>
-        {audioNote && <p className="notice" role="status">{audioNote}</p>}
 
         {ctx.origin !== 'home' && d && (
           <details className="context-card" open>

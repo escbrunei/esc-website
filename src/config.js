@@ -19,7 +19,4 @@ export const CONFIG = {
   // Membership form endpoint (Google Apps Script web app URL or Formspree URL).
   // Leave empty until it is set up; the form then shows the ESC email instead.
   REGISTRATION_ENDPOINT: '',
-
-  GREETING_AUDIO: 'audio/esync-greeting.mp3',
-  GREETING_TEXT: 'Hello, I am ESynC.',
 };
