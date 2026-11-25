@@ -1002,11 +1002,11 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .send-btn:disabled { opacity: .4; cursor: default; }
 .esync-chat .fineprint { margin: 0 0 .55rem; text-align: center; font-size: .72rem; color: var(--muted); }
 
-.esync-pop { position: fixed; right: 18px; bottom: 132px; z-index: 46; width: min(390px, calc(100vw - 24px)); height: min(600px, calc(100vh - 170px)); opacity: 0; transform: translateY(16px) scale(.96); transform-origin: bottom right; pointer-events: none; visibility: hidden; transition: opacity .22s, transform .22s, visibility 0s .22s; }
+.esync-pop { position: fixed; right: 18px; bottom: 132px; z-index: 46; width: min(390px, calc(100vw - 24px)); height: min(600px, calc(100dvh - 132px - 92px)); opacity: 0; transform: translateY(16px) scale(.96); transform-origin: bottom right; pointer-events: none; visibility: hidden; transition: opacity .22s, transform .22s, visibility 0s .22s; }
 .esync-pop.open { opacity: 1; transform: none; pointer-events: auto; visibility: visible; transition: opacity .22s, transform .22s; }
 .esync-pop .esync-chat { height: 100%; }
 @media (max-width: 640px) {
-  .esync-pop { right: 12px; left: 12px; width: auto; bottom: 96px; height: calc(100dvh - 170px); }
+  .esync-pop { right: 12px; left: 12px; width: auto; bottom: 96px; height: calc(100dvh - 96px - 90px); }
   .float-esync.is-open .float-label { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .esync-pop { transition: none; } }

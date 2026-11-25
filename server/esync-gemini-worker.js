@@ -6,7 +6,7 @@
  * Set in Cloudflare (Worker → Settings → Variables and Secrets):
  *   GEMINI_API_KEY  (Secret)    from https://aistudio.google.com → Get API key
  *   ALLOWED_ORIGIN  (Variable)  e.g. https://escbrunei.github.io
- *   MODEL           (Variable, optional) default: gemini-flash-latest
+ *   MODEL           (Variable, optional) default: gemini-3.5-flash
  */
 
 const MAX_MESSAGES = 16;
@@ -29,10 +29,10 @@ News items: separate "What was reported" from "Possible effects" (your reasoning
 Stay neutral on politics, give no personal financial advice, and say when you are unsure.`;
 
 function cors(origin, env) {
-  const allowed = (env.ALLOWED_ORIGIN || '').split(',').map((s) => s.trim()).filter(Boolean);
-  const ok = !allowed.length || allowed.includes(origin);
+  const allowed = (env.ALLOWED_ORIGIN || '').split(',').map((s) => s.trim().replace(/\/+$/, '').toLowerCase()).filter(Boolean);
+  const ok = !allowed.length || allowed.includes(origin.toLowerCase());
   return {
-    'Access-Control-Allow-Origin': ok ? origin || '*' : allowed[0],
+    'Access-Control-Allow-Origin': origin || '*', // the POST check below blocks other sites; reflecting lets them see why
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
     'Access-Control-Max-Age': '86400',
@@ -47,8 +47,8 @@ export default {
     const h = cors(origin, env);
     if (request.method === 'OPTIONS') return new Response(null, { status: 204, headers: h });
     if (request.method !== 'POST') return json({ error: 'Use POST' }, 405, h);
-    const allowed = (env.ALLOWED_ORIGIN || '').split(',').map((s) => s.trim()).filter(Boolean);
-    if (allowed.length && !allowed.includes(origin)) return json({ error: 'Origin not allowed' }, 403, h);
+    const allowed = (env.ALLOWED_ORIGIN || '').split(',').map((s) => s.trim().replace(/\/+$/, '').toLowerCase()).filter(Boolean);
+    if (allowed.length && !allowed.includes(origin.toLowerCase())) return json({ error: 'Origin not allowed' }, 403, h);
     if (!env.GEMINI_API_KEY) return json({ error: 'Server not configured' }, 500, h);
 
     let body;
@@ -75,14 +75,19 @@ ${JSON.stringify(body.datasets || []).slice(0, 20000)}`;
     };
 
     try {
-      const model = env.MODEL || 'gemini-flash-latest';
+      const model = env.MODEL || 'gemini-3.5-flash';
       const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'x-goog-api-key': env.GEMINI_API_KEY },
         body: JSON.stringify(payload),
       });
       if (res.status === 429) return json({ reply: 'ESynC has reached today’s free question limit. Please try again tomorrow.', sources: [] }, 200, h);
-      if (!res.ok) { console.log('Gemini error', res.status, await res.text()); return json({ error: 'AI service error' }, 502, h); }
+      if (!res.ok) {
+        const t = await res.text();
+        console.log('Gemini error', res.status, t);
+        let msg = ''; try { msg = JSON.parse(t).error?.status || ''; } catch { /* ignore */ }
+        return json({ error: `AI service error ${res.status}${msg ? ` ${msg}` : ''}` }, 502, h);
+      }
       const data = await res.json();
       const cand = data.candidates?.[0] || {};
       const reply = (cand.content?.parts || []).map((p) => p.text || '').join('').trim();

@@ -103,8 +103,12 @@ export function ESynCChat({ popup = false, onClose, open = true }) {
           datasets,
         }),
       });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const data = await res.json();
+      let data = {};
+      try { data = await res.json(); } catch { /* not JSON */ }
+      if (!res.ok) {
+        setMessages([...next, { role: 'assistant', system: true, content: `Sorry, ESynC isn’t available right now (error ${res.status}${data.error ? `: ${data.error}` : ''}). Please try again later.` }]);
+        return;
+      }
       setMessages([...next, { role: 'assistant', content: data.reply || 'Sorry, I didn’t get an answer. Please try again.', sources: data.sources || [] }]);
     } catch {
       setMessages([...next, { role: 'assistant', system: true, content: 'Sorry, ESynC couldn’t be reached. Please check your connection and try again.' }]);
