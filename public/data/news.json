@@ -1,0 +1,14 @@
+{
+  "sample": true,
+  "note": "SAMPLE HEADLINES. These are placeholders shown until the scheduled news workflow runs successfully. They are not real news.",
+  "generatedAt": null,
+  "lastSuccessfulRefresh": null,
+  "sources": [],
+  "items": [
+    { "id": "sample-1", "region": "brunei", "kind": "official", "title": "[Sample] Consumer Price Index release for the latest month", "publisher": "Department of Economic Planning and Statistics (sample)", "url": "https://deps.mofe.gov.bn/consumer-price-index-3/", "publishedAt": "2026-11-20T09:00:00+08:00", "summary": "Sample item showing how an official statistical release appears." },
+    { "id": "sample-2", "region": "brunei", "kind": "official", "title": "[Sample] Central bank press release", "publisher": "Brunei Darussalam Central Bank (sample)", "url": "https://www.bdcb.gov.bn/publications", "publishedAt": "2026-11-19T15:30:00+08:00", "summary": "" },
+    { "id": "sample-3", "region": "brunei", "kind": "headline", "title": "[Sample] Local business headline about Brunei's economy", "publisher": "Sample publisher", "url": "https://www.deps.gov.bn/", "publishedAt": "2026-11-18T11:00:00+08:00", "summary": "" },
+    { "id": "sample-4", "region": "asean", "kind": "headline", "title": "[Sample] ASEAN trade headline", "publisher": "Sample publisher", "url": "https://asean.org/", "publishedAt": "2026-11-18T08:00:00+08:00", "summary": "" },
+    { "id": "sample-5", "region": "global", "kind": "headline", "title": "[Sample] Global markets headline", "publisher": "Sample publisher", "url": "https://www.imf.org/en/News", "publishedAt": "2026-11-17T22:00:00+08:00", "summary": "" }
+  ]
+}

@@ -1,0 +1,11 @@
+name = "esync"
+main = "esync-worker.js"
+compatibility_date = "2026-11-01"
+
+[vars]
+# Your GitHub Pages address (no trailing slash). Add a custom domain with a comma.
+ALLOWED_ORIGIN = "https://YOUR-GITHUB-USERNAME.github.io"
+# MODEL = "claude-sonnet-5-5"
+
+# The API key is NOT stored here. Set it with:
+#   npx wrangler secret put ANTHROPIC_API_KEY

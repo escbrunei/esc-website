@@ -1,0 +1,48 @@
+{
+  "_howToUpdate": "Edit the CSV file for an indicator, then update its source, unit and status here. Set \"status\" to \"official\" only when every figure in the CSV is a verified official figure. Use \"sample\" for placeholder figures.",
+  "indicators": [
+    {
+      "id": "real-gdp-growth",
+      "title": "Real GDP growth",
+      "file": "real-gdp-growth.csv",
+      "unit": "% change, year on year (constant prices)",
+      "source": "Department of Economic Planning and Statistics (DEPS)",
+      "sourceUrl": "https://deps.mofe.gov.bn/national-accounts/",
+      "status": "sample",
+      "series": [{ "column": "value", "label": "Real GDP growth" }]
+    },
+    {
+      "id": "inflation",
+      "title": "Inflation (CPI)",
+      "file": "inflation.csv",
+      "unit": "% change in annual average CPI",
+      "source": "Department of Economic Planning and Statistics (DEPS)",
+      "sourceUrl": "https://deps.mofe.gov.bn/consumer-price-index-3/",
+      "status": "sample",
+      "series": [{ "column": "value", "label": "Inflation" }]
+    },
+    {
+      "id": "unemployment",
+      "title": "Unemployment rate",
+      "file": "unemployment.csv",
+      "unit": "% of labour force",
+      "source": "Department of Economic Planning and Statistics (DEPS), Labour Force Survey",
+      "sourceUrl": "https://deps.mofe.gov.bn/labour-force/",
+      "status": "sample",
+      "series": [{ "column": "value", "label": "Unemployment rate" }]
+    },
+    {
+      "id": "oil-vs-non-oil-gdp",
+      "title": "Oil and gas vs non-oil and gas GDP",
+      "file": "oil-vs-non-oil-gdp.csv",
+      "unit": "% change, year on year (constant prices)",
+      "source": "Department of Economic Planning and Statistics (DEPS)",
+      "sourceUrl": "https://deps.mofe.gov.bn/national-accounts/",
+      "status": "sample",
+      "series": [
+        { "column": "oil_and_gas", "label": "Oil and gas sector" },
+        { "column": "non_oil_and_gas", "label": "Non-oil and gas sector" }
+      ]
+    }
+  ]
+}

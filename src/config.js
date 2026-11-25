@@ -1,0 +1,21 @@
+// ESC site settings. The committee can edit these values on GitHub.
+export const CONFIG = {
+  ESC_EMAIL: 'info.escbrunei@gmail.com',
+  INSTAGRAM_HANDLE: '@escbrunei',
+  INSTAGRAM_URL: 'https://www.instagram.com/escbrunei/',
+  LINKEDIN_NAME: 'Economic Students’ Chamber (DPE) Brunei',
+  // Paste the official LinkedIn page URL here, e.g. 'https://www.linkedin.com/company/...'
+  // Left empty, the site shows the page name without a link.
+  LINKEDIN_URL: '',
+
+  // ESynC AI backend URL (your deployed server/esync-worker.js), e.g.
+  // 'https://esync.your-account.workers.dev'. Leave empty until it is set up.
+  ESYNC_ENDPOINT: '',
+
+  // Membership form endpoint (Google Apps Script web app URL or Formspree URL).
+  // Leave empty until it is set up; the form then shows the ESC email instead.
+  REGISTRATION_ENDPOINT: '',
+
+  GREETING_AUDIO: 'audio/esync-greeting.mp3',
+  GREETING_TEXT: 'Hello, I am ESynC.',
+};

@@ -1,0 +1,107 @@
+{
+  "_howToEdit": "Add, remove or switch off sources here. region: brunei | asean | global. kind: official (statistical/central bank releases) or headline (news). format: rss (any RSS or Atom feed), bdcb (BDCB publications listing page), newsapi (licensed API; key read from the NEWS_API_KEY secret). Set enabled to false to pause a source.",
+  "maxItemsPerRegion": 30,
+  "maxAgeDays": 45,
+  "sources": [
+    {
+      "id": "deps",
+      "name": "DEPS releases",
+      "publisher": "Department of Economic Planning and Statistics",
+      "region": "brunei",
+      "kind": "official",
+      "format": "rss",
+      "url": "https://www.deps.gov.bn/feed/",
+      "enabled": true
+    },
+    {
+      "id": "bdcb-press",
+      "name": "BDCB press releases",
+      "publisher": "Brunei Darussalam Central Bank",
+      "region": "brunei",
+      "kind": "official",
+      "format": "bdcb",
+      "url": "https://www.bdcb.gov.bn/publications?flt_types%5B0%5D=01HGMSNAJXZHM7W8ZWPCCQ29JP",
+      "enabled": true
+    },
+    {
+      "id": "borneo-bulletin-business",
+      "name": "Borneo Bulletin – Business",
+      "publisher": "Borneo Bulletin",
+      "region": "brunei",
+      "kind": "headline",
+      "format": "rss",
+      "url": "https://borneobulletin.com.bn/category/business/feed/",
+      "enabled": true
+    },
+    {
+      "id": "the-scoop",
+      "name": "The Scoop",
+      "publisher": "The Scoop",
+      "region": "brunei",
+      "kind": "headline",
+      "format": "rss",
+      "url": "https://thescoop.co/feed/",
+      "enabled": true
+    },
+    {
+      "id": "asean-briefing",
+      "name": "ASEAN Briefing",
+      "publisher": "ASEAN Briefing (Dezan Shira & Associates)",
+      "region": "asean",
+      "kind": "headline",
+      "format": "rss",
+      "url": "https://www.aseanbriefing.com/news/feed/",
+      "enabled": true
+    },
+    {
+      "id": "cna-business",
+      "name": "CNA Business",
+      "publisher": "CNA",
+      "region": "asean",
+      "kind": "headline",
+      "format": "rss",
+      "url": "https://www.channelnewsasia.com/api/v1/rss-outbound-feed?_format=xml&category=6936",
+      "enabled": true
+    },
+    {
+      "id": "bbc-business",
+      "name": "BBC Business",
+      "publisher": "BBC News",
+      "region": "global",
+      "kind": "headline",
+      "format": "rss",
+      "url": "https://feeds.bbci.co.uk/news/business/rss.xml",
+      "enabled": true
+    },
+    {
+      "id": "cnbc-economy",
+      "name": "CNBC Economy",
+      "publisher": "CNBC",
+      "region": "global",
+      "kind": "headline",
+      "format": "rss",
+      "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html",
+      "enabled": true
+    },
+    {
+      "id": "imf-news",
+      "name": "IMF press releases",
+      "publisher": "International Monetary Fund",
+      "region": "global",
+      "kind": "official",
+      "format": "rss",
+      "url": "https://www.imf.org/en/News/RSS?Language=ENG",
+      "enabled": true
+    },
+    {
+      "id": "licensed-api-example",
+      "name": "Licensed news API (example)",
+      "publisher": "",
+      "region": "global",
+      "kind": "headline",
+      "format": "newsapi",
+      "url": "https://newsapi.org/v2/top-headlines?category=business&language=en&pageSize=20",
+      "enabled": false
+    }
+  ]
+}

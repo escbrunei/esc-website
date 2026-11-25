@@ -1,0 +1,16 @@
+{
+  "_howToEdit": "currentTerm picks which committee shows first. To start a new term: add a new object to committees with a new term, then change currentTerm to it. The previous team moves to Past Committees automatically. Never delete the founders list. Photos go in public/images/committee/ and are written as \"images/committee/name.jpg\"; leave photo empty to show initials. See _example.",
+  "_example": {
+    "founder": { "name": "Full Name", "photo": "images/committee/full-name.jpg", "foundingRole": "Founding President" },
+    "committeeMember": { "name": "Full Name", "role": "President", "photo": "" }
+  },
+  "currentTerm": "2026",
+  "founders": [],
+  "committees": [
+    {
+      "term": "2026",
+      "label": "Inaugural Committee (2026)",
+      "members": []
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+name: Update news and deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '7 * * * *'   # every hour at minute 7 (UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Fetch news and official releases
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        run: node scripts/fetch-news.mjs
+
+      - name: Save news.json to the repository (keeps the last successful feed)
+        run: |
+          if ! git diff --quiet -- public/data/news.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add public/data/news.json
+            git commit -m "Update news feed"
+            git pull --rebase --autostash || true
+            git push || echo "Could not push news.json (it will be retried next hour)"
+          fi
+
+      - name: Install and build
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
