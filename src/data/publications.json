@@ -57,7 +57,24 @@
       "id": "ihs-takeaways",
       "title": "IHS Key Takeaways",
       "blurb": "The main lessons from each session of The Invisible Handshake.",
-      "items": []
+      "items": [
+        {
+          "title": "The Invisible Handshake #2: Brunei’s Economic Ambitions: Are We Ready For What’s Next?",
+          "date": "",
+          "summary": "Nine takeaways from Mr. Daniel Leong on moving Brunei’s economy forward: competitive value chains, stronger local businesses and meaningful investment.",
+          "pages": 4,
+          "file": "publications/ihs-takeaways/ihs2-economic-ambitions.pdf",
+          "cover": "images/publications/ihs2-economic-ambitions.jpg"
+        },
+        {
+          "title": "The Invisible Handshake #1: Shaping Society: An Economics Mind Guided by a Human Lens",
+          "date": "",
+          "summary": "Eight takeaways from Professor Alvin Ang on understanding people, creating value and making decisions that improve lives.",
+          "pages": 4,
+          "file": "publications/ihs-takeaways/ihs1-shaping-society.pdf",
+          "cover": "images/publications/ihs1-shaping-society.jpg"
+        }
+      ]
     }
   ]
 }
