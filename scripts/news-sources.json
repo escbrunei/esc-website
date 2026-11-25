@@ -31,7 +31,7 @@
       "kind": "headline",
       "format": "rss",
       "url": "https://borneobulletin.com.bn/category/business/feed/",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "the-scoop",
@@ -91,7 +91,7 @@
       "kind": "official",
       "format": "rss",
       "url": "https://www.imf.org/en/News/RSS?Language=ENG",
-      "enabled": true
+      "enabled": false
     },
     {
       "id": "licensed-api-example",
