@@ -19,7 +19,7 @@ const GROUPS = [
     type: 'menu', id: 'about', label: 'About',
     items: [
       { to: '/about', label: 'About Us', hint: 'Who we are' },
-      { to: '/invisible-handshake', label: 'The Invisible Handshake', hint: 'Networking series' },
+      { to: '/invisible-handshake', label: 'The Invisible Handshake Series', hint: 'Networking series' },
       { to: '/contact', label: 'Contact', hint: 'Email and socials' },
     ],
   },

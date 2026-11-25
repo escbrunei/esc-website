@@ -1,9 +1,9 @@
 {
-  "_howToEdit": "Add one object to \"events\" per event. Publish confirmed details only. Dates use YYYY-MM-DD; events on or after today show as Upcoming, earlier ones as Past. Use series \"invisible-handshake\" for The Invisible Handshake sessions, or null for other ESC activities. Photos go in public/images/events/ and are listed as \"images/events/your-photo.jpg\". See _example for every field, and copy it into the events list to use it.",
+  "_howToEdit": "Add one object to \"events\" per event. Publish confirmed details only. Dates use YYYY-MM-DD; events on or after today show as Upcoming, earlier ones as Past. Use series \"invisible-handshake\" for The Invisible Handshake Series sessions, or null for other ESC activities. Photos go in public/images/events/ and are listed as \"images/events/your-photo.jpg\". See _example for every field, and copy it into the events list to use it.",
   "_example": {
     "id": "ih-01",
     "series": "invisible-handshake",
-    "title": "The Invisible Handshake: Session 1",
+    "title": "The Invisible Handshake Series: Session 1",
     "topic": "Careers in economic policy",
     "date": "2026-03-14",
     "time": "2:00 pm – 4:00 pm",

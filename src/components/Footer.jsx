@@ -36,7 +36,7 @@ export default function Footer() {
             <h2>Get Involved</h2>
             <ul>
               <li><a {...joinProps}>Join ESC</a></li>
-              <li><a href="#/invisible-handshake">The Invisible Handshake</a></li>
+              <li><a href="#/invisible-handshake">The Invisible Handshake Series</a></li>
               <li><a href="#/merch">Merch</a></li>
               <li><button type="button" className="linklike" onClick={() => openESynC({ origin: 'home' })}>Ask ESynC</button></li>
             </ul>
@@ -48,7 +48,7 @@ export default function Footer() {
             <ul className="social-row">
               <li><a className="social" href={CONFIG.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Instagram ${CONFIG.INSTAGRAM_HANDLE}`} title={CONFIG.INSTAGRAM_HANDLE}><InstagramIcon /></a></li>
               {CONFIG.LINKEDIN_URL && <li><a className="social" href={CONFIG.LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="ESC on LinkedIn" title="LinkedIn"><LinkedInIcon /></a></li>}
-              <li><a className="social" href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`The Invisible Handshake on Instagram ${CONFIG.IHS_INSTAGRAM_HANDLE}`} title={`The Invisible Handshake ${CONFIG.IHS_INSTAGRAM_HANDLE}`}><InstagramIcon /><span className="social-tag">IHS</span></a></li>
+              <li><a className="social" href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`The Invisible Handshake Series on Instagram ${CONFIG.IHS_INSTAGRAM_HANDLE}`} title={`The Invisible Handshake Series ${CONFIG.IHS_INSTAGRAM_HANDLE}`}><InstagramIcon /><span className="social-tag">IHS</span></a></li>
             </ul>
           </div>
         </div>

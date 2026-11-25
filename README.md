@@ -2,7 +2,7 @@
 
 The ESC website, built with React and Vite and published free on GitHub Pages.
 
-**Pages:** Home · Brunei Economy Dashboard (with Economic News & Releases) · Economics Lab · Ask ESynC (AI assistant) · Events · The Invisible Handshake · About Us · Join ESC · Contact
+**Pages:** Home · Brunei Economy Dashboard (with Economic News & Releases) · Economics Lab · Ask ESynC (AI assistant) · Events · The Invisible Handshake Series · About Us · Join ESC · Contact
 
 > **Before launch:** the dashboard charts and the CPI exercise currently use **sample figures**, clearly labelled as such. Replace them with verified DEPS figures (see [Update the dashboard data](#update-the-dashboard-data)).
 
@@ -68,7 +68,7 @@ Copy the `_example` block into the `events` list and fill it in. **Publish confi
   {
     "id": "ih-02",
     "series": "invisible-handshake",
-    "title": "The Invisible Handshake: Session 2",
+    "title": "The Invisible Handshake Series: Session 2",
     "topic": "Careers in banking",
     "date": "2027-02-10",
     "time": "2:00 pm – 4:00 pm",
@@ -273,7 +273,7 @@ Headings use **Plate Gothic Three Four** and body text uses **Glacial Indifferen
 
 ---
 
-## The Invisible Handshake: past sessions from Instagram
+## The Invisible Handshake Series: past sessions from Instagram
 
 Open `src/data/ihs-posts.json` and paste @theihs.esc post links into `posts` (newest first), e.g.
 
@@ -284,7 +284,7 @@ Open `src/data/ihs-posts.json` and paste @theihs.esc post links into `posts` (ne
 ]
 ```
 
-Each post appears on The Invisible Handshake page with its photos and caption, using Instagram's official embed, so edits on Instagram show up automatically.
+Each post appears on The Invisible Handshake Series page with its photos and caption, using Instagram's official embed, so edits on Instagram show up automatically.
 
 ## Merch
 

@@ -15,7 +15,7 @@ export default function Events() {
           <p className="eyebrow">Events</p>
           <h1>ESC Events</h1>
           <p className="lead">Talks, workshops and networking for students interested in economics and policy.</p>
-          <a className="btn btn-gold" href="#/invisible-handshake">The Invisible Handshake series</a>
+          <a className="btn btn-gold" href="#/invisible-handshake">The Invisible Handshake Series</a>
         </div>
       </section>
       <section className="section container" aria-labelledby="up-h">

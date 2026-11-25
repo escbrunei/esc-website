@@ -6,7 +6,7 @@ import InstagramFeed from '../components/InstagramFeed.jsx';
 import InstagramPosts from '../components/InstagramEmbed.jsx';
 import ihs from '../data/ihs-posts.json';
 
-export const HANDSHAKE_INTRO = 'The Invisible Handshake is the Economic Students’ Chamber’s networking series connecting students with invited speakers from industry.';
+export const HANDSHAKE_INTRO = 'The Invisible Handshake Series is the Economic Students’ Chamber’s networking series connecting students with invited speakers from industry.';
 
 export default function Handshake() {
   const { upcoming, past } = getEvents();
@@ -17,7 +17,7 @@ export default function Handshake() {
       <section className="page-hero handshake-hero">
         <div className="container">
           <p className="eyebrow">ESC networking series</p>
-          <h1>The Invisible Handshake</h1>
+          <h1>The Invisible Handshake Series</h1>
           <p className="lead">{HANDSHAKE_INTRO}</p>
           <div className="hero-actions">
             <a className="btn btn-gold" href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Follow {CONFIG.IHS_INSTAGRAM_HANDLE} on Instagram</a>

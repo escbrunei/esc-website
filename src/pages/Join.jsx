@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CONFIG } from '../config.js';
 
-const ACTIVITIES = ['The Invisible Handshake', 'Workshops and training', 'Outreach programmes', 'Research and policy discussions', 'Social and networking events'];
+const ACTIVITIES = ['The Invisible Handshake Series', 'Workshops and training', 'Outreach programmes', 'Research and policy discussions', 'Social and networking events'];
 const YEARS = ['Year 1', 'Year 2', 'Year 3', 'Year 4', 'Year 5 or above', 'Postgraduate', 'Other'];
 
 export default function Join() {

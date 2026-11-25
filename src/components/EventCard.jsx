@@ -5,7 +5,7 @@ export default function EventCard({ ev, past }) {
   const s = ev.speaker;
   return (
     <article className="card event-card" id={`event-${ev.id}`}>
-      {ev.series === 'invisible-handshake' && <span className="kind kind-series">The Invisible Handshake</span>}
+      {ev.series === 'invisible-handshake' && <span className="kind kind-series">The Invisible Handshake Series</span>}
       <h3>{ev.title}</h3>
       {ev.topic && <p className="event-topic">Topic: {ev.topic}</p>}
       <p className="event-meta">

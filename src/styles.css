@@ -416,7 +416,7 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .news-item h3 a { border-left: 4px solid var(--gold); padding-left: .6rem; display: inline-block; }
 .btn { letter-spacing: .01em; }
 
-/* Instagram call-out on The Invisible Handshake page */
+/* Instagram call-out on The Invisible Handshake Series page */
 .ig-card { display: flex; align-items: center; gap: 1.1rem; text-decoration: none; color: var(--ink); border-left: 6px solid var(--gold); }
 .ig-card:hover { color: var(--ink); box-shadow: 0 8px 20px rgba(98,22,13,.14); }
 .ig-icon { flex: none; width: 60px; height: 60px; border-radius: 16px; display: grid; place-items: center; color: #fff; background: radial-gradient(circle at 30% 110%, #ffd776 0%, #f58529 25%, #dd2a7b 55%, #8134af 80%, #515bd4 100%); }

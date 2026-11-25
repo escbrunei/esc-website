@@ -47,8 +47,8 @@ export default function About() {
       <section className="section band">
         <div className="container handshake-feature">
           <div>
-            <h2>The Invisible Handshake</h2>
-            <p>The Invisible Handshake is ESC’s networking series, where students meet invited speakers from industry.</p>
+            <h2>The Invisible Handshake Series</h2>
+            <p>The Invisible Handshake Series is ESC’s networking series, where students meet invited speakers from industry.</p>
             <a className="btn btn-gold" href="#/invisible-handshake">Explore the Series</a>
           </div>
         </div>

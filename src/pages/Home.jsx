@@ -78,7 +78,7 @@ export default function Home() {
         <div className="container handshake-feature">
           <div>
             <p className="eyebrow">Featured series</p>
-            <h2>The Invisible Handshake</h2>
+            <h2>The Invisible Handshake Series</h2>
             <p>{HANDSHAKE_INTRO}</p>
             {next && <p className="next-session"><strong>Next session:</strong> {next.topic || next.title} · {bruneiDate(next.date)}</p>}
             <a className="btn btn-gold" href="#/invisible-handshake">Explore the series</a>

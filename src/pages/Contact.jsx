@@ -34,7 +34,7 @@ export default function Contact() {
         <h2 id="ig-h" className="section-title">Latest on Instagram</h2>
         <div className="ig-feeds">
           <InstagramFeed feedUrl={CONFIG.INSTAGRAM_FEED_URL} handle={CONFIG.INSTAGRAM_HANDLE} url={CONFIG.INSTAGRAM_URL} title="Economic Students’ Chamber" />
-          <InstagramFeed feedUrl={CONFIG.IHS_INSTAGRAM_FEED_URL} handle={CONFIG.IHS_INSTAGRAM_HANDLE} url={CONFIG.IHS_INSTAGRAM_URL} title="The Invisible Handshake" />
+          <InstagramFeed feedUrl={CONFIG.IHS_INSTAGRAM_FEED_URL} handle={CONFIG.IHS_INSTAGRAM_HANDLE} url={CONFIG.IHS_INSTAGRAM_URL} title="The Invisible Handshake Series" />
         </div>
       </section>
     </>

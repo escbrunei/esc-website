@@ -14,7 +14,7 @@ export const CONFIG = {
   INSTAGRAM_FEED_URL: '',
   IHS_INSTAGRAM_FEED_URL: '',
 
-  // The Invisible Handshake series Instagram
+  // The Invisible Handshake Series Instagram
   IHS_INSTAGRAM_HANDLE: '@theihs.esc',
   IHS_INSTAGRAM_URL: 'https://www.instagram.com/theihs.esc/',
 
