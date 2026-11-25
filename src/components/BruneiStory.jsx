@@ -9,9 +9,13 @@ import { loadIndicators } from '../lib/data.js';
 const W = 2400; const H = 600;
 
 export default function BruneiStory() {
-  const outerRef = useRef(null);
-  const [p, setP] = useState(0);           // scroll progress 0..1
+  const sceneRef = useRef(null);
+  const svgRef = useRef(null);
+  const [step, setStep] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const [offset, setOffset] = useState(0);
   const [data, setData] = useState({});
+  const drag = useRef(null);
 
   useEffect(() => {
     loadIndicators().then((list) => {
@@ -19,90 +23,93 @@ export default function BruneiStory() {
       const latest = (id, col = 'value') => {
         const ind = by[id]; if (!ind) return null;
         const row = [...ind.rows].reverse().find((r) => typeof r[col] === 'number');
-        return row ? { year: row.year, value: row[col], sample: ind.status !== 'official', source: ind.source } : null;
+        return row ? { year: row.year, value: row[col], sample: ind.status !== 'official' } : null;
       };
-      setData({
-        gdp: latest('real-gdp-growth'),
-        infl: latest('inflation'),
-        unemp: latest('unemployment'),
-        oil: latest('oil-vs-non-oil-gdp', 'oil_and_gas'),
-        nonoil: latest('oil-vs-non-oil-gdp', 'non_oil_and_gas'),
-      });
+      setData({ gdp: latest('real-gdp-growth'), infl: latest('inflation'), unemp: latest('unemployment'),
+        oil: latest('oil-vs-non-oil-gdp', 'oil_and_gas'), nonoil: latest('oil-vs-non-oil-gdp', 'non_oil_and_gas') });
     }).catch(() => {});
   }, []);
 
-  useEffect(() => {
-    const reduce = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-    let raf = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(raf);
-      raf = requestAnimationFrame(() => {
-        const el = outerRef.current; if (!el) return;
-        const r = el.getBoundingClientRect();
-        const total = r.height - window.innerHeight;
-        setP(reduce ? 0 : Math.min(1, Math.max(0, -r.top / Math.max(1, total))));
-      });
-    };
-    onScroll();
-    window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', onScroll);
-    return () => { window.removeEventListener('scroll', onScroll); window.removeEventListener('resize', onScroll); cancelAnimationFrame(raf); };
-  }, []);
-
-  const fmt = (d, unit = '%') => (d ? `${d.value > 0 ? '+' : ''}${d.value}${unit}` : '…');
+  const fmt = (d) => (d ? `${d.value > 0 ? '+' : ''}${d.value}%` : '…');
+  const stat = (d, label) => d && { label: `${label}, ${d.year}`, value: label.startsWith('Unemployment') ? `${d.value}%` : fmt(d), sample: d.sample };
   const steps = [
-    { title: 'Bandar Seri Begawan', text: 'Brunei’s capital, home to the Omar Ali Saifuddien Mosque. Scroll to travel across Brunei’s economy.', stat: null },
-    { title: 'Kampong Ayer', text: 'The water village where daily life and small businesses shape household spending.', stat: data.infl && { label: `Inflation, ${data.infl.year}`, value: fmt(data.infl), sample: data.infl.sample },
-      stat2: data.unemp && { label: `Unemployment, ${data.unemp.year}`, value: `${data.unemp.value}%`, sample: data.unemp.sample } },
-    { title: 'Oil and gas', text: 'Offshore platforms and LNG exports remain the backbone of Brunei’s economy.', stat: data.oil && { label: `Oil & gas GDP growth, ${data.oil.year}`, value: fmt(data.oil), sample: data.oil.sample },
-      stat2: data.nonoil && { label: `Non-oil & gas GDP growth, ${data.nonoil.year}`, value: fmt(data.nonoil), sample: data.nonoil.sample } },
-    { title: 'Temburong Bridge', text: 'New links and new sectors: diversifying the economy for the next generation.', stat: data.gdp && { label: `Real GDP growth, ${data.gdp.year}`, value: fmt(data.gdp), sample: data.gdp.sample } },
+    { x: 380, name: 'Welcome', title: 'Welcome to Brunei’s economy', text: 'Start at the Omar Ali Saifuddien Mosque in Bandar Seri Begawan. Use the arrows or swipe to travel across the economy.', stats: [] },
+    { x: 400, name: 'The capital', title: 'Jobs and prices in the capital', text: 'Bandar Seri Begawan is where most people work, shop and pay the bills. Two numbers matter most to households: how fast prices rise, and how many people can’t find work.', stats: [stat(data.infl, 'Inflation'), stat(data.unemp, 'Unemployment')] },
+    { x: 1010, name: 'Kampong Ayer', title: 'Kampong Ayer', text: 'One of the world’s largest water villages, and a reminder that heritage, culture and tourism are part of Brunei’s non-oil economy.', stats: [] },
+    { x: 1620, name: 'Oil and gas', title: 'Oil and gas', text: 'Offshore platforms and LNG exports are still the backbone of the economy. Compare their growth with everything else.', stats: [stat(data.oil, 'Oil & gas GDP growth'), stat(data.nonoil, 'Non-oil & gas GDP growth')] },
+    { x: 2150, name: 'Temburong', title: 'Temburong Bridge: the road ahead', text: 'New links and new sectors to diversify the economy. Overall, how fast is the economy growing?', stats: [stat(data.gdp, 'Real GDP growth')] },
   ];
-  const step = Math.min(steps.length - 1, Math.floor(p * steps.length * 0.999));
+  const go = (i) => setStep(Math.max(0, Math.min(steps.length - 1, i)));
+
+  // centre the current stop on screen
+  useEffect(() => {
+    const place = () => {
+      const scene = sceneRef.current; const svg = svgRef.current; if (!scene || !svg) return;
+      const sw = svg.getBoundingClientRect().width; const vw = scene.clientWidth;
+      const want = vw * 0.62 - (steps[step].x / W) * sw;
+      setOffset(Math.min(0, Math.max(vw - sw, want)));
+    };
+    place();
+    window.addEventListener('resize', place);
+    return () => window.removeEventListener('resize', place);
+  }, [step]);
+
+  // gentle autoplay, paused on hover/touch
+  useEffect(() => {
+    if (paused || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return undefined;
+    const t = setTimeout(() => setStep((s) => (s + 1) % steps.length), 7000);
+    return () => clearTimeout(t);
+  }, [step, paused]);
+
+  const onDown = (e) => { drag.current = { x: e.clientX }; setPaused(true); };
+  const onUp = (e) => {
+    if (!drag.current) return;
+    const dx = e.clientX - drag.current.x; drag.current = null;
+    if (dx < -40) go(step + 1); else if (dx > 40) go(step - 1);
+  };
+  const onKey = (e) => { if (e.key === 'ArrowRight') { go(step + 1); setPaused(true); } if (e.key === 'ArrowLeft') { go(step - 1); setPaused(true); } };
+
+  const cur = steps[step];
   const anySample = Object.values(data).some((d) => d && d.sample);
-
-  // motion values driven by scroll
-  const pan = p;                                  // camera 0..1
-  const taxi = (p * 3) % 1;                       // water taxis loop
-  const tanker = Math.min(1, Math.max(0, (p - 0.35) / 0.5));
-  const sunX = 200 + p * 2000;
-  const sunY = 150 - Math.sin(p * Math.PI) * 70;
-
   return (
-    <section className="brunei-story" ref={outerRef} aria-label="Brunei’s economy at a glance">
-      <div className="bs-sticky">
-        <div className="bs-scene">
-          <svg viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMinYMid slice" className="bs-svg"
-            style={{ transform: `translateX(calc(${(-pan).toFixed(4)} * (100% - 100vw)))` }} aria-hidden="true">
-            <Scene sunX={sunX} sunY={sunY} taxi={taxi} tanker={tanker} />
-          </svg>
+    <section className="brunei-story" aria-roledescription="carousel" aria-label="Brunei’s economy at a glance"
+      onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onKeyDown={onKey}>
+      <div className="bs-scene" ref={sceneRef} onPointerDown={onDown} onPointerUp={onUp} onPointerCancel={() => { drag.current = null; }}>
+        <svg ref={svgRef} viewBox={`0 0 ${W} ${H}`} preserveAspectRatio="xMinYMid meet" className="bs-svg"
+          style={{ transform: `translateX(${offset}px)` }} aria-hidden="true">
+          <Scene sunX={300 + step * 470} sunY={150 - Math.sin((step / (steps.length - 1)) * Math.PI) * 70} tankerIn={step >= 3} />
+        </svg>
+      </div>
+      <div className="bs-panel container">
+        <div className="bs-card" key={step} aria-live="polite">
+          <span className="bs-step">{step + 1} / {steps.length}</span>
+          <h2>{cur.title}</h2>
+          <p>{cur.text}</p>
+          {cur.stats.filter(Boolean).length > 0 && (
+            <div className="bs-stats">
+              {cur.stats.filter(Boolean).map((s) => (
+                <div key={s.label} className="bs-stat"><span className="bs-value">{s.value}</span><span className="bs-label">{s.label}{s.sample ? ' · sample' : ''}</span></div>
+              ))}
+            </div>
+          )}
+          {step === steps.length - 1 && <a className="btn btn-small" href="#/dashboard">Explore the data →</a>}
         </div>
-        <div className="bs-panel container">
-          <div className="bs-card" key={step}>
-            <span className="bs-step">{step + 1} / {steps.length}</span>
-            <h2>{steps[step].title}</h2>
-            <p>{steps[step].text}</p>
-            {(steps[step].stat || steps[step].stat2) && (
-              <div className="bs-stats">
-                {[steps[step].stat, steps[step].stat2].filter(Boolean).map((s) => (
-                  <div key={s.label} className="bs-stat">
-                    <span className="bs-value">{s.value}</span>
-                    <span className="bs-label">{s.label}{s.sample ? ' · sample' : ''}</span>
-                  </div>
-                ))}
-              </div>
-            )}
-            {step === steps.length - 1 && <a className="btn btn-small" href="#/dashboard">Explore the data →</a>}
+        <div className="bs-controls">
+          <button type="button" className="bs-arrow" onClick={() => { go(step - 1); setPaused(true); }} disabled={step === 0} aria-label="Previous stop">←</button>
+          <div className="bs-chips" role="tablist" aria-label="Stops">
+            {steps.map((s, i) => (
+              <button key={s.name} type="button" role="tab" aria-selected={i === step} className={`bs-chip ${i === step ? 'on' : ''}`} onClick={() => { go(i); setPaused(true); }}>{s.name}</button>
+            ))}
           </div>
-          <div className="bs-dots" aria-hidden="true">{steps.map((_, i) => <i key={i} className={i === step ? 'on' : ''} />)}</div>
-          {anySample && <p className="bs-note">Figures come from the dashboard and are sample data until official DEPS figures are added.</p>}
+          <button type="button" className="bs-arrow" onClick={() => { go(step + 1); setPaused(true); }} disabled={step === steps.length - 1} aria-label="Next stop">→</button>
         </div>
+        {anySample && <p className="bs-note">Figures are sample data until official DEPS figures are added.</p>}
       </div>
     </section>
   );
 }
 
-function Scene({ sunX, sunY, taxi, tanker }) {
+function Scene({ sunX, sunY, tankerIn }) {
   const houses = useMemo(() => {
     const out = [];
     for (let i = 0; i < 16; i++) {
@@ -131,7 +138,7 @@ function Scene({ sunX, sunY, taxi, tanker }) {
         <linearGradient id="bs-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stopColor="#ffe08a" /><stop offset="1" stopColor="#d9a12a" /></linearGradient>
       </defs>
       <rect width={W} height={H} fill="url(#bs-sky)" />
-      <circle cx={sunX} cy={sunY} r="46" fill="#FFC549" opacity=".9" />
+      <circle className="bs-sun" cx={sunX} cy={sunY} r="46" fill="#FFC549" opacity=".9" />
       {/* distant hills */}
       <path d={`M0 430 Q200 360 420 410 T860 400 T1300 420 T1760 390 T2400 410 V470 H0Z`} fill="#e9cdbf" />
 
@@ -167,9 +174,8 @@ function Scene({ sunX, sunY, taxi, tanker }) {
       <rect x="745" y="444" width="560" height="6" fill="#8a6a5c" />
       {houses}
       {/* water taxis */}
-      {[0, 0.5].map((o, i) => {
-        const x = 720 + ((taxi + o) % 1) * 640;
-        return <g key={i} transform={`translate(${x} ${520 + i * 30})`}>
+      {[0, 1].map((i) => {
+        return <g key={i} className={`bs-taxi t${i}`} style={{ transform: `translate(720px, ${520 + i * 30}px)` }}>
           <path d="M0 0 h70 l-10 16 h-52 z" fill={i ? '#62160d' : '#2f6f8f'} />
           <rect x="18" y="-12" width="30" height="12" rx="3" fill="#fff6e6" stroke="#8a6a5c" />
           <path d="M-6 10 q-12 4 -24 0" stroke="#e8f4f8" strokeWidth="3" fill="none" />
@@ -187,7 +193,7 @@ function Scene({ sunX, sunY, taxi, tanker }) {
         <path className="bs-flame" d="M155 300 q-14 -22 0 -44 q14 22 0 44" fill="#ff8a2a" />
       </g>
       {/* LNG tanker sails in */}
-      <g transform={`translate(${1300 + tanker * 560} 500)`}>
+      <g className="bs-tanker" style={{ transform: `translate(${tankerIn ? 1860 : 1300}px, 500px)` }}>
         <path d="M0 0 h220 l-24 34 h-176 z" fill="#62160d" />
         {[40, 90, 140].map((x) => <circle key={x} cx={x} cy="-8" r="20" fill="#fff6e6" stroke="#b9917f" strokeWidth="2" />)}
         <rect x="176" y="-30" width="28" height="30" fill="#fff6e6" stroke="#b9917f" />

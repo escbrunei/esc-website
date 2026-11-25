@@ -634,3 +634,30 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   .bs-note { font-size: .72rem; max-width: 70%; }
 }
 .brand-door { height: 42px; width: auto; display: block; }
+
+/* ===== Brunei panorama (button/swipe driven) ===== */
+.brunei-story { position: relative; height: clamp(500px, 78vh, 720px); background: #fff3d1; overflow: hidden; }
+.bs-sticky { display: contents; }
+.brunei-story .bs-scene { position: absolute; inset: 0; overflow: hidden; touch-action: pan-y; cursor: grab; }
+.brunei-story .bs-scene:active { cursor: grabbing; }
+.brunei-story .bs-svg { position: absolute; top: 0; left: 0; height: 100%; width: auto; aspect-ratio: 4 / 1; min-width: 0; transition: transform 1.3s cubic-bezier(.45,.05,.25,1); }
+.bs-sun { transition: cx 1.3s ease, cy 1.3s ease; }
+.bs-tanker { transition: transform 2.2s ease-in-out; }
+.bs-taxi { animation: bs-taxi 16s linear infinite; }
+.bs-taxi.t1 { animation-duration: 22s; animation-delay: -9s; }
+@keyframes bs-taxi { from { translate: 0 0; } to { translate: 640px 0; } }
+.brunei-story .bs-panel { position: relative; z-index: 2; height: 100%; display: flex; flex-direction: column; padding-top: 1.6rem; pointer-events: none; }
+.bs-controls { pointer-events: auto; display: flex; align-items: center; gap: .5rem; margin-top: 1rem; flex-wrap: wrap; }
+.bs-arrow { width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--maroon); background: #fff; color: var(--maroon); font-size: 1.2rem; cursor: pointer; flex: none; }
+.bs-arrow:hover:not(:disabled) { background: var(--maroon); color: var(--gold); }
+.bs-arrow:disabled { opacity: .35; cursor: default; }
+.bs-chips { display: flex; gap: .35rem; flex-wrap: wrap; }
+.bs-chip { border: 1.5px solid rgba(98,22,13,.3); background: rgba(255,255,255,.85); color: var(--maroon); border-radius: 999px; padding: .35rem .8rem; cursor: pointer; font: inherit; font-size: .88rem; }
+.bs-chip.on { background: var(--maroon); color: var(--gold); border-color: var(--maroon); }
+.brunei-story .bs-note { position: absolute; bottom: 1rem; left: max(1.25rem, calc((100% - 1140px) / 2)); margin: 0; }
+@media (max-width: 760px) {
+  .brunei-story { height: 600px; }
+  .bs-chips { display: none; }
+  .bs-controls { justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: reduce) { .brunei-story .bs-svg, .bs-tanker, .bs-sun { transition: none; } .bs-taxi { animation: none; } }
