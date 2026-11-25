@@ -1208,3 +1208,10 @@ h3 { font-size: clamp(1.15rem, 1.8vw, 1.35rem); letter-spacing: -0.01em; }
 .brunei-story h2 .story-t1, .brunei-story h2 .story-t2 { display: block; }
 .brunei-story h2 .story-t2 { white-space: nowrap; font-size: .82em; margin-top: .1em; }
 @media (max-width: 420px) { .brunei-story h2 .story-t2 { white-space: normal; } }
+
+/* News page: background video banner */
+.video-hero { position: relative; overflow: hidden; isolation: isolate; }
+.hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero-video-tint { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(98,22,13,.94) 0%, rgba(98,22,13,.82) 45%, rgba(98,22,13,.6) 100%); }
+.video-credit { position: absolute; right: 12px; bottom: 8px; font-size: .7rem; color: rgba(255,255,255,.6); text-decoration: none; }
+.video-credit:hover { color: #fff; text-decoration: underline; }
