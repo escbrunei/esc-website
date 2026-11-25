@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T10:09:01.959Z",
-  "lastSuccessfulRefresh": "2026-11-25T10:09:01.959Z",
+  "generatedAt": "2026-11-25T10:18:25.995Z",
+  "lastSuccessfulRefresh": "2026-11-25T10:18:25.995Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:09:01.959Z",
+      "lastSuccess": "2026-11-25T10:18:25.995Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:09:01.959Z",
+      "lastSuccess": "2026-11-25T10:18:25.995Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:09:01.959Z",
+      "lastSuccess": "2026-11-25T10:18:25.995Z",
       "count": 9
     },
     {
@@ -36,21 +36,21 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:09:01.959Z",
+      "lastSuccess": "2026-11-25T10:18:25.995Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:09:01.959Z",
+      "lastSuccess": "2026-11-25T10:18:25.995Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:09:01.959Z",
+      "lastSuccess": "2026-11-25T10:18:25.995Z",
       "count": 30
     }
   ],
@@ -116,12 +116,12 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-VhcnMtNjU4MDI2MQ-5",
+      "id": "cna-business-ZWFycy02NTgwMjYx-5",
       "region": "asean",
       "kind": "headline",
-      "title": "Oil slips 1% as supply glut prospect offsets Middle East disruption fears",
+      "title": "Oil steady as supply glut prospect offsets Middle East disruption fears",
       "publisher": "CNA",
-      "url": "https://www.channelnewsasia.com/business/oil-slips-1-supply-glut-prospect-offsets-middle-east-disruption-fears-6580261",
+      "url": "https://www.channelnewsasia.com/business/oil-steady-supply-glut-prospect-offsets-middle-east-disruption-fears-6580261",
       "publishedAt": "2026-11-25T09:05:26.000Z",
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--viN2C2RQ--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T015829Z_1_LYNXNPEMAO053_RTROPTP_3_GLOBAL-OIL.JPG?itok=sw-LT9xu",
@@ -320,12 +320,12 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-bHVtcC02NTgwMDk2-22",
+      "id": "cna-business-kYXRhLTY1ODAwOTY-22",
       "region": "asean",
       "kind": "headline",
-      "title": "Dollar rallies before key inflation reading; Aussie and sterling slump",
+      "title": "Risk-off mood lifts dollar ahead of inflation data",
       "publisher": "CNA",
-      "url": "https://www.channelnewsasia.com/business/dollar-rallies-key-inflation-reading-aussie-and-sterling-slump-6580096",
+      "url": "https://www.channelnewsasia.com/business/risk-mood-lifts-dollar-ahead-inflation-data-6580096",
       "publishedAt": "2026-11-25T01:19:16.000Z",
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--W56okOwB--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T012150Z_2_LYNXNPEMAO03H_RTROPTP_3_GLOBAL-FOREX.JPG?itok=4E4wZwX4",
