@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import merch from '../data/merch.json';
 import { CONFIG } from '../config.js';
-import Merch3D from '../components/Merch3D.jsx';
+import MerchSpin from '../components/MerchSpin.jsx';
 
 const SECTIONS = [
   { key: 'apparel', title: 'ESC Apparel.', sub: 'Wear the Chamber.', form: () => CONFIG.MERCH_APPAREL_URL, cta: 'Order apparel' },
@@ -18,7 +18,7 @@ function Product({ item }) {
         <h3>{item.name}</h3>
         <p className="mp-tag">{item.tagline}</p>
       </div>
-      <Merch3D key={view.front} front={view.front} back={view.back} label={`${item.name}, ${view.name}`} depth={item.id === 'lanyard' ? 0.02 : item.category === 'accessories' ? 0.05 : 0.09} round={item.id === 'lanyard' ? 0.04 : 0.16} />
+      <MerchSpin key={view.front} frames={view.frames || [view.front, view.back].filter(Boolean)} label={`${item.name}, ${view.name}`} />
       <div className="mp-foot">
         {item.views.length > 1 ? (
           <div className="mp-swatches" role="radiogroup" aria-label="Colour">
@@ -32,7 +32,7 @@ function Product({ item }) {
           <span className="mp-colour">{view.name}</span>
         )}
         {typeof item.price === 'number' && <p className="mp-price">B${item.price.toFixed(2)}</p>}
-        {!view.back && <p className="mp-note">Back view coming soon</p>}
+        {!view.back && !view.frames && <p className="mp-note">Back view coming soon</p>}
       </div>
     </article>
   );
@@ -45,7 +45,7 @@ export default function Merch() {
       <header className="mstore-hero">
         <p className="mstore-kicker">ESC Merch</p>
         <h1>Made for aspiring ekonomists.</h1>
-        <p className="mstore-lead">Drag any piece to turn it around.</p>
+        <p className="mstore-lead">Drag to see the back.</p>
       </header>
       {SECTIONS.map((sec) => {
         const list = items.filter((i) => i.category === sec.key);

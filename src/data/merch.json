@@ -1,5 +1,5 @@
 {
-  "_howToEdit": "Each item has one or more colours, each with a front picture and (optionally) a back picture in public/images/merch/ (transparent PNGs, front and back the same size). category is \"apparel\" or \"accessories\"; the order buttons use MERCH_APPAREL_URL / MERCH_ACCESSORIES_URL in src/config.js. Add \"price\" (number, B$) to show a price.",
+  "_howToEdit": "Each item has one or more colours, each with a front picture and (optionally) a back picture in public/images/merch/ (transparent PNGs, front and back the same size). category is \"apparel\" or \"accessories\"; the order buttons use MERCH_APPAREL_URL / MERCH_ACCESSORIES_URL in src/config.js. Add \"price\" (number, B$) to show a price. For a true 360° spin, add \"frames\": a list of 24–36 photos taken all the way round (same size, product centred), e.g. [\"images/merch/zip/01.webp\", ...]; dragging then plays through them.",
   "items": [
     {
       "id": "quarter-zip",
