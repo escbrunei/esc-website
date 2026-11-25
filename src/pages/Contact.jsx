@@ -1,6 +1,7 @@
 import React from 'react';
 import { CONFIG } from '../config.js';
 import { LinkedInLink } from '../components/Footer.jsx';
+import InstagramFeed from '../components/InstagramFeed.jsx';
 
 export default function Contact() {
   return (
@@ -27,6 +28,13 @@ export default function Contact() {
             <LinkedInLink />
           </li>
         </ul>
+      </section>
+      <section className="section container" aria-labelledby="ig-h">
+        <h2 id="ig-h" className="section-title">Latest on Instagram</h2>
+        <div className="ig-feeds">
+          <InstagramFeed feedUrl={CONFIG.INSTAGRAM_FEED_URL} handle={CONFIG.INSTAGRAM_HANDLE} url={CONFIG.INSTAGRAM_URL} title="Economic Students’ Chamber" />
+          <InstagramFeed feedUrl={CONFIG.IHS_INSTAGRAM_FEED_URL} handle={CONFIG.IHS_INSTAGRAM_HANDLE} url={CONFIG.IHS_INSTAGRAM_URL} title="The Invisible Handshake" />
+        </div>
       </section>
     </>
   );

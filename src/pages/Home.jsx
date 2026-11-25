@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
+import EconomyRoad from '../components/EconomyRoad.jsx';
+import FeatureIcon from '../components/FeatureIcon.jsx';
 import { openESynC } from '../lib/esync.js';
 import { getEvents } from '../lib/events.js';
 import { HANDSHAKE_INTRO } from './Handshake.jsx';
@@ -6,6 +8,8 @@ import { bruneiDate } from '../lib/time.js';
 import { joinProps } from '../lib/join.js';
 
 export default function Home() {
+  const [hover, setHover] = useState(null);
+  const hv = (i) => ({ onMouseEnter: () => setHover(i), onMouseLeave: () => setHover(null), onFocus: () => setHover(i), onBlur: () => setHover(null) });
   const next = getEvents().upcoming.find((e) => e.series === 'invisible-handshake');
   return (
     <>
@@ -33,29 +37,34 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section container">
+      <section className="section container features">
         <div className="feature-grid">
-          <a className="card feature" href="#/dashboard">
+          <a className="card feature" href="#/dashboard" {...hv(0)}>
+            <FeatureIcon kind="dashboard" />
             <h2>Brunei Economy Dashboard</h2>
             <p>GDP growth, inflation, unemployment and the oil and gas economy in interactive charts you can filter, download and ask about.</p>
             <span className="more">Open the dashboard →</span>
           </a>
-          <a className="card feature" href="#/news">
+          <a className="card feature" href="#/news" {...hv(1)}>
+            <FeatureIcon kind="news" />
             <h2>Economic News</h2>
             <p>Hourly headlines and official DEPS and BDCB releases for Brunei, ASEAN and the world.</p>
             <span className="more">Read the news →</span>
           </a>
-          <a className="card feature" href="#/lab">
+          <a className="card feature" href="#/lab" {...hv(2)}>
+            <FeatureIcon kind="lab" />
             <h2>Economics Lab</h2>
             <p>Shift supply and demand to see what happens to prices, and practise calculating inflation from CPI.</p>
             <span className="more">Start experimenting →</span>
           </a>
-          <button type="button" className="card feature as-button" onClick={() => openESynC({ origin: 'home' })}>
+          <button type="button" className="card feature as-button" onClick={() => openESynC({ origin: 'home' })} {...hv(3)}>
+            <FeatureIcon kind="esync" />
             <h2>Ask ESynC</h2>
             <p>Get plain-language explanations, help reading Brunei’s data and step-by-step guidance on calculations.</p>
             <span className="more">Start a chat →</span>
           </button>
         </div>
+        <EconomyRoad target={hover} />
       </section>
 
       <section className="section band">

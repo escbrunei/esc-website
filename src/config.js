@@ -3,6 +3,11 @@ export const CONFIG = {
   ESC_EMAIL: 'info.escbrunei@gmail.com',
   INSTAGRAM_HANDLE: '@escbrunei',
   INSTAGRAM_URL: 'https://www.instagram.com/escbrunei/',
+  // Live Instagram feeds (JSON feed URLs from behold.so, e.g. 'https://feeds.behold.so/AbC123').
+  // Leave empty to show a simple Follow card instead.
+  INSTAGRAM_FEED_URL: '',
+  IHS_INSTAGRAM_FEED_URL: '',
+
   // The Invisible Handshake series Instagram
   IHS_INSTAGRAM_HANDLE: '@theihs.esc',
   IHS_INSTAGRAM_URL: 'https://www.instagram.com/theihs.esc/',
