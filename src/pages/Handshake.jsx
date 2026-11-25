@@ -21,7 +21,6 @@ export default function Handshake() {
           <p className="lead">{HANDSHAKE_INTRO}</p>
           <div className="hero-actions">
             <a className="btn btn-gold" href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Follow {CONFIG.IHS_INSTAGRAM_HANDLE} on Instagram</a>
-            <a className="btn btn-outline-light" href="#/events">All ESC events</a>
           </div>
         </div>
       </section>

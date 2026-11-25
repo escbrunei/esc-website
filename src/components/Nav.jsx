@@ -2,18 +2,17 @@ import React, { useState, useEffect, useRef } from 'react';
 import { openESynC } from '../lib/esync.js';
 import { joinProps } from '../lib/join.js';
 
-// Short top bar: Home · Explore ▾ · Events · About ▾ · Join ESC
+// Short top bar: Home · Explore ▾ · News · About ▾ · Join ESC
 const GROUPS = [
   { type: 'link', to: '/', label: 'Home' },
   {
     type: 'menu', id: 'explore', label: 'Explore',
     items: [
       { to: '/dashboard', label: 'Brunei Economy', hint: 'Charts and data' },
-      { to: '/news', label: 'News', hint: 'Daily headlines and releases' },
       { to: '/lab', label: 'Economics Lab', hint: 'Simulator and exercises' },
     ],
   },
-  { type: 'link', to: '/events', label: 'Events' },
+  { type: 'link', to: '/news', label: 'News' },
   { type: 'link', to: '/merch', label: 'Merch' },
   {
     type: 'menu', id: 'about', label: 'About',
