@@ -850,3 +850,11 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   72% { transform: translateX(160px) translateY(-6px) scale(.65); opacity: 0; }
   100% { transform: translateX(160px) scale(.65); opacity: 0; }
 }
+
+/* Join call-to-action inside the street scene (in the sky) */
+.street-cta { position: absolute; top: 7%; left: 50%; transform: translateX(-50%); z-index: 5; text-align: center; width: min(640px, 92%); }
+.street-cta h2 { color: var(--maroon); font-size: clamp(1.6rem, 3.4vw, 2.4rem); margin-bottom: .3rem; }
+.street-cta p { margin: 0 auto .9rem; max-width: 46ch; }
+.escape-street .escape-tag { bottom: calc(100% + 4px); }
+@media (max-width: 640px) { .escape-street { height: 600px; } .street-cta { top: 4%; } }
+@media (max-width: 640px) { .street-sun { top: auto; bottom: 47%; right: 6%; width: 60px; height: 60px; } .cloud.c3 { display: none; } .escape-street { height: 560px; } }

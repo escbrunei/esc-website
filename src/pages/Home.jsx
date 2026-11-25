@@ -82,14 +82,11 @@ export default function Home() {
         </div>
       </section>
 
-      <EscapeDoor />
-      <section className="section container join-cta">
-        <div className="join-text">
-          <h2>Be part of ESC</h2>
-          <p>Membership is open to students interested in economics and policy.</p>
-          <a className="btn btn-large" {...joinProps}>Join ESC</a>
-        </div>
-      </section>
+      <EscapeDoor>
+        <h2>Be part of ESC</h2>
+        <p>Membership is open to students interested in economics and policy.</p>
+        <a className="btn btn-large" {...joinProps}>Join ESC</a>
+      </EscapeDoor>
     </>
   );
 }

@@ -13,7 +13,7 @@ const PEOPLE = [
   { c: '#c96a4a', d: 24, delay: -18, dir: 1, s: .95 },
 ];
 
-export default function EscapeDoor() {
+export default function EscapeDoor({ children }) {
   const ref = useRef(null);
   const [run, setRun] = useState(0);
 
@@ -24,7 +24,15 @@ export default function EscapeDoor() {
     io.observe(el);
     return () => io.disconnect();
   }, []);
-  const replay = () => setRun((r) => r + 1);
+  // Replay only when the previous run has finished (prevents restarts mid-animation).
+  const busy = useRef(false);
+  useEffect(() => {
+    if (!run) return undefined;
+    busy.current = true;
+    const t = setTimeout(() => { busy.current = false; }, 5200);
+    return () => clearTimeout(t);
+  }, [run]);
+  const replay = () => { if (!busy.current) setRun((r) => r + 1); };
 
   // Scale the 1200x300 street so it fills the whole section (like background-size: cover).
   const [scale, setScale] = useState(1);
@@ -39,6 +47,7 @@ export default function EscapeDoor() {
   return (
     <div className="escape-street" ref={ref}>
       <span className="cloud c1" /><span className="cloud c2" /><span className="cloud c3" /><span className="street-sun" />
+      {children && <div className="street-cta">{children}</div>}
       <div className="street-world" style={{ transform: `translateX(-50%) scale(${scale})` }}>
       <svg className="street-bg" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
         <Street />
@@ -51,7 +60,7 @@ export default function EscapeDoor() {
         ))}
       </div>
       <button type="button" className={`escape ${run ? 'play' : ''}`} key={run} onClick={replay}
-        onMouseEnter={() => { if (run) replay(); }} aria-label="ESCape the ordinary: play the animation">
+        aria-label="ESCape the ordinary: play the animation">
         <span className="escape-stage" aria-hidden="true">
           <span className="escape-frame" style={{ WebkitMaskImage: "url(images/esc-door-hd.png)", maskImage: "url(images/esc-door-hd.png)" }} />
           <span className="escape-man"><span className="escape-person"><Person color="#62160d" scale={1.55} /></span></span>
