@@ -77,9 +77,14 @@ export default function Home() {
       </section>
 
       <section className="section container join-cta">
-        <h2>Be part of ESC</h2>
-        <p>Membership is open to students interested in economics and policy.</p>
-        <a className="btn btn-large" {...joinProps}>Join ESC</a>
+        <div className="join-grid">
+          <img className="join-art" src="images/escape-the-ordinary.png" alt="ESC door logo with a figure peeking out: ESCape the ordinary" width="320" height="350" loading="lazy" />
+          <div className="join-text">
+            <h2>Be part of ESC</h2>
+            <p>Membership is open to students interested in economics and policy.</p>
+            <a className="btn btn-large" {...joinProps}>Join ESC</a>
+          </div>
+        </div>
       </section>
     </>
   );
