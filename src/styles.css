@@ -12,7 +12,7 @@
   --radius: 14px;
   --shadow: 0 2px 10px rgba(98, 22, 13, 0.08);
   --font-head: 'Plate Gothic Three Four', 'Copperplate', 'Copperplate Gothic Light', 'Copperplate Gothic', 'Times New Roman', serif;
-  --font-body: 'Glacial Indifference', 'Century Gothic', 'Futura', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -391,7 +391,7 @@ h1, h2, h3, .brand-mark, .brand-text, .footer-title, .avatar-initials, .thumb-fa
 }
 @media (min-width: 1121px) { .nav-toggle { display: none; } .site-nav { display: flex !important; position: static; flex-direction: row; background: none; box-shadow: none; padding: 0; } }
 
-/* Homepage headline: Glacial Indifference, italic */
+/* Homepage headline: italic */
 .hero h1.hero-title { font-family: var(--font-body); font-style: italic; font-weight: 400; font-synthesis: style; letter-spacing: 0; line-height: 1.12; font-size: clamp(2.1rem, 5.2vw, 3.6rem); }
 
 /* Crest rolls in from the right on page load */
@@ -1128,7 +1128,7 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .pub-section .pub-title { border-bottom: 3px solid var(--gold); padding-bottom: .4rem; width: fit-content; margin-left: auto; margin-right: auto; }
 
 /* Merch store (Apple-inspired) */
-.mstore { background: #f5f5f7; color: #1d1d1f; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Inter, Arial, sans-serif; padding-bottom: 3rem; }
+.mstore { background: #f5f5f7; color: #1d1d1f; font-family: var(--font-body); padding-bottom: 3rem; }
 .mstore h1, .mstore h2, .mstore h3 { font-family: inherit; font-weight: 500; letter-spacing: -0.015em; color: #1d1d1f; }
 .mstore-hero { text-align: center; padding: 4.5rem 1.2rem 2.2rem; }
 .mstore-kicker { margin: 0 0 .4rem; color: var(--maroon); font-size: 1.05rem; }

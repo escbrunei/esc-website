@@ -269,7 +269,7 @@ Set a monthly spending limit in the Anthropic console.
 
 ## Brand fonts
 
-Headings use **Plate Gothic Three Four** and body text uses **Glacial Indifference**. Upload the font files to `public/fonts/` with the names listed in `public/fonts/README.md`. Until then, similar system fonts are used. Glacial Indifference is free. Check that your Plate Gothic licence allows web use.
+Headings use **Plate Gothic Three Four**. Body text uses the device's own system font: San Francisco on Apple devices (shown by the device, not hosted by us) and the free Inter font (SIL Open Font License, in `public/fonts/`) everywhere else. Check that your Plate Gothic licence allows web use.
 
 ---
 
