@@ -950,3 +950,22 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   .news-item .card-actions { margin-left: 0 !important; flex-wrap: wrap; }
   .news-item h3 { -webkit-line-clamp: 3; }
 }
+
+/* Mandate cards: centred with animated icons */
+.mandate { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.mandate .obj-icon { margin-bottom: .4rem; }
+.obj-purpose .glow { animation: obj-glow 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes obj-glow { 50% { transform: scale(1.2); opacity: .6; } }
+.obj-purpose .ray { animation: obj-ray 2.4s ease-in-out infinite; }
+.obj-purpose .r1 { animation-delay: .2s; } .obj-purpose .r2 { animation-delay: .4s; } .obj-purpose .r3 { animation-delay: .6s; } .obj-purpose .r4 { animation-delay: .8s; }
+@keyframes obj-ray { 0%, 100% { opacity: .25; } 50% { opacity: 1; } }
+.obj-vision .scope { animation: obj-scope 4s ease-in-out infinite; }
+@keyframes obj-scope { 50% { transform: rotate(-5deg); } }
+.obj-vision .star { animation: obj-star 2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes obj-star { 50% { transform: scale(1.25) rotate(20deg); } }
+.obj-vision .twinkle { animation: obj-ray 1.6s ease-in-out infinite; }
+.obj-vision .t2 { animation-delay: .8s; }
+.obj-mission .arrow { animation: obj-shoot 2.6s cubic-bezier(.3,.7,.3,1) infinite; }
+@keyframes obj-shoot { 0% { transform: translateX(-40px); opacity: 0; } 15% { opacity: 1; } 45%, 85% { transform: translateX(0); opacity: 1; } 100% { transform: translateX(0); opacity: 0; } }
+.obj-mission .bull { animation: obj-hit 2.6s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes obj-hit { 0%, 44% { transform: scale(1); } 52% { transform: scale(1.35); } 62%, 100% { transform: scale(1); } }

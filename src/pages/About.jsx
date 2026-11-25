@@ -33,9 +33,9 @@ export default function About() {
       <section className="section container" aria-labelledby="mand-h">
         <h2 id="mand-h" className="section-title">Our Mandates</h2>
         <div className="card-grid three">
-          <div className="card mandate"><h3>Purpose</h3><p>To foster a vibrant, student-led community of economics enthusiasts and provide opportunities for learning, professional development, networking, and dialogue.</p></div>
-          <div className="card mandate"><h3>Vision</h3><p>To be a leading national student-led economic association, recognised for developing aspiring economists and contributing to academic discourse and national development.</p></div>
-          <div className="card mandate"><h3>Mission</h3><p>To empower aspiring economists through programmes that connect academic learning with real-world challenges.</p></div>
+          <div className="card mandate"><ObjectiveIcon n="purpose" /><h3>Purpose</h3><p>To foster a vibrant, student-led community of economics enthusiasts and provide opportunities for learning, professional development, networking, and dialogue.</p></div>
+          <div className="card mandate"><ObjectiveIcon n="vision" /><h3>Vision</h3><p>To be a leading national student-led economic association, recognised for developing aspiring economists and contributing to academic discourse and national development.</p></div>
+          <div className="card mandate"><ObjectiveIcon n="mission" /><h3>Mission</h3><p>To empower aspiring economists through programmes that connect academic learning with real-world challenges.</p></div>
         </div>
       </section>
 

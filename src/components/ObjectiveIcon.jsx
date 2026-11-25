@@ -6,6 +6,46 @@ const M = '#62160d'; const G = '#FFC549'; const S = '#fff4d6';
 export default function ObjectiveIcon({ n }) {
   const p = { viewBox: '0 0 120 90', width: 120, height: 90, 'aria-hidden': true, className: `obj-icon obj-${n}` };
   switch (n) {
+    case 'purpose': // a lit lamp of learning that glows
+      return (
+        <svg {...p}>
+          <circle className="glow" cx="60" cy="34" r="26" fill={G} opacity=".35" />
+          <path d="M46 30 a14 14 0 1 1 28 0 c0 7 -5 10 -7 15 h-14 c-2 -5 -7 -8 -7 -15z" fill={G} stroke={M} strokeWidth="3" strokeLinejoin="round" />
+          <rect x="52" y="48" width="16" height="6" rx="2" fill={M} />
+          <rect x="54" y="56" width="12" height="5" rx="2" fill={M} />
+          {[[-26, 34], [26, 34], [-18, 12], [18, 12], [0, 2]].map(([dx, y], i) => (
+            <line key={i} className={`ray r${i}`} x1={60 + dx * 0.78} y1={y + (34 - y) * 0.22} x2={60 + dx} y2={y} stroke={M} strokeWidth="3" strokeLinecap="round" />
+          ))}
+          <path d="M28 78 h64" stroke={M} strokeWidth="3" strokeLinecap="round" />
+        </svg>
+      );
+    case 'vision': // a telescope pointed at a twinkling star
+      return (
+        <svg {...p}>
+          <g className="scope" style={{ transformOrigin: '50px 60px' }}>
+            <rect x="26" y="44" width="54" height="16" rx="5" fill={S} stroke={M} strokeWidth="3" transform="rotate(-24 53 52)" />
+            <rect x="72" y="28" width="14" height="20" rx="3" fill={G} stroke={M} strokeWidth="3" transform="rotate(-24 79 38)" />
+          </g>
+          <path d="M50 60 L38 84 M50 60 L62 84" stroke={M} strokeWidth="3" strokeLinecap="round" />
+          <path className="star" d="M100 10 l3 7 7 1 -5 5 1 7 -6 -3 -6 3 1 -7 -5 -5 7 -1z" fill={G} stroke={M} strokeWidth="2" strokeLinejoin="round" />
+          <circle className="twinkle t1" cx="84" cy="10" r="2" fill={M} />
+          <circle className="twinkle t2" cx="112" cy="34" r="2" fill={M} />
+        </svg>
+      );
+    case 'mission': // an arrow flying into a target
+      return (
+        <svg {...p}>
+          <circle cx="78" cy="46" r="30" fill={S} stroke={M} strokeWidth="3" />
+          <circle cx="78" cy="46" r="19" fill="#fff" stroke={M} strokeWidth="3" />
+          <circle className="bull" cx="78" cy="46" r="8" fill={G} stroke={M} strokeWidth="3" />
+          <g className="arrow">
+            <line x1="14" y1="46" x2="74" y2="46" stroke={M} strokeWidth="3.5" strokeLinecap="round" />
+            <path d="M74 46 l-10 -6 v12z" fill={M} />
+            <path d="M14 46 l-6 -7 M14 46 l-6 7 M20 46 l-6 -7 M20 46 l-6 7" stroke={G} strokeWidth="3" strokeLinecap="round" />
+          </g>
+        </svg>
+      );
+
     case 1: // skills: laptop with a chart that draws itself + spinning gear
       return (
         <svg {...p}>
