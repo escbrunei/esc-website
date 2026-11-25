@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRoute } from './lib/router.js';
+import { setupReveal } from './lib/reveal.js';
 import Nav from './components/Nav.jsx';
 import Footer from './components/Footer.jsx';
 import FloatingESynC from './components/FloatingESynC.jsx';
@@ -36,6 +37,7 @@ const PAGES = {
 export default function App() {
   const route = useRoute();
   const Page = PAGES[route.path] || NotFound;
+  React.useEffect(() => setupReveal(), [route.path]);
   return (
     <>
       <a className="skip-link" href="#/" onClick={(e) => { e.preventDefault(); document.getElementById('main')?.focus(); }}>Skip to content</a>
