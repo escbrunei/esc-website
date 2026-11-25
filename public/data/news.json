@@ -1,28 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T09:23:21.804Z",
-  "lastSuccessfulRefresh": "2026-11-25T09:23:21.804Z",
+  "generatedAt": "2026-11-25T09:25:23.629Z",
+  "lastSuccessfulRefresh": "2026-11-25T09:25:23.629Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
-      "ok": false,
-      "error": "This operation was aborted",
-      "lastSuccess": "2026-11-25T09:21:37.104Z",
-      "keptFromLastSuccess": 2
+      "ok": true,
+      "lastSuccess": "2026-11-25T09:25:23.629Z",
+      "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:23:21.804Z",
+      "lastSuccess": "2026-11-25T09:25:23.629Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:23:21.804Z",
+      "lastSuccess": "2026-11-25T09:25:23.629Z",
       "count": 9
     },
     {
@@ -37,27 +36,39 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:23:21.804Z",
+      "lastSuccess": "2026-11-25T09:25:23.629Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:23:21.804Z",
+      "lastSuccess": "2026-11-25T09:25:23.629Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:23:21.804Z",
+      "lastSuccess": "2026-11-25T09:25:23.629Z",
       "count": 30
     }
   ],
   "items": [
     {
-      "id": "bbc-business-0yMHFucTMzZTkwbw-0",
+      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-0",
+      "region": "global",
+      "kind": "headline",
+      "title": "Energy bills will soar - here's how you can ease the pain",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T09:24:48.000Z",
+      "summary": "Household energy bills are about to increase but there are ways to keep a lid on your expenditure.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/53c7/live/9b2f4a60-bd7f-11f1-bc2e-018d645d8d21.jpg",
+      "sourceId": "bbc-business"
+    },
+    {
+      "id": "bbc-business-0yMHFucTMzZTkwbw-1",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills to rise by 26% from January",
@@ -66,18 +77,6 @@
       "publishedAt": "2026-11-25T09:20:37.000Z",
       "summary": "A household using a typical amount of energy would see its annual bill rise from £1,723 to £2,166 if this level was sustained for a year.",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9855/live/6f788a40-e8a3-11f1-99b6-a35a62fa4264.jpg",
-      "sourceId": "bbc-business"
-    },
-    {
-      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-1",
-      "region": "global",
-      "kind": "headline",
-      "title": "Energy bills will soar - here's how you can ease the pain",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T09:05:41.000Z",
-      "summary": "Household energy bills are about to increase but there are ways to keep a lid on your expenditure.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/53c7/live/9b2f4a60-bd7f-11f1-bc2e-018d645d8d21.jpg",
       "sourceId": "bbc-business"
     },
     {
