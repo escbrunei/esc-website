@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T10:25:12.763Z",
-  "lastSuccessfulRefresh": "2026-11-25T10:25:12.763Z",
+  "generatedAt": "2026-11-25T10:27:21.264Z",
+  "lastSuccessfulRefresh": "2026-11-25T10:27:21.264Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:25:12.763Z",
+      "lastSuccess": "2026-11-25T10:27:21.264Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:25:12.763Z",
+      "lastSuccess": "2026-11-25T10:27:21.264Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:25:12.763Z",
+      "lastSuccess": "2026-11-25T10:27:21.264Z",
       "count": 9
     },
     {
@@ -36,21 +36,21 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:25:12.763Z",
+      "lastSuccess": "2026-11-25T10:27:21.264Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:25:12.763Z",
+      "lastSuccess": "2026-11-25T10:27:21.264Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:25:12.763Z",
+      "lastSuccess": "2026-11-25T10:27:21.264Z",
       "count": 30
     }
   ],
@@ -112,7 +112,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T09:54:39.000Z",
       "summary": "A household using a typical amount of energy would see its annual bill rise from £1,723 to £2,166 if this level was sustained for a year.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9855/live/6f788a40-e8a3-11f1-99b6-a35a62fa4264.jpg",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/cb60/live/6bdfdbb0-e8ba-11f1-99b6-a35a62fa4264.jpg",
       "sourceId": "bbc-business"
     },
     {
