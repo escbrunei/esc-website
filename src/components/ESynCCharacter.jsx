@@ -7,7 +7,7 @@ export default function ESynCCharacter({ size = 96, peeking = false, badge = fal
   const img = (
     <img
       src="images/esync-robot.png"
-      alt="ESynC, the ESC economics assistant"
+      alt="ESynC, the ESC AI assistant"
       width={size}
       height={Math.round(size * 1.14)}
       className="esync-img"

@@ -30,7 +30,7 @@ export default function Home() {
               <a className="btn btn-outline-light btn-large" href="#/lab">Open Economics Lab</a>
             </div>
             <p className="hero-links">
-              <button type="button" className="linklike light" onClick={() => openESynC({ origin: 'home' })}>Ask ESynC, our economics assistant →</button>
+              <button type="button" className="linklike light" onClick={() => openESynC({ origin: 'home' })}>Ask ESynC, our AI assistant →</button>
               <a {...joinProps} className="light">Join ESC →</a>
             </p>
           </div>

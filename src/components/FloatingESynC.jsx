@@ -28,7 +28,7 @@ export default function FloatingESynC({ path }) {
         type="button"
         className={`float-esync ${open ? 'is-open' : ''}`}
         onClick={() => { setMounted(true); setOpen((o) => !o); }}
-        aria-label={open ? 'Close ESynC chat' : 'Chat with ESynC, our economics assistant'}
+        aria-label={open ? 'Close ESynC chat' : 'Chat with ESynC, our AI assistant'}
         aria-expanded={open}
       >
         <span className="float-label" aria-hidden="true">{open ? 'Close chat' : 'Chat with ESynC'}</span>

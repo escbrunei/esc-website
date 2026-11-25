@@ -121,7 +121,7 @@ export function ESynCChat({ popup = false, onClose, open = true }) {
         <img src="images/esync-robot.png" alt="" className="esync-chat-avatar" />
         <div className="esync-chat-title">
           <h2>ESynC</h2>
-          <p>ESC’s economics assistant</p>
+          <p>ESC’s AI assistant</p>
         </div>
         {onClose && <button type="button" className="esync-close" onClick={onClose} aria-label="Close chat">×</button>}
       </header>
