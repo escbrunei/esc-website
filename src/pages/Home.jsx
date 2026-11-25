@@ -3,6 +3,7 @@ import EconomyRoad from '../components/EconomyRoad.jsx';
 import FeatureIcon from '../components/FeatureIcon.jsx';
 import BruneiStory from '../components/BruneiStory.jsx';
 import EscapeDoor from '../components/EscapeDoor.jsx';
+import HeroSociety from '../components/HeroSociety.jsx';
 import { openESynC } from '../lib/esync.js';
 import { getEvents } from '../lib/events.js';
 import { HANDSHAKE_INTRO } from './Handshake.jsx';
@@ -34,7 +35,10 @@ export default function Home() {
             </p>
           </div>
           <div className="hero-art">
-            <img className="hero-crest" src="images/esc-crest-v2.png" alt="Economic Students’ Chamber crest — Dewan Pelajar Ekonomi" width="320" height="320" />
+            <div className="hero-community">
+              <img className="hero-crest" src="images/esc-crest-v2.png" alt="Economic Students’ Chamber crest — Dewan Pelajar Ekonomi" width="320" height="320" />
+              <HeroSociety />
+            </div>
           </div>
         </div>
       </section>

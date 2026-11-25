@@ -1010,3 +1010,20 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   .float-esync.is-open .float-label { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { .esync-pop { transition: none; } }
+
+/* Hero: community of students under the crest */
+.hero-community { display: flex; flex-direction: column; align-items: center; width: min(440px, 100%); }
+.hero-society { width: 100%; height: auto; margin-top: -46px; overflow: visible; position: relative; z-index: 1; }
+.soc-in { animation: soc-pop .55s cubic-bezier(.3,1.5,.5,1) both; animation-delay: var(--d); transform-box: fill-box; transform-origin: 50% 100%; }
+@keyframes soc-pop { from { transform: translateY(18px) scale(.4); opacity: 0; } to { transform: none; opacity: 1; } }
+.soc-net { stroke-dashoffset: 0; animation: soc-fade 1s ease both; animation-delay: 2.5s; }
+.soc-node { animation: soc-fade .4s ease both, soc-blink 2.8s ease-in-out infinite; animation-delay: var(--d), calc(var(--d) + 1.5s); }
+@keyframes soc-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes soc-blink { 50% { opacity: .35; } }
+.soc-wave { animation: soc-wave 1.4s ease-in-out infinite; animation-delay: 2.6s; transform-box: view-box; }
+@keyframes soc-wave { 0%, 60%, 100% { transform: rotate(0); } 15% { transform: rotate(18deg); } 30% { transform: rotate(-8deg); } 45% { transform: rotate(14deg); } }
+@media (max-width: 760px) {
+  .hero-community { width: 260px; }
+  .hero-society { margin-top: -28px; }
+}
+@media (prefers-reduced-motion: reduce) { .soc-in, .soc-net, .soc-node, .soc-wave { animation: none; } }
