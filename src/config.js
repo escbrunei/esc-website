@@ -25,7 +25,7 @@ export const CONFIG = {
 
   // ESynC AI backend URL (your deployed server/esync-worker.js), e.g.
   // 'https://esync.your-account.workers.dev'. Leave empty until it is set up.
-  ESYNC_ENDPOINT: '',
+  ESYNC_ENDPOINT: 'https://esync.info-escbrunei.workers.dev',
 
   // Membership registration link. Every "Join ESC" button opens this.
   // Leave empty to use the built-in form on the Join page instead.
