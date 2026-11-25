@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T09:19:11.631Z",
-  "lastSuccessfulRefresh": "2026-11-25T09:19:11.631Z",
+  "generatedAt": "2026-11-25T09:21:37.104Z",
+  "lastSuccessfulRefresh": "2026-11-25T09:21:37.104Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:19:11.631Z",
+      "lastSuccess": "2026-11-25T09:21:37.104Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:19:11.631Z",
+      "lastSuccess": "2026-11-25T09:21:37.104Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:19:11.631Z",
+      "lastSuccess": "2026-11-25T09:21:37.104Z",
       "count": 9
     },
     {
@@ -36,27 +36,39 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:19:11.631Z",
+      "lastSuccess": "2026-11-25T09:21:37.104Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:19:11.631Z",
+      "lastSuccess": "2026-11-25T09:21:37.104Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:19:11.631Z",
+      "lastSuccess": "2026-11-25T09:21:37.104Z",
       "count": 30
     }
   ],
   "items": [
     {
-      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-0",
+      "id": "bbc-business-0yMHFucTMzZTkwbw-0",
+      "region": "global",
+      "kind": "headline",
+      "title": "Energy bills to rise by 26% from January",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T09:20:37.000Z",
+      "summary": "A household using a typical amount of energy would see its annual bill rise from £1,723 to £2,166 if this level was sustained for a year.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9855/live/6f788a40-e8a3-11f1-99b6-a35a62fa4264.jpg",
+      "sourceId": "bbc-business"
+    },
+    {
+      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-1",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills will soar - here's how you can ease the pain",
@@ -68,7 +80,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-VhcnMtNjU4MDI2MQ-1",
+      "id": "cna-business-VhcnMtNjU4MDI2MQ-2",
       "region": "asean",
       "kind": "headline",
       "title": "Oil slips 1% as supply glut prospect offsets Middle East disruption fears",
@@ -80,7 +92,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-b3JlYS02NTgxMTcx-2",
+      "id": "cna-business-b3JlYS02NTgxMTcx-3",
       "region": "asean",
       "kind": "headline",
       "title": "Aramco, S-Oil inaugurate $7 billion petrochemicals complex in South Korea",
@@ -90,18 +102,6 @@
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--q38D1eHQ--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T084225Z_2_LYNXNPEMAO0M6_RTROPTP_3_IRAN-CRISIS-ARAMCO-PIPELINE.JPG?itok=-qV05OJZ",
       "sourceId": "cna-business"
-    },
-    {
-      "id": "bbc-business-0yMHFucTMzZTkwbw-3",
-      "region": "global",
-      "kind": "headline",
-      "title": "Energy bills to rise by 26% from January",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T08:38:13.000Z",
-      "summary": "A household using a typical amount of energy would see its annual bill rise from £1,723 to £2,166 if this level was sustained for a year.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9855/live/6f788a40-e8a3-11f1-99b6-a35a62fa4264.jpg",
-      "sourceId": "bbc-business"
     },
     {
       "id": "cna-business-vcGVlLTY1ODEwODY-4",
