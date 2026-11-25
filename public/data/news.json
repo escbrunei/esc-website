@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T08:38:34.522Z",
-  "lastSuccessfulRefresh": "2026-11-25T08:38:34.522Z",
+  "generatedAt": "2026-11-25T08:40:01.818Z",
+  "lastSuccessfulRefresh": "2026-11-25T08:40:01.818Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:38:34.522Z",
+      "lastSuccess": "2026-11-25T08:40:01.818Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:38:34.522Z",
+      "lastSuccess": "2026-11-25T08:40:01.818Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:38:34.522Z",
+      "lastSuccess": "2026-11-25T08:40:01.818Z",
       "count": 9
     },
     {
@@ -36,21 +36,21 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:38:34.522Z",
+      "lastSuccess": "2026-11-25T08:40:01.818Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:38:34.522Z",
+      "lastSuccess": "2026-11-25T08:40:01.818Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:38:34.522Z",
+      "lastSuccess": "2026-11-25T08:40:01.818Z",
       "count": 30
     }
   ],
@@ -74,7 +74,7 @@
       "title": "'Crazy moves only look good in hindsight': Forrest Li on Singapore football, Shopee and a new era of e-commerce",
       "publisher": "CNA",
       "url": "https://www.channelnewsasia.com/singapore/forrest-li-football-association-sea-shopee-6581086",
-      "publishedAt": "2026-11-25T08:27:06.000Z",
+      "publishedAt": "2026-11-25T08:27:00.000Z",
       "summary": "Sea founder Forrest Li said he was advised against taking the top job at the Football Association of Singapore, but felt he had to give it a shot.",
       "image": "https://dam.mediacorp.sg/image/upload/s--Z_ORa2K9--/c_crop,h_1125,w_2000,x_0,y_54/fl_relative,g_south_east,l_mediacorp:cna:watermark:2021-08:cna,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/25/obk_4234.jpg?itok=icf330YX",
       "sourceId": "cna-business"
