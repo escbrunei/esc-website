@@ -679,3 +679,4 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .join-text h2 { font-size: clamp(1.6rem, 3.5vw, 2.3rem); color: var(--maroon); }
 .join-text p { font-size: 1.1rem; }
 @media (max-width: 640px) { .join-grid { grid-template-columns: 1fr; text-align: center; gap: 1.2rem; } .join-art { max-width: 230px; margin: 0 auto; } }
+@media (max-width: 760px) { .bs-stats { gap: .4rem; } .bs-stat { padding: .3rem .55rem; } .bs-label { font-size: .74rem; } }

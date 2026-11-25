@@ -31,10 +31,10 @@ export default function BruneiStory() {
   }, []);
 
   const fmt = (d) => (d ? `${d.value > 0 ? '+' : ''}${d.value}%` : '…');
-  const stat = (d, label) => d && { label: `${label}, ${d.year}`, value: label.startsWith('Unemployment') ? `${d.value}%` : fmt(d), sample: d.sample, source: d.source, sourceUrl: d.sourceUrl };
+  const stat = (d, label) => d && { label: `${label}, ${d.year}`, value: label.startsWith('Unemployment') ? `${d.value.toFixed(1)}%` : fmt(d), sample: d.sample, source: d.source, sourceUrl: d.sourceUrl };
   const steps = [
-    { x: 380, name: 'Welcome', title: 'Welcome to Brunei’s economy', text: 'Start at the Omar Ali Saifuddien Mosque in Bandar Seri Begawan. Use the arrows or swipe to travel across the economy.', stats: [] },
-    { x: 400, name: 'The capital', title: 'Jobs and prices in the capital', text: 'Bandar Seri Begawan is where most people work, shop and pay the bills. Two numbers matter most to households: how fast prices rise, and how many people can’t find work.', stats: [stat(data.infl, 'Inflation'), stat(data.unemp, 'Unemployment')] },
+    { x: 380, name: 'Welcome', title: 'Welcome to Brunei’s economy', text: 'Start at the Omar Ali Saifuddien Mosque in the capital, Bandar Seri Begawan. Use the arrows or swipe to travel across the economy.', stats: [] },
+    { x: 400, name: 'Brunei-Muara', title: 'Brunei-Muara: where most people live', text: 'Home to the capital, Bandar Seri Begawan, and about three in four residents. Prices and jobs matter most to households.', stats: [{ label: 'Population living in Brunei-Muara, 2025', value: '72.5%', sample: false, source: 'DEPS Population Estimates 2025', sourceUrl: 'https://deps.mofe.gov.bn/wp-content/uploads/2026/04/POP_2025_RPT.pdf' }, stat(data.infl, 'Inflation'), stat(data.unemp, 'Unemployment')] },
     { x: 1010, name: 'Visit Brunei 2027', title: 'Visit Brunei Year 2027', text: 'Brunei is preparing for Visit Brunei Year 2027, a national campaign to grow tourism and diversify the economy. Heritage sites like Kampong Ayer, one of the world’s largest water villages, are part of the draw.', stats: [], link: { href: 'https://www.thestar.com.my/aseanplus/aseanplus-news/2026/06/25/visit-brunei-year-to-be-held-in-2027', label: 'Read about the campaign' } },
     { x: 1620, name: 'Oil and gas', title: 'Oil and gas', text: 'Offshore platforms and LNG exports are still the backbone of the economy. Compare their growth with everything else.', stats: [stat(data.oil, 'Oil & gas GDP growth'), stat(data.nonoil, 'Non-oil & gas GDP growth')] },
     { x: 2150, name: 'Temburong', title: 'Temburong Bridge: the road ahead', text: 'New links and new sectors to diversify the economy. Overall, how fast is the economy growing?', stats: [stat(data.gdp, 'Real GDP growth')] },
@@ -88,7 +88,7 @@ export default function BruneiStory() {
           {cur.stats.filter(Boolean).length > 0 && (
             <div className="bs-stats">
               {cur.stats.filter(Boolean).map((s) => (
-                <div key={s.label} className="bs-stat"><span className="bs-value">{s.value}</span><span className="bs-label">{s.label}{s.sample ? ' · sample' : ''}</span>{s.source && <a className="bs-src" href={s.sourceUrl} target="_blank" rel="noopener noreferrer">Source: {s.source}</a>}</div>
+                <div key={s.label} className="bs-stat"><span className="bs-value">{s.value}</span><span className="bs-label">{s.label}{s.sample ? ' · sample' : ''}</span>{s.source && <a className="bs-src" href={s.sourceUrl} target="_blank" rel="noopener noreferrer" title={s.source}>Source: {s.source.split(/[,(;]/)[0].trim()} ↗</a>}</div>
               ))}
             </div>
           )}
