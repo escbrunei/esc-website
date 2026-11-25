@@ -12,6 +12,10 @@ export const CONFIG = {
   // 'https://esync.your-account.workers.dev'. Leave empty until it is set up.
   ESYNC_ENDPOINT: '',
 
+  // Membership registration link. Every "Join ESC" button opens this.
+  // Leave empty to use the built-in form on the Join page instead.
+  JOIN_URL: 'https://tr.ee/2A6wBxUWjK',
+
   // Membership form endpoint (Google Apps Script web app URL or Formspree URL).
   // Leave empty until it is set up; the form then shows the ESC email instead.
   REGISTRATION_ENDPOINT: '',

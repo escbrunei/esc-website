@@ -68,6 +68,13 @@ export default function Join() {
             <h2>Thank you for registering with ESC!</h2>
             <p>We’ll be in touch by email. Follow <a href={CONFIG.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{CONFIG.INSTAGRAM_HANDLE}</a> for the latest news.</p>
           </div>
+        ) : CONFIG.JOIN_URL ? (
+          <div className="card notice-card" data-testid="join-link">
+            <h2>Register with ESC</h2>
+            <p>Fill in our membership form to join. It opens in a new tab.</p>
+            <a className="btn btn-large" href={CONFIG.JOIN_URL} target="_blank" rel="noopener noreferrer">Open the membership form</a>
+            <p className="fineprint" style={{ marginTop: '1rem' }}>Having trouble? Email the committee at {emailLink}.</p>
+          </div>
         ) : !available ? (
           <div className="card notice-card" role="note" data-testid="registration-unavailable">
             <h2>Online registration isn’t open yet</h2>

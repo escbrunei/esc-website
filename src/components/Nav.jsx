@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { openESynC } from '../lib/esync.js';
+import { joinProps } from '../lib/join.js';
 
 const LINKS = [
   ['/', 'Home'],
@@ -37,7 +38,7 @@ export default function Nav({ path }) {
             </a>
           ))}
           <button type="button" className="nav-ask" onClick={() => openESynC({ origin: 'home' })}>Ask ESynC</button>
-          <a href="#/join" className="btn btn-gold nav-join">Join ESC</a>
+          <a {...joinProps} className="btn btn-gold nav-join">Join ESC</a>
         </nav>
       </div>
     </header>

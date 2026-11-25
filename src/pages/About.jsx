@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import members from '../data/members.json';
 import Avatar from '../components/Avatar.jsx';
 import { CONFIG } from '../config.js';
 import { LinkedInLink } from '../components/Footer.jsx';
+import { joinProps } from '../lib/join.js';
 
 const OBJECTIVES = [
   'Equip aspiring economists with practical and analytical skills through professional development, workshops, and training programmes.',
@@ -13,14 +14,7 @@ const OBJECTIVES = [
   'Contribute to discussions on national development and growth.',
 ];
 
-const termLabel = (c) => c.label || `Committee ${c.term}`;
-
 export default function About() {
-  const committees = members.committees || [];
-  const current = committees.find((c) => c.term === members.currentTerm);
-  const past = committees.filter((c) => c.term !== members.currentTerm).sort((a, b) => String(b.term).localeCompare(String(a.term)));
-  const [pastTerm, setPastTerm] = useState(past[0]?.term || '');
-  const selected = past.find((c) => c.term === pastTerm);
   const speakMail = `mailto:${CONFIG.ESC_EMAIL}?subject=${encodeURIComponent('Speaking at an ESC event')}`;
 
   return (
@@ -62,34 +56,15 @@ export default function About() {
       </section>
 
       <section className="section container" aria-labelledby="members-h">
-        <h2 id="members-h" className="section-title">Meet Our Members</h2>
-
-        <h3 className="sub-title">Current Committee{current ? ` · ${termLabel(current)}` : ''}</h3>
-        <PeopleGrid people={current?.members || []} roleKey="role" empty="Committee profiles will be added soon." />
-
-        <h3 className="sub-title">Founding Members</h3>
+        <h2 id="members-h" className="section-title">Founding Members</h2>
         <p className="muted">Recognising the people who helped establish the Economic Students’ Chamber (DPE) Brunei in 2026.</p>
         <PeopleGrid people={members.founders || []} roleKey="foundingRole" empty="Founding member profiles will be added soon." />
-
-        <h3 className="sub-title">Past Committees</h3>
-        {past.length ? (
-          <>
-            <label className="term-select">Select a term{' '}
-              <select value={pastTerm} onChange={(e) => setPastTerm(e.target.value)}>
-                {past.map((c) => <option key={c.term} value={c.term}>{termLabel(c)}</option>)}
-              </select>
-            </label>
-            {selected && <PeopleGrid people={selected.members} roleKey="role" empty="No profiles were recorded for this term." />}
-          </>
-        ) : (
-          <div className="empty"><p>Past committees will appear here once the inaugural committee’s term ends.</p></div>
-        )}
       </section>
 
       <section className="section container get-involved" aria-labelledby="gi-h">
         <h2 id="gi-h" className="section-title">Get Involved</h2>
         <div className="hero-actions">
-          <a className="btn btn-large" href="#/join">Join ESC</a>
+          <a className="btn btn-large" {...joinProps}>Join ESC</a>
           <a className="btn btn-large btn-ghost" href={speakMail}>Speak at an ESC Event</a>
         </div>
         <p className="muted">Instagram: <a href={CONFIG.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{CONFIG.INSTAGRAM_HANDLE}</a> · LinkedIn: <LinkedInLink /></p>

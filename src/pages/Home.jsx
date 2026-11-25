@@ -3,6 +3,7 @@ import { openESynC } from '../lib/esync.js';
 import { getEvents } from '../lib/events.js';
 import { HANDSHAKE_INTRO } from './Handshake.jsx';
 import { bruneiDate } from '../lib/time.js';
+import { joinProps } from '../lib/join.js';
 
 export default function Home() {
   const next = getEvents().upcoming.find((e) => e.series === 'invisible-handshake');
@@ -23,7 +24,7 @@ export default function Home() {
             </div>
             <p className="hero-links">
               <button type="button" className="linklike light" onClick={() => openESynC({ origin: 'home' })}>Ask ESynC, our economics assistant →</button>
-              <a href="#/join" className="light">Join ESC →</a>
+              <a {...joinProps} className="light">Join ESC →</a>
             </p>
           </div>
           <div className="hero-art">
@@ -72,7 +73,7 @@ export default function Home() {
       <section className="section container join-cta">
         <h2>Be part of ESC</h2>
         <p>Membership is open to students interested in economics and policy.</p>
-        <a className="btn btn-large" href="#/join">Join ESC</a>
+        <a className="btn btn-large" {...joinProps}>Join ESC</a>
       </section>
     </>
   );

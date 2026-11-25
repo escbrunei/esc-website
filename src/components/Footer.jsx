@@ -2,6 +2,7 @@ import React from 'react';
 import { CONFIG } from '../config.js';
 import { openESynC } from '../lib/esync.js';
 import ESynCCharacter from './ESynCCharacter.jsx';
+import { joinProps } from '../lib/join.js';
 
 export function LinkedInLink({ className = '' }) {
   return CONFIG.LINKEDIN_URL ? (
@@ -43,7 +44,7 @@ export default function Footer() {
           <div className="footer-col">
             <h2>Get Involved</h2>
             <ul>
-              <li><a href="#/join">Join ESC</a></li>
+              <li><a {...joinProps}>Join ESC</a></li>
               <li><a href="#/invisible-handshake">The Invisible Handshake</a></li>
               <li><a href={speakMail}>Speak at an ESC event</a></li>
               <li><button type="button" className="linklike" onClick={() => openESynC({ origin: 'home' })}>Ask ESynC</button></li>
