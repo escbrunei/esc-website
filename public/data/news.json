@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T09:50:33.036Z",
-  "lastSuccessfulRefresh": "2026-11-25T09:50:33.036Z",
+  "generatedAt": "2026-11-25T09:56:20.485Z",
+  "lastSuccessfulRefresh": "2026-11-25T09:56:20.485Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:50:33.036Z",
+      "lastSuccess": "2026-11-25T09:56:20.485Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:50:33.036Z",
+      "lastSuccess": "2026-11-25T09:56:20.485Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:50:33.036Z",
+      "lastSuccess": "2026-11-25T09:56:20.485Z",
       "count": 9
     },
     {
@@ -36,27 +36,51 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:50:33.036Z",
+      "lastSuccess": "2026-11-25T09:56:20.485Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:50:33.036Z",
+      "lastSuccess": "2026-11-25T09:56:20.485Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T09:50:33.036Z",
+      "lastSuccess": "2026-11-25T09:56:20.485Z",
       "count": 30
     }
   ],
   "items": [
     {
-      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-0",
+      "id": "bbc-business-0yMHFucTMzZTkwbw-0",
+      "region": "global",
+      "kind": "headline",
+      "title": "Energy bills to rise by 26% from January after gas prices surge",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T09:54:39.000Z",
+      "summary": "A household using a typical amount of energy would see its annual bill rise from £1,723 to £2,166 if this level was sustained for a year.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9855/live/6f788a40-e8a3-11f1-99b6-a35a62fa4264.jpg",
+      "sourceId": "bbc-business"
+    },
+    {
+      "id": "bbc-business-Y2RkMjl2OG1wOWpv-1",
+      "region": "global",
+      "kind": "headline",
+      "title": "What will the energy cap changes mean for my bills?",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T09:54:32.000Z",
+      "summary": "Regulator Ofgem is raising the cap affecting the energy bills of millions of households.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4155/live/6d965910-59d2-11f1-8b8c-6d33e1d5abb6.jpg",
+      "sourceId": "bbc-business"
+    },
+    {
+      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-2",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills will soar - here's how you can ease the pain",
@@ -68,19 +92,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-0yMHFucTMzZTkwbw-1",
-      "region": "global",
-      "kind": "headline",
-      "title": "Energy bills to rise by 26% from January",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T09:20:37.000Z",
-      "summary": "A household using a typical amount of energy would see its annual bill rise from £1,723 to £2,166 if this level was sustained for a year.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9855/live/6f788a40-e8a3-11f1-99b6-a35a62fa4264.jpg",
-      "sourceId": "bbc-business"
-    },
-    {
-      "id": "cna-business-VhcnMtNjU4MDI2MQ-2",
+      "id": "cna-business-VhcnMtNjU4MDI2MQ-3",
       "region": "asean",
       "kind": "headline",
       "title": "Oil slips 1% as supply glut prospect offsets Middle East disruption fears",
@@ -92,7 +104,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-b3JlYS02NTgxMTcx-3",
+      "id": "cna-business-b3JlYS02NTgxMTcx-4",
       "region": "asean",
       "kind": "headline",
       "title": "Aramco, S-Oil inaugurate $7 billion petrochemicals complex in South Korea",
@@ -104,7 +116,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-vcGVlLTY1ODEwODY-4",
+      "id": "cna-business-vcGVlLTY1ODEwODY-5",
       "region": "asean",
       "kind": "headline",
       "title": "'Crazy moves only look good in hindsight': Forrest Li on Singapore football, Shopee and a new era of e-commerce",
@@ -116,7 +128,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-LWNlby02NTgxMTE2-5",
+      "id": "cna-business-LWNlby02NTgxMTE2-6",
       "region": "asean",
       "kind": "headline",
       "title": "Walmart-owned Flipkart's Kalyan Krishnamurthy steps down as CEO",
@@ -128,7 +140,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-cml0eS02NTgxMDkx-6",
+      "id": "cna-business-cml0eS02NTgxMDkx-7",
       "region": "asean",
       "kind": "headline",
       "title": "Japan's JBIC, QatarEnergy sign MOU to strengthen energy security",
@@ -140,7 +152,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-EtdmktNjU4MTAzMQ-7",
+      "id": "cna-business-EtdmktNjU4MTAzMQ-8",
       "region": "asean",
       "kind": "headline",
       "title": "CD Projekt RED sees no material fourth-quarter hit from GTA VI",
@@ -152,7 +164,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-LXNheS02NTgxMDIx-8",
+      "id": "cna-business-LXNheS02NTgxMDIx-9",
       "region": "asean",
       "kind": "headline",
       "title": "Meta officials meet India's opposition Congress amid protests on content curbs, sources say",
@@ -164,7 +176,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-0ZW50LTY1ODA5NzY-9",
+      "id": "cna-business-0ZW50LTY1ODA5NzY-10",
       "region": "asean",
       "kind": "headline",
       "title": "Australia passes law forcing internet platforms to take down harmful content",
@@ -176,7 +188,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tc2F5LTY1ODA5MjY-10",
+      "id": "cna-business-tc2F5LTY1ODA5MjY-11",
       "region": "asean",
       "kind": "headline",
       "title": "Cognizant in talks to take over parts of S&P Global's Capital IQ operations, sources say",
@@ -188,7 +200,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-QtdXMtNjU4MDg1MQ-11",
+      "id": "cna-business-QtdXMtNjU4MDg1MQ-12",
       "region": "asean",
       "kind": "headline",
       "title": "Amazon to launch Amazon Autos in UK in early 2027 in first expansion beyond US",
@@ -200,7 +212,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cnbc-economy-9teS1vaWwuaHRtbA-12",
+      "id": "cnbc-economy-9teS1vaWwuaHRtbA-13",
       "region": "global",
       "kind": "headline",
       "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
@@ -212,7 +224,7 @@
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "bbc-business-JwZHcxcXg3amd4bw-13",
+      "id": "bbc-business-JwZHcxcXg3amd4bw-14",
       "region": "global",
       "kind": "headline",
       "title": "US attorney general dodges questions about Nvidia investigation",
@@ -224,7 +236,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-b3J0cy02NTgwNDYx-14",
+      "id": "cna-business-b3J0cy02NTgwNDYx-15",
       "region": "asean",
       "kind": "headline",
       "title": "Starbucks to engage banks for sale of Japan business, Bloomberg News reports",
@@ -236,7 +248,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-yc2VzLTY1ODA0NTE-15",
+      "id": "cna-business-yc2VzLTY1ODA0NTE-16",
       "region": "asean",
       "kind": "headline",
       "title": "Tech firms back in crosshairs as Huang rally reverses",
@@ -248,7 +260,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tYW5kLTY1ODA0MzE-16",
+      "id": "cna-business-tYW5kLTY1ODA0MzE-17",
       "region": "asean",
       "kind": "headline",
       "title": "Goldman says US data center boom through 2028 will lift power and gas demand",
@@ -260,7 +272,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-15NDluZ3lkcXpwbw-17",
+      "id": "bbc-business-15NDluZ3lkcXpwbw-18",
       "region": "global",
       "kind": "headline",
       "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
@@ -272,7 +284,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-0aW55LTY1Nzk0MTE-18",
+      "id": "cna-business-0aW55LTY1Nzk0MTE-19",
       "region": "asean",
       "kind": "headline",
       "title": "Nvidia board joins Jensen Huang under scrutiny after reinstating embattled CEO",
@@ -284,7 +296,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-bHVtcC02NTgwMDk2-19",
+      "id": "cna-business-bHVtcC02NTgwMDk2-20",
       "region": "asean",
       "kind": "headline",
       "title": "Dollar rallies before key inflation reading; Aussie and sterling slump",
@@ -296,7 +308,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-tqMDVtMnpkeXJ5bw-20",
+      "id": "bbc-business-tqMDVtMnpkeXJ5bw-21",
       "region": "global",
       "kind": "headline",
       "title": "Trump's rescue of Nvidia's Huang brings political risks",
@@ -308,7 +320,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-15MHhqNDFrbDUwbw-21",
+      "id": "bbc-business-15MHhqNDFrbDUwbw-22",
       "region": "global",
       "kind": "headline",
       "title": "The rising cost of putting food on the table in India",
@@ -320,7 +332,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-g5M3I5a2U1cDk3bw-22",
+      "id": "bbc-business-g5M3I5a2U1cDk3bw-23",
       "region": "global",
       "kind": "headline",
       "title": "US preparing to unveil plan for new tariffs on global trading partners",
@@ -332,7 +344,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-13eTlqbmUwZzdxbw-23",
+      "id": "bbc-business-13eTlqbmUwZzdxbw-24",
       "region": "global",
       "kind": "headline",
       "title": "Why tiny cars are taking off across Europe",
@@ -341,18 +353,6 @@
       "publishedAt": "2026-11-25T00:34:05.000Z",
       "summary": "Once seen as a car for elderly, rural people, tiny cars are being embraced by a younger demographic.",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2edb/live/5d054030-ddcf-11f1-b441-2b33b063138f.jpg",
-      "sourceId": "bbc-business"
-    },
-    {
-      "id": "bbc-business-Y2RkMjl2OG1wOWpv-24",
-      "region": "global",
-      "kind": "headline",
-      "title": "What will the energy cap changes mean for my bills?",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T00:33:25.000Z",
-      "summary": "Regulator Ofgem is raising the cap affecting the energy bills of millions of households.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4155/live/6d965910-59d2-11f1-8b8c-6d33e1d5abb6.jpg",
       "sourceId": "bbc-business"
     },
     {
