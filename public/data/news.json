@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T10:51:14.946Z",
-  "lastSuccessfulRefresh": "2026-11-25T10:51:14.946Z",
+  "generatedAt": "2026-11-25T10:52:23.712Z",
+  "lastSuccessfulRefresh": "2026-11-25T10:52:23.712Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:51:14.946Z",
+      "lastSuccess": "2026-11-25T10:52:23.712Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:51:14.946Z",
+      "lastSuccess": "2026-11-25T10:52:23.712Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:51:14.946Z",
+      "lastSuccess": "2026-11-25T10:52:23.712Z",
       "count": 9
     },
     {
@@ -36,27 +36,39 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:51:14.946Z",
+      "lastSuccess": "2026-11-25T10:52:23.712Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:51:14.946Z",
+      "lastSuccess": "2026-11-25T10:52:23.712Z",
       "count": 44
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:51:14.946Z",
+      "lastSuccess": "2026-11-25T10:52:23.712Z",
       "count": 30
     }
   ],
   "items": [
     {
-      "id": "cna-business-dGVjaC02NTgxNDQx-0",
+      "id": "bbc-business-15NDluZ3lkcXpwbw-0",
+      "region": "global",
+      "kind": "headline",
+      "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T10:52:09.000Z",
+      "summary": "The verdict follows a months-long trial in New York.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c0cb/live/da83bf80-e849-11f1-aa88-031e8213533d.jpg",
+      "sourceId": "bbc-business"
+    },
+    {
+      "id": "cna-business-dGVjaC02NTgxNDQx-1",
       "region": "asean",
       "kind": "headline",
       "title": "EU postpones discussion to approve Tesla's self-driving tech",
@@ -68,7 +80,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-1",
+      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-2",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills will soar - here's how you can ease the pain",
@@ -80,7 +92,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-Yml0ZS02NTgxNDEx-2",
+      "id": "cna-business-Yml0ZS02NTgxNDEx-3",
       "region": "asean",
       "kind": "headline",
       "title": "Shein Europe sales sink as new import fees bite",
@@ -92,7 +104,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-dXJlZC02NTgxMzYx-3",
+      "id": "cna-business-dXJlZC02NTgxMzYx-4",
       "region": "asean",
       "kind": "headline",
       "title": "Retailers face rising AI cyberattack threat ahead of Black Friday, many uninsured",
@@ -104,7 +116,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-9ybXMtNjU4MTM3MQ-4",
+      "id": "cna-business-9ybXMtNjU4MTM3MQ-5",
       "region": "asean",
       "kind": "headline",
       "title": "LG Electronics to offload up to 2% in Indian unit to meet public float norms",
@@ -116,7 +128,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-gyMHFuem5rcm40bw-5",
+      "id": "bbc-business-gyMHFuem5rcm40bw-6",
       "region": "global",
       "kind": "headline",
       "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down",
@@ -128,7 +140,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-2eDI5dm5lN2xua28-6",
+      "id": "bbc-business-2eDI5dm5lN2xua28-7",
       "region": "global",
       "kind": "headline",
       "title": "Interest rate affect on Guernsey's housing market",
@@ -140,7 +152,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-0yMHFucTMzZTkwbw-7",
+      "id": "bbc-business-0yMHFucTMzZTkwbw-8",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills to rise by 26% from January after gas prices surge",
@@ -152,7 +164,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-Y2RkMjl2OG1wOWpv-8",
+      "id": "bbc-business-Y2RkMjl2OG1wOWpv-9",
       "region": "global",
       "kind": "headline",
       "title": "What will the energy cap changes mean for my bills?",
@@ -164,7 +176,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-VhcnMtNjU4MDI2MQ-9",
+      "id": "cna-business-VhcnMtNjU4MDI2MQ-10",
       "region": "asean",
       "kind": "headline",
       "title": "Oil edges down as supply glut prospect offsets Middle East disruption fears",
@@ -176,7 +188,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-b3JlYS02NTgxMTcx-10",
+      "id": "cna-business-b3JlYS02NTgxMTcx-11",
       "region": "asean",
       "kind": "headline",
       "title": "Aramco, S-Oil inaugurate $7 billion petrochemicals complex in South Korea",
@@ -188,7 +200,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-vcGVlLTY1ODEwODY-11",
+      "id": "cna-business-vcGVlLTY1ODEwODY-12",
       "region": "asean",
       "kind": "headline",
       "title": "'Crazy moves only look good in hindsight': Forrest Li on Singapore football, Shopee and a new era of e-commerce",
@@ -200,7 +212,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-Rvd24tNjU4MTExNg-12",
+      "id": "cna-business-Rvd24tNjU4MTExNg-13",
       "region": "asean",
       "kind": "headline",
       "title": "Walmart-owned Flipkart CEO Kalyan Krishnamurthy to step down",
@@ -212,7 +224,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-cml0eS02NTgxMDkx-13",
+      "id": "cna-business-cml0eS02NTgxMDkx-14",
       "region": "asean",
       "kind": "headline",
       "title": "Japan's JBIC, QatarEnergy sign MOU to strengthen energy security",
@@ -224,7 +236,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-EtdmktNjU4MTAzMQ-14",
+      "id": "cna-business-EtdmktNjU4MTAzMQ-15",
       "region": "asean",
       "kind": "headline",
       "title": "CD Projekt RED sees no material fourth-quarter hit from GTA VI",
@@ -236,7 +248,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-LXNheS02NTgxMDIx-15",
+      "id": "cna-business-LXNheS02NTgxMDIx-16",
       "region": "asean",
       "kind": "headline",
       "title": "Meta officials meet India's opposition Congress amid protests on content curbs, sources say",
@@ -248,7 +260,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-0ZW50LTY1ODA5NzY-16",
+      "id": "cna-business-0ZW50LTY1ODA5NzY-17",
       "region": "asean",
       "kind": "headline",
       "title": "Australia passes law forcing internet platforms to take down harmful content",
@@ -260,7 +272,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tc2F5LTY1ODA5MjY-17",
+      "id": "cna-business-tc2F5LTY1ODA5MjY-18",
       "region": "asean",
       "kind": "headline",
       "title": "Cognizant in talks to take over parts of S&P Global's Capital IQ operations, sources say",
@@ -272,7 +284,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-QtdXMtNjU4MDg1MQ-18",
+      "id": "cna-business-QtdXMtNjU4MDg1MQ-19",
       "region": "asean",
       "kind": "headline",
       "title": "Amazon to launch Amazon Autos in UK in early 2027 in first expansion beyond US",
@@ -284,7 +296,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cnbc-economy-9teS1vaWwuaHRtbA-19",
+      "id": "cnbc-economy-9teS1vaWwuaHRtbA-20",
       "region": "global",
       "kind": "headline",
       "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
@@ -296,7 +308,7 @@
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "bbc-business-JwZHcxcXg3amd4bw-20",
+      "id": "bbc-business-JwZHcxcXg3amd4bw-21",
       "region": "global",
       "kind": "headline",
       "title": "US attorney general dodges questions about Nvidia investigation",
@@ -308,7 +320,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-b3J0cy02NTgwNDYx-21",
+      "id": "cna-business-b3J0cy02NTgwNDYx-22",
       "region": "asean",
       "kind": "headline",
       "title": "Starbucks to engage banks for sale of Japan business, Bloomberg News reports",
@@ -320,7 +332,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-yc2VzLTY1ODA0NTE-22",
+      "id": "cna-business-yc2VzLTY1ODA0NTE-23",
       "region": "asean",
       "kind": "headline",
       "title": "Tech firms back in crosshairs as Huang rally reverses",
@@ -332,7 +344,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tYW5kLTY1ODA0MzE-23",
+      "id": "cna-business-tYW5kLTY1ODA0MzE-24",
       "region": "asean",
       "kind": "headline",
       "title": "Goldman says US data center boom through 2028 will lift power and gas demand",
@@ -342,18 +354,6 @@
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--Bm2IR5iW--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T032421Z_2_LYNXNPEMAO08A_RTROPTP_3_USA-DATA-CENTERS-XAI-TURBINES.JPG?itok=Y6lCFLTQ",
       "sourceId": "cna-business"
-    },
-    {
-      "id": "bbc-business-15NDluZ3lkcXpwbw-24",
-      "region": "global",
-      "kind": "headline",
-      "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T02:59:27.000Z",
-      "summary": "The verdict follows a months-long trial in New York.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c0cb/live/da83bf80-e849-11f1-aa88-031e8213533d.jpg",
-      "sourceId": "bbc-business"
     },
     {
       "id": "cna-business-0aW55LTY1Nzk0MTE-25",
