@@ -18,7 +18,7 @@ function Product({ item }) {
         <h3>{item.name}</h3>
         <p className="mp-tag">{item.tagline}</p>
       </div>
-      <Merch3D key={view.front} front={view.front} back={view.back} label={`${item.name}, ${view.name}`} depth={item.category === 'accessories' ? 0.03 : 0.06} />
+      <Merch3D key={view.front} front={view.front} back={view.back} label={`${item.name}, ${view.name}`} depth={item.id === 'lanyard' ? 0.02 : item.category === 'accessories' ? 0.05 : 0.09} round={item.id === 'lanyard' ? 0.04 : 0.16} />
       <div className="mp-foot">
         {item.views.length > 1 ? (
           <div className="mp-swatches" role="radiogroup" aria-label="Colour">
