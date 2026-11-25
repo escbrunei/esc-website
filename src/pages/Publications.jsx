@@ -56,18 +56,15 @@ function Viewer({ open, onClose }) {
 
 export default function Publications() {
   const series = pubs.series || [];
-  const [tab, setTab] = useState((series.find((s) => s.items?.length) || series[0])?.id);
   const [open, setOpen] = useState(null);
-  const current = series.find((s) => s.id === tab) || series[0];
-  const items = (current?.items || []).filter((i) => i && i.file && i.title);
 
-  const read = (item) => {
+  const read = (item, cur) => {
     // Phones show embedded PDFs poorly, so open the file directly there.
     if (window.matchMedia('(max-width: 760px)').matches) {
       window.open(item.file, '_blank', 'noopener');
       return;
     }
-    setOpen({ ...item, seriesTitle: current.title });
+    setOpen({ ...item, seriesTitle: cur.title });
   };
 
   return (
@@ -80,37 +77,33 @@ export default function Publications() {
         </div>
       </section>
 
-      <section className="section container" aria-label="Publication series">
-        <div className="pub-tabs" role="tablist">
-          {series.map((s) => (
-            <button key={s.id} role="tab" aria-selected={s.id === current?.id} className={`pub-tab ${s.id === current?.id ? 'on' : ''}`} onClick={() => setTab(s.id)}>
-              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d={ICON[s.id] || ICON['dpe-insight']} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
-              {s.title}
-            </button>
-          ))}
-        </div>
-
-        {current && (
-          <div className="pub-panel" role="tabpanel">
-            <p className="pub-blurb">{current.blurb}</p>
-            {items.length === 0 ? (
+      {series.map((cur) => {
+        const list = (cur.items || []).filter((i) => i && i.file && i.title);
+        return (
+          <section key={cur.id} className="section container pub-section" aria-labelledby={`pub-${cur.id}`}>
+            <h2 id={`pub-${cur.id}`} className="section-title pub-title">
+              <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d={ICON[cur.id] || ICON['dpe-insight']} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+              {cur.title}
+            </h2>
+            <p className="pub-blurb">{cur.blurb}</p>
+            {list.length === 0 ? (
               <div className="empty pub-empty">
-                <p>The first {current.title.replace(/s$/, '')} issue is coming soon.</p>
+                <p>The first {cur.title.replace(/s$/, '')} issue is coming soon.</p>
                 <p>Follow <a href={CONFIG.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{CONFIG.INSTAGRAM_HANDLE}</a> for the release.</p>
               </div>
             ) : (
               <div className="pub-grid">
-                {items.map((item) => (
+                {list.map((item) => (
                   <article key={item.file} className="card pub-card">
-                    <button type="button" className="pub-cover" onClick={() => read(item)} aria-label={`Read ${item.title}`}>
-                      <Cover item={item} series={current} />
+                    <button type="button" className="pub-cover" onClick={() => read(item, cur)} aria-label={`Read ${item.title}`}>
+                      <Cover item={item} series={cur} />
                     </button>
                     <div className="pub-body">
                       {(item.date || item.pages) && <p className="pub-date">{[item.date && fmtDate(item.date), item.pages && `${item.pages} pages`].filter(Boolean).join(' · ')}</p>}
                       <h3>{item.title}</h3>
                       {item.summary && <p className="muted">{item.summary}</p>}
                       <div className="pub-btns">
-                        <button type="button" className="btn btn-small" onClick={() => read(item)}>Read</button>
+                        <button type="button" className="btn btn-small" onClick={() => read(item, cur)}>Read</button>
                         <a className="btn btn-small btn-ghost" href={item.file} download>Download PDF</a>
                       </div>
                     </div>
@@ -118,9 +111,9 @@ export default function Publications() {
                 ))}
               </div>
             )}
-          </div>
-        )}
-      </section>
+          </section>
+        );
+      })}
       <Viewer open={open} onClose={() => setOpen(null)} />
     </>
   );

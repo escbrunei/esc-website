@@ -1122,3 +1122,7 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .footer-disclaimer { flex-basis: 100%; font-size: .8rem; opacity: .75; }
 @media (max-width: 820px) { .legal { grid-template-columns: 1fr; } .legal-toc { position: static; } }
 .dash-disclaimer { font-size: .85rem; opacity: .85; margin-top: .4rem; } .dash-disclaimer a { color: var(--gold); }
+.pub-section + .pub-section { padding-top: 0; }
+.pub-title { display: flex; align-items: center; justify-content: center; gap: .55rem; text-align: center; }
+.pub-title::after { display: none; }
+.pub-section .pub-title { border-bottom: 3px solid var(--gold); padding-bottom: .4rem; width: fit-content; margin-left: auto; margin-right: auto; }
