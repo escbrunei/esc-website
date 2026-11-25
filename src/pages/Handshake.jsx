@@ -14,14 +14,15 @@ export default function Handshake() {
   const done = past.filter((e) => e.series === 'invisible-handshake');
   return (
     <>
-      <section className="page-hero handshake-hero">
+      <section className="ihs-banner">
+        <h1 className="sr-only">The Invisible Handshake Series</h1>
+        <img src="images/ihs-banner.jpg" srcSet="images/ihs-banner-1400.jpg 1400w, images/ihs-banner.jpg 2940w" sizes="100vw"
+          alt="The Invisible Handshake by ESC: Where Economics comes alive. Join casual conversations, exchange ideas and connect with experts and peers in a friendly, interactive space. Engage, Speak, Connect." />
+      </section>
+      <section className="ihs-intro">
         <div className="container">
-          <p className="eyebrow">ESC networking series</p>
-          <h1>The Invisible Handshake Series</h1>
           <p className="lead">{HANDSHAKE_INTRO}</p>
-          <div className="hero-actions">
-            <a className="btn btn-gold" href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Follow {CONFIG.IHS_INSTAGRAM_HANDLE} on Instagram</a>
-          </div>
+          <a className="btn btn-gold" href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">Follow {CONFIG.IHS_INSTAGRAM_HANDLE} on Instagram</a>
         </div>
       </section>
       <section className="section container" aria-labelledby="ih-up">

@@ -1236,3 +1236,10 @@ h3 { font-size: clamp(1.15rem, 1.8vw, 1.35rem); letter-spacing: -0.01em; }
   .hero.video-hero .hero-video-tint { background: rgba(98,22,13,.85); }
 }
 .hero, .page-hero { background: var(--maroon); }
+
+/* The Invisible Handshake Series banner */
+.ihs-banner { background: #5a1610; line-height: 0; }
+.ihs-banner img { display: block; width: 100%; height: auto; max-height: 72vh; object-fit: cover; object-position: center; }
+.ihs-intro { background: var(--maroon); color: #fff; padding: 1.6rem 0 2rem; }
+.ihs-intro .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem 2rem; }
+.ihs-intro .lead { margin: 0; max-width: 680px; color: #fff; }
