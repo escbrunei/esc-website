@@ -34,6 +34,7 @@ export default function Dashboard() {
           <p className="eyebrow">Brunei Economy Dashboard</p>
           <h1>Explore Brunei’s Economy</h1>
           <p className="lead">Key indicators with their sources. Tap or hover over a chart to read the values, then download the data or ask ESynC what it means.</p>
+          <p className="dash-disclaimer">For education and general information only. Official figures may be revised, so always check the original source. <a href="#/terms">Terms of Use</a></p>
           <a className="btn btn-outline-light" href="#/news">Latest economic news →</a>
         </div>
       </section>

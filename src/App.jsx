@@ -15,6 +15,7 @@ import Handshake from './pages/Handshake.jsx';
 import About from './pages/About.jsx';
 import Join from './pages/Join.jsx';
 import Contact from './pages/Contact.jsx';
+import Terms from './pages/Terms.jsx';
 
 const PAGES = {
   '/': Home,
@@ -29,6 +30,7 @@ const PAGES = {
   '/about': About,
   '/join': Join,
   '/contact': Contact,
+  '/terms': Terms,
 };
 
 export default function App() {

@@ -52,7 +52,11 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="container footer-bottom">© {new Date().getFullYear()} Economic Students’ Chamber (DPE) Brunei</div>
+        <div className="container footer-bottom">
+          <span>© {new Date().getFullYear()} Economic Students’ Chamber (DPE) Brunei</span>
+          <span className="footer-legal"><a href="#/terms">Terms of Use</a> · <a href="#/terms" onClick={() => setTimeout(() => document.getElementById('privacy')?.scrollIntoView(), 300)}>Privacy</a></span>
+          <span className="footer-disclaimer">Content is for education and general information only, not financial or professional advice. Always check figures against the original source.</span>
+        </div>
       </div>
     </footer>
   );
