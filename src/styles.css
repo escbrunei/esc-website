@@ -356,3 +356,7 @@ h1, h2, h3, .brand-mark, .brand-text, .footer-title, .avatar-initials, .thumb-fa
 @media (prefers-reduced-motion: reduce) { .hero-art .esync-char.badge { animation: none; } }
 .chat-header .esync-char.badge { border-width: 3px; flex: none; }
 .chat-header .esync-char.badge .esync-img { width: 82%; }
+
+/* ESC crest in the homepage hero */
+.hero-crest { width: min(320px, 100%); height: auto; filter: drop-shadow(0 14px 28px rgba(0,0,0,.35)); }
+@media (max-width: 760px) { .hero-crest { width: 170px; } }

@@ -2,7 +2,6 @@ import React from 'react';
 import { openESynC } from '../lib/esync.js';
 import { getEvents } from '../lib/events.js';
 import { HANDSHAKE_INTRO } from './Handshake.jsx';
-import ESynCCharacter from '../components/ESynCCharacter.jsx';
 import { bruneiDate } from '../lib/time.js';
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div>
             <p className="eyebrow">Economic Students’ Chamber (DPE) Brunei</p>
-            <h1>Where Brunei’s aspiring economists meet</h1>
+            <h1>Empowering and Mobilising Aspiring Economists</h1>
             <p className="lead">
               ESC is a student-led, non-profit community for students interested in economics and policy.
               We learn together, meet practitioners and join conversations about Brunei’s development.
@@ -27,8 +26,8 @@ export default function Home() {
               <a href="#/join" className="light">Join ESC →</a>
             </p>
           </div>
-          <div className="hero-art" aria-hidden="true">
-            <ESynCCharacter size={230} badge />
+          <div className="hero-art">
+            <img className="hero-crest" src="images/esc-crest.png" alt="Economic Students’ Chamber crest — Dewan Pelajar Ekonomi" width="320" height="320" />
           </div>
         </div>
       </section>
