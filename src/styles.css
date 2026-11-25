@@ -415,3 +415,12 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .feature h2, .chart-head h2, .event-card h3, .mandate h3 { position: relative; }
 .news-item h3 a { border-left: 4px solid var(--gold); padding-left: .6rem; display: inline-block; }
 .btn { letter-spacing: .01em; }
+
+/* Instagram call-out on The Invisible Handshake page */
+.ig-card { display: flex; align-items: center; gap: 1.1rem; text-decoration: none; color: var(--ink); border-left: 6px solid var(--gold); }
+.ig-card:hover { color: var(--ink); box-shadow: 0 8px 20px rgba(98,22,13,.14); }
+.ig-icon { flex: none; width: 60px; height: 60px; border-radius: 16px; display: grid; place-items: center; color: #fff; background: radial-gradient(circle at 30% 110%, #ffd776 0%, #f58529 25%, #dd2a7b 55%, #8134af 80%, #515bd4 100%); }
+.ig-title { display: block; color: var(--maroon); font-size: 1.15rem; }
+.ig-sub { display: block; color: var(--muted); font-size: .95rem; }
+.ig-card .more { margin-left: auto; color: var(--maroon); font-size: 1.4rem; }
+.ig-more { margin-top: 1rem; }

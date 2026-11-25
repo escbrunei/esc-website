@@ -3,6 +3,10 @@ export const CONFIG = {
   ESC_EMAIL: 'info.escbrunei@gmail.com',
   INSTAGRAM_HANDLE: '@escbrunei',
   INSTAGRAM_URL: 'https://www.instagram.com/escbrunei/',
+  // The Invisible Handshake series Instagram
+  IHS_INSTAGRAM_HANDLE: '@theihs.esc',
+  IHS_INSTAGRAM_URL: 'https://www.instagram.com/theihs.esc/',
+
   LINKEDIN_NAME: 'Economic Students’ Chamber (DPE) Brunei',
   // Paste the official LinkedIn page URL here, e.g. 'https://www.linkedin.com/company/...'
   // Left empty, the site shows the page name without a link.
