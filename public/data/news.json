@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T17:26:01.826Z",
-  "lastSuccessfulRefresh": "2026-11-25T17:26:01.826Z",
+  "generatedAt": "2026-11-25T17:29:54.448Z",
+  "lastSuccessfulRefresh": "2026-11-25T17:29:54.448Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:26:01.826Z",
+      "lastSuccess": "2026-11-25T17:29:54.448Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:26:01.826Z",
+      "lastSuccess": "2026-11-25T17:29:54.448Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:26:01.826Z",
+      "lastSuccess": "2026-11-25T17:29:54.448Z",
       "count": 9
     },
     {
@@ -36,27 +36,39 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:26:01.826Z",
+      "lastSuccess": "2026-11-25T17:29:54.448Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:26:01.826Z",
+      "lastSuccess": "2026-11-25T17:29:54.448Z",
       "count": 47
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:26:01.826Z",
+      "lastSuccess": "2026-11-25T17:29:54.448Z",
       "count": 30
     }
   ],
   "items": [
     {
-      "id": "bbc-business-0zdmdkbjAzN3o0bw-0",
+      "id": "bbc-business-01eTFnNDJ4Mnd6bw-0",
+      "region": "global",
+      "kind": "headline",
+      "title": "Energy price increase 'could put me in hospital'",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y1g42x2wzo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T17:26:13.000Z",
+      "summary": "People on Teesside share their views on the news energy bills are expected to increase by 26%.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e42d/live/92f87c80-e8e1-11f1-99b6-a35a62fa4264.jpg",
+      "sourceId": "bbc-business"
+    },
+    {
+      "id": "bbc-business-0zdmdkbjAzN3o0bw-1",
       "region": "global",
       "kind": "headline",
       "title": "Poundland collapses putting 11,000 jobs at risk",
@@ -68,7 +80,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-wYWNlLTY1ODI0NzE-1",
+      "id": "cna-business-wYWNlLTY1ODI0NzE-2",
       "region": "asean",
       "kind": "headline",
       "title": "US authorizes SpaceX to deploy 1 million satellites for data centers in space",
@@ -80,7 +92,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-tcWxxMDdkNzF5a28-2",
+      "id": "bbc-business-tcWxxMDdkNzF5a28-3",
       "region": "global",
       "kind": "headline",
       "title": "Scots react to news of rising energy prices",
@@ -92,7 +104,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-FkZXMtNjU4MDI0Ng-3",
+      "id": "cna-business-FkZXMtNjU4MDI0Ng-4",
       "region": "asean",
       "kind": "headline",
       "title": "World stocks tumble as Trump tariffs rattle markets, AI rally fades",
@@ -104,7 +116,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-rcmVnbjBncTJ5ZG8-4",
+      "id": "bbc-business-rcmVnbjBncTJ5ZG8-5",
       "region": "global",
       "kind": "headline",
       "title": "Why has Poundland collapsed and what happens next?",
@@ -116,7 +128,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-g5M3I5a2U1cDk3bw-5",
+      "id": "bbc-business-g5M3I5a2U1cDk3bw-6",
       "region": "global",
       "kind": "headline",
       "title": "US announces new tariffs on host of countries including China",
@@ -128,7 +140,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cnbc-economy-QtZ2lmdHMuaHRtbA-6",
+      "id": "cnbc-economy-QtZ2lmdHMuaHRtbA-7",
       "region": "global",
       "kind": "headline",
       "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
@@ -140,7 +152,7 @@
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "cna-business-maXRzLTY1ODI0MDY-7",
+      "id": "cna-business-maXRzLTY1ODI0MDY-8",
       "region": "asean",
       "kind": "headline",
       "title": "Anthropic's slide tests Wall Street's lofty bets on future AI profits",
@@ -152,7 +164,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-EwbWQ4ZzE0enJ5bw-8",
+      "id": "bbc-business-EwbWQ4ZzE0enJ5bw-9",
       "region": "global",
       "kind": "headline",
       "title": "US stocks fall further as fears over AI intensify",
@@ -161,18 +173,6 @@
       "publishedAt": "2026-11-25T16:07:26.000Z",
       "summary": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9f2e/live/6940e8e0-e8f1-11f1-99a1-253766e7ad8b.jpg",
-      "sourceId": "bbc-business"
-    },
-    {
-      "id": "bbc-business-01eTFnNDJ4Mnd6bw-9",
-      "region": "global",
-      "kind": "headline",
-      "title": "Energy price increase 'could put me in hospital'",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y1g42x2wzo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T16:06:25.000Z",
-      "summary": "People on Teesside share their views on the news energy bills are expected to increase by 26%.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e42d/live/92f87c80-e8e1-11f1-99b6-a35a62fa4264.jpg",
       "sourceId": "bbc-business"
     },
     {
