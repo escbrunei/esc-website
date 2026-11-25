@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T08:02:32.566Z",
-  "lastSuccessfulRefresh": "2026-11-25T08:02:32.566Z",
+  "generatedAt": "2026-11-25T08:15:11.245Z",
+  "lastSuccessfulRefresh": "2026-11-25T08:15:11.245Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:02:32.566Z",
+      "lastSuccess": "2026-11-25T08:15:11.245Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:02:32.566Z",
+      "lastSuccess": "2026-11-25T08:15:11.245Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:02:32.566Z",
+      "lastSuccess": "2026-11-25T08:15:11.245Z",
       "count": 9
     },
     {
@@ -36,21 +36,21 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:02:32.566Z",
+      "lastSuccess": "2026-11-25T08:15:11.245Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:02:32.566Z",
+      "lastSuccess": "2026-11-25T08:15:11.245Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:02:32.566Z",
+      "lastSuccess": "2026-11-25T08:15:11.245Z",
       "count": 30
     }
   ],
@@ -62,23 +62,49 @@
       "title": "Energy bills to rise by 26% from January",
       "publisher": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm20qnq33e90o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T07:34:20.000Z",
+      "publishedAt": "2026-11-25T08:10:56.000Z",
       "summary": "A household using a typical amount of energy would see its annual bill rise from £1,723 to £2,166 if this level was sustained for a year.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9855/live/6f788a40-e8a3-11f1-99b6-a35a62fa4264.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-1zYXktNjU4MTAyMQ-1",
+      "id": "cna-business-cml0eS02NTgxMDkx-1",
       "region": "asean",
       "kind": "headline",
-      "title": "Meta delegation meets Congress in New Delhi as protests intensify over content curbs, sources say",
+      "title": "Japan's JBIC, QatarEnergy sign MOU to strengthen energy security",
       "publisher": "CNA",
-      "url": "https://www.channelnewsasia.com/business/meta-delegation-meets-congress-in-new-delhi-protests-intensify-over-content-curbs-sources-say-6581021",
-      "publishedAt": "2026-11-25T07:33:27.000Z",
+      "url": "https://www.channelnewsasia.com/business/japans-jbic-qatarenergy-sign-mou-strengthen-energy-security-6581091",
+      "publishedAt": "2026-11-25T08:03:09.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--8SWOJ2sM--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T080309Z_1_LYNXNPEMAO0JE_RTROPTP_3_IRAN-CRISIS-QATAR-LNG.JPG?itok=fhW_XIT-",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-0ZW50LTY1ODA5NzY-2",
+      "id": "cna-business-EtdmktNjU4MTAzMQ-2",
+      "region": "asean",
+      "kind": "headline",
+      "title": "CD Projekt RED sees no material fourth-quarter hit from GTA VI",
+      "publisher": "CNA",
+      "url": "https://www.channelnewsasia.com/business/cd-projekt-red-sees-no-material-fourth-quarter-hit-gta-vi-6581031",
+      "publishedAt": "2026-11-25T07:42:50.000Z",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--ZdHPGX9S--/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/mediacorp/one-cms/images/2021-06/business_1.png?itok=npguKy4y",
+      "sourceId": "cna-business"
+    },
+    {
+      "id": "cna-business-LXNheS02NTgxMDIx-3",
+      "region": "asean",
+      "kind": "headline",
+      "title": "Meta officials meet India's opposition Congress amid protests on content curbs, sources say",
+      "publisher": "CNA",
+      "url": "https://www.channelnewsasia.com/business/meta-officials-meet-indias-opposition-congress-amid-protests-content-curbs-sources-say-6581021",
+      "publishedAt": "2026-11-25T07:33:27.000Z",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--BIZjl6i6--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T073453Z_2_LYNXNPEMAO0I4_RTROPTP_3_META-PLATFORMS-MOVES.JPG?itok=Vqdf9C_X",
+      "sourceId": "cna-business"
+    },
+    {
+      "id": "cna-business-0ZW50LTY1ODA5NzY-4",
       "region": "asean",
       "kind": "headline",
       "title": "Australia passes law forcing internet platforms to take down harmful content",
@@ -86,10 +112,11 @@
       "url": "https://www.channelnewsasia.com/business/australia-passes-law-forcing-internet-platforms-take-down-harmful-content-6580976",
       "publishedAt": "2026-11-25T07:12:42.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--gjrcJpKD--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T072412Z_2_LYNXNPEMAO0FS_RTROPTP_3_AUSTRALIA-INTERNET.JPG?itok=k1ifKEt4",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tc2F5LTY1ODA5MjY-3",
+      "id": "cna-business-tc2F5LTY1ODA5MjY-5",
       "region": "asean",
       "kind": "headline",
       "title": "Cognizant in talks to take over parts of S&P Global's Capital IQ operations, sources say",
@@ -97,10 +124,11 @@
       "url": "https://www.channelnewsasia.com/business/cognizant-in-talks-take-over-parts-sp-globals-capital-iq-operations-sources-say-6580926",
       "publishedAt": "2026-11-25T06:37:24.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--Wh87BKPd--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T064141Z_2_LYNXNPEMAO0EO_RTROPTP_3_COGNIZANT-RESULTS.JPG?itok=NnlE6FnX",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-QtdXMtNjU4MDg1MQ-4",
+      "id": "cna-business-QtdXMtNjU4MDg1MQ-6",
       "region": "asean",
       "kind": "headline",
       "title": "Amazon to launch Amazon Autos in UK in early 2027 in first expansion beyond US",
@@ -108,10 +136,11 @@
       "url": "https://www.channelnewsasia.com/business/amazon-launch-amazon-autos-in-uk-in-early-2027-in-first-expansion-beyond-us-6580851",
       "publishedAt": "2026-11-25T06:04:39.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--yAfzX-kw--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-25T060439Z_1_LYNXNPEMAO0DD_RTROPTP_3_AUTOS-HYUNDAI-CEO.JPG?itok=oWipl8Up",
       "sourceId": "cna-business"
     },
     {
-      "id": "cnbc-economy-9teS1vaWwuaHRtbA-5",
+      "id": "cnbc-economy-9teS1vaWwuaHRtbA-7",
       "region": "global",
       "kind": "headline",
       "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
@@ -119,10 +148,11 @@
       "url": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
       "publishedAt": "2026-11-25T04:06:01.000Z",
       "summary": "The UAE is optimistic about achieving 7%-8% economic growth next year, banking on a \"different\" economic model.",
+      "image": "https://image.cnbcfm.com/api/v1/image/108558993-1795573681967-gettyimages-2264019212-AFP_99QN8VR.jpeg?v=1795573693&w=1920&h=1080",
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "bbc-business-JwZHcxcXg3amd4bw-6",
+      "id": "bbc-business-JwZHcxcXg3amd4bw-8",
       "region": "global",
       "kind": "headline",
       "title": "US attorney general dodges questions about Nvidia investigation",
@@ -130,10 +160,11 @@
       "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T03:44:07.000Z",
       "summary": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/067a/live/dc6baca0-e839-11f1-a094-5fdc692f3e33.png",
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-b3J0cy02NTgwNDYx-7",
+      "id": "cna-business-b3J0cy02NTgwNDYx-9",
       "region": "asean",
       "kind": "headline",
       "title": "Starbucks to engage banks for sale of Japan business, Bloomberg News reports",
@@ -141,10 +172,11 @@
       "url": "https://www.channelnewsasia.com/business/starbucks-engage-banks-sale-japan-business-bloomberg-news-reports-6580461",
       "publishedAt": "2026-11-25T03:32:50.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--jgqU8DiU--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T033250Z_2_LYNXNPEMAO08F_RTROPTP_3_GLOBAL-TRADE.JPG?itok=sFT2e-AM",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-yc2VzLTY1ODA0NTE-8",
+      "id": "cna-business-yc2VzLTY1ODA0NTE-10",
       "region": "asean",
       "kind": "headline",
       "title": "Tech firms back in crosshairs as Huang rally reverses",
@@ -152,10 +184,11 @@
       "url": "https://www.channelnewsasia.com/business/tech-stocks-jensen-huang-nvidia-rally-reverses-6580451",
       "publishedAt": "2026-11-25T03:31:00.000Z",
       "summary": "Taipei, Tokyo and Seoul - home of most of the region's key AI-linked firms - were all down, a day after a surge on the back of the news of Jensen Huang's return as Nvidia CEO.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--W3EzYZWu--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-24T011359Z_1_LYNXNPEMAN033_RTROPTP_3_GLOBAL-MARKETS.JPG?itok=_bLKOUdK",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tYW5kLTY1ODA0MzE-9",
+      "id": "cna-business-tYW5kLTY1ODA0MzE-11",
       "region": "asean",
       "kind": "headline",
       "title": "Goldman says US data center boom through 2028 will lift power and gas demand",
@@ -163,10 +196,11 @@
       "url": "https://www.channelnewsasia.com/business/goldman-says-us-data-center-boom-through-2028-will-lift-power-and-gas-demand-6580431",
       "publishedAt": "2026-11-25T03:22:48.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--Bm2IR5iW--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T032421Z_2_LYNXNPEMAO08A_RTROPTP_3_USA-DATA-CENTERS-XAI-TURBINES.JPG?itok=Y6lCFLTQ",
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-15NDluZ3lkcXpwbw-10",
+      "id": "bbc-business-15NDluZ3lkcXpwbw-12",
       "region": "global",
       "kind": "headline",
       "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
@@ -174,10 +208,11 @@
       "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T02:59:27.000Z",
       "summary": "The verdict follows a months-long trial in New York.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c0cb/live/da83bf80-e849-11f1-aa88-031e8213533d.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-0aW55LTY1Nzk0MTE-11",
+      "id": "cna-business-0aW55LTY1Nzk0MTE-13",
       "region": "asean",
       "kind": "headline",
       "title": "Nvidia board joins Jensen Huang under scrutiny after reinstating embattled CEO",
@@ -185,10 +220,11 @@
       "url": "https://www.channelnewsasia.com/world/nvidia-board-jensen-huang-under-scrutiny-6579411",
       "publishedAt": "2026-11-25T01:57:00.000Z",
       "summary": "Nvidia’s board faces scrutiny after unanimously rehiring Jensen Huang days after accepting his resignation, fuelling calls for accountability and transparency.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--rPXv9Izh--/c_crop,h_562,w_1000,x_0,y_0/fl_relative,g_south_east,l_one-cms:core:watermark:ap_data-1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/Nvidia_76155.jpg?itok=MvFBattm",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-bHVtcC02NTgwMDk2-12",
+      "id": "cna-business-bHVtcC02NTgwMDk2-14",
       "region": "asean",
       "kind": "headline",
       "title": "Dollar rallies before key inflation reading; Aussie and sterling slump",
@@ -196,10 +232,11 @@
       "url": "https://www.channelnewsasia.com/business/dollar-rallies-key-inflation-reading-aussie-and-sterling-slump-6580096",
       "publishedAt": "2026-11-25T01:19:16.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--W56okOwB--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T012150Z_2_LYNXNPEMAO03H_RTROPTP_3_GLOBAL-FOREX.JPG?itok=4E4wZwX4",
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-tqMDVtMnpkeXJ5bw-13",
+      "id": "bbc-business-tqMDVtMnpkeXJ5bw-15",
       "region": "global",
       "kind": "headline",
       "title": "Trump's rescue of Nvidia's Huang brings political risks",
@@ -207,10 +244,11 @@
       "url": "https://www.bbc.co.uk/news/articles/ckj05m2zdyryo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T01:03:05.000Z",
       "summary": "The US president's intercession to reinstate CEO Jensen Huang has inextricably linked their fates.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c9b4/live/d081e3d0-e8a4-11f1-99b6-a35a62fa4264.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-15MHhqNDFrbDUwbw-14",
+      "id": "bbc-business-15MHhqNDFrbDUwbw-16",
       "region": "global",
       "kind": "headline",
       "title": "The rising cost of putting food on the table in India",
@@ -218,10 +256,11 @@
       "url": "https://www.bbc.co.uk/news/articles/cmy0xj41kl50o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T01:02:13.000Z",
       "summary": "India's food inflation is broadening, squeezing household budgets.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e93a/live/237a32d0-e7d4-11f1-939f-471cde339c0e.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-g5M3I5a2U1cDk3bw-15",
+      "id": "bbc-business-g5M3I5a2U1cDk3bw-17",
       "region": "global",
       "kind": "headline",
       "title": "US preparing to unveil plan for new tariffs on global trading partners",
@@ -229,10 +268,11 @@
       "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T00:38:01.000Z",
       "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/511d/live/da29c130-e860-11f1-a330-6153c8fb2fad.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-13eTlqbmUwZzdxbw-16",
+      "id": "bbc-business-13eTlqbmUwZzdxbw-18",
       "region": "global",
       "kind": "headline",
       "title": "Why tiny cars are taking off across Europe",
@@ -240,10 +280,11 @@
       "url": "https://www.bbc.co.uk/news/articles/cmwy9jne0g7qo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T00:34:05.000Z",
       "summary": "Once seen as a car for elderly, rural people, tiny cars are being embraced by a younger demographic.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2edb/live/5d054030-ddcf-11f1-b441-2b33b063138f.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-Y2RkMjl2OG1wOWpv-17",
+      "id": "bbc-business-Y2RkMjl2OG1wOWpv-19",
       "region": "global",
       "kind": "headline",
       "title": "What will the energy cap changes mean for my bills?",
@@ -251,10 +292,11 @@
       "url": "https://www.bbc.co.uk/news/articles/cdd29v8mp9jo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T00:33:25.000Z",
       "summary": "Regulator Ofgem is raising the cap affecting the energy bills of millions of households.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4155/live/6d965910-59d2-11f1-8b8c-6d33e1d5abb6.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-gyMHFuem5rcm40bw-18",
+      "id": "bbc-business-gyMHFuem5rcm40bw-20",
       "region": "global",
       "kind": "headline",
       "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down",
@@ -262,10 +304,11 @@
       "url": "https://www.bbc.co.uk/news/articles/c820qnznkrn4o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T00:30:52.000Z",
       "summary": "The BBC speaks to three people about steps they take to keep their energy bills under control.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a8e/live/565f9af0-e806-11f1-a094-5fdc692f3e33.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-BvbGwtNjU3OTkxMQ-19",
+      "id": "cna-business-BvbGwtNjU3OTkxMQ-21",
       "region": "asean",
       "kind": "headline",
       "title": "Japan's Nikkei to rise next year but fall short of record as investors reassess AI trade: Reuters poll",
@@ -273,10 +316,11 @@
       "url": "https://www.channelnewsasia.com/business/japans-nikkei-rise-next-year-fall-short-record-investors-reassess-ai-trade-reuters-poll-6579911",
       "publishedAt": "2026-11-25T00:09:10.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--rGxpY_pb--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T000846Z_1_LYNXNPEMAO009_RTROPTP_3_GLOBAL-MARKETS.JPG?itok=hjMqgGeW",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-aGlnaC02NTc5ODkx-20",
+      "id": "cna-business-aGlnaC02NTc5ODkx-22",
       "region": "asean",
       "kind": "headline",
       "title": "Japan's key services inflation gauge hits 36-year high",
@@ -284,10 +328,11 @@
       "url": "https://www.channelnewsasia.com/business/japans-key-services-inflation-gauge-hits-36-year-high-6579891",
       "publishedAt": "2026-11-25T00:05:24.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--5mQ74jfI--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T011234Z_2_LYNXNPEMAO00A_RTROPTP_3_JAPAN-ECONOMY-INFLATION.JPG?itok=Y0yLyOGG",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-FpbXMtNjU3OTEzMQ-21",
+      "id": "cna-business-FpbXMtNjU3OTEzMQ-23",
       "region": "asean",
       "kind": "headline",
       "title": "Shein to pay US$100 million to settle US shipping, customer service claims",
@@ -295,10 +340,11 @@
       "url": "https://www.channelnewsasia.com/world/shein-100-million-settle-us-shipping-customer-service-claims-6579131",
       "publishedAt": "2026-11-25T00:01:00.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--5hs5GPIp--/c_crop,h_450,w_800,x_0,y_55/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-09-04T153901Z_3_LYNXMPEM830UL_RTROPTP_3_SHEIN-IPO.JPG?itok=Bi0FLBmA",
       "sourceId": "cna-business"
     },
     {
-      "id": "the-scoop-uZy1pbi1icnVuZWk-22",
+      "id": "the-scoop-uZy1pbi1icnVuZWk-24",
       "region": "brunei",
       "kind": "headline",
       "title": "Heavyweight charm: Sumo legend Hakuho Sho steps into the ring in Brunei",
@@ -306,10 +352,11 @@
       "url": "https://thescoop.co/2026/11/25/heavyweight-charm-sumo-legend-hakuho-sho-steps-into-the-ring-in-brunei/?utm_source=rss&utm_medium=rss&utm_campaign=heavyweight-charm-sumo-legend-hakuho-sho-steps-into-the-ring-in-brunei",
       "publishedAt": "2026-11-24T23:18:37.000Z",
       "summary": "BANDAR SERI BEGAWAN – The Toyota Gadong showroom was filled with excitement on Tuesday as sumo legend Hakuho Sho brought a taste of Japan’s traditional sport to Brunei, drawing around 200 guests for an afternoon of live demonstrations, interactive activities and cultural…",
+      "image": "https://thescoop.co/wp-content/uploads/2026/11/img_0856-1024x575.jpg",
       "sourceId": "the-scoop"
     },
     {
-      "id": "cna-business-ydW1wLTY1Nzc3NTY-23",
+      "id": "cna-business-ydW1wLTY1Nzc3NTY-25",
       "region": "asean",
       "kind": "headline",
       "title": "Commentary: Jensen Huang should never have been too big to fail at Nvidia",
@@ -317,10 +364,11 @@
       "url": "https://www.channelnewsasia.com/commentary/jensen-huang-returns-nvidia-ceo-donald-trump-6577756",
       "publishedAt": "2026-11-24T21:59:00.000Z",
       "summary": "Nvidia may be too big to fail. Jensen Huang shouldn’t have been, says Dave Lee for Bloomberg Opinion.",
+      "image": "https://dam.mediacorp.sg/image/upload/s--LESI3ARH--/c_crop,h_1125,w_2000,x_0,y_1/fl_relative,g_south_east,l_mediacorp:cna:watermark:2023-11:afp_watermark_14112023,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/mediacorp/cna/image/2026/11/24/000_d2nm323.jpg?itok=CoT52Tce",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tYW5kLTY1Nzk1NTY-24",
+      "id": "cna-business-tYW5kLTY1Nzk1NTY-26",
       "region": "asean",
       "kind": "headline",
       "title": "Dell lifts annual forecasts after record quarter on surging AI server demand",
@@ -328,10 +376,11 @@
       "url": "https://www.channelnewsasia.com/business/dell-lifts-annual-forecasts-after-record-quarter-surging-ai-server-demand-6579556",
       "publishedAt": "2026-11-24T21:06:49.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--m_qfvnvs--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-24T211128Z_1_LYNXNPEMAN1WQ_RTROPTP_3_FRANCE-SECURITY.JPG?itok=XWWiHB4g",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-NheXMtNjU3OTQ5Ng-25",
+      "id": "cna-business-NheXMtNjU3OTQ5Ng-27",
       "region": "asean",
       "kind": "headline",
       "title": "AI consumes less water per dollar spent than almond milk or golf, Enverus report says",
@@ -339,10 +388,11 @@
       "url": "https://www.channelnewsasia.com/business/ai-consumes-less-water-dollar-spent-almond-milk-or-golf-enverus-report-says-6579496",
       "publishedAt": "2026-11-24T20:38:33.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--JnhlKwtm--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-24T205338Z_2_LYNXNPEMAN1V9_RTROPTP_3_FRANCE-DATACENTERS.JPG?itok=guEjQK6g",
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-ZlcnktNjU3OTQ2MQ-26",
+      "id": "cna-business-ZlcnktNjU3OTQ2MQ-28",
       "region": "asean",
       "kind": "headline",
       "title": "Brazil zoo hails birth of Spix's macaw chick as boost for species' recovery",
@@ -350,10 +400,11 @@
       "url": "https://www.channelnewsasia.com/business/brazil-zoo-hails-birth-spixs-macaw-chick-boost-species-recovery-6579461",
       "publishedAt": "2026-11-24T20:19:20.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--iWbIXJzm--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-24T201802Z_1_LYNXNPEMAN1U2_RTROPTP_3_BRAZIL-MACAW.JPG?itok=v8TB78uJ",
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-M1eW44eDc0OGU5bw-27",
+      "id": "bbc-business-M1eW44eDc0OGU5bw-29",
       "region": "global",
       "kind": "headline",
       "title": "Will I get the £100 energy payment and when will I receive it?",
@@ -361,10 +412,11 @@
       "url": "https://www.bbc.co.uk/news/articles/c35yn8x748e9o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-24T20:16:24.000Z",
       "summary": "Here is what you need to know about the payment that millions will receive from January.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c06e/live/66b0c920-d2ed-11f1-8d86-83eebc838351.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-NheXMtNjU3OTQyNg-28",
+      "id": "cna-business-NheXMtNjU3OTQyNg-30",
       "region": "asean",
       "kind": "headline",
       "title": "US CIA, ODNI suffer cybersecurity breach of some unclassified information, source says",
@@ -372,10 +424,11 @@
       "url": "https://www.channelnewsasia.com/business/us-cia-odni-suffer-cybersecurity-breach-some-unclassified-information-source-says-6579426",
       "publishedAt": "2026-11-24T19:45:57.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--dKb-CGaA--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-24T225458Z_1_LYNXNPEMAN21M_RTROPTP_3_CYBERSECURITY-USA-BREACH.JPG?itok=TQpobHAd",
       "sourceId": "cna-business"
     },
     {
-      "id": "cnbc-economy-1pZHRlcm0uaHRtbA-29",
+      "id": "cnbc-economy-1pZHRlcm0uaHRtbA-31",
       "region": "global",
       "kind": "headline",
       "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
@@ -383,10 +436,11 @@
       "url": "https://www.cnbc.com/2026/11/24/consumer-confidence-november-election-midterm.html",
       "publishedAt": "2026-11-24T18:34:43.000Z",
       "summary": "The Conference Board survey released Tuesday showed improvement across the board, with the headline confidence index jumping to 103.3.",
+      "image": "https://image.cnbcfm.com/api/v1/image/108415078-1792082627963-gettyimages-2297167568-_dsc4023.jpeg?v=1792082682&w=1920&h=1080",
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "bbc-business-Y4OTRldmdwZWw1bw-30",
+      "id": "bbc-business-Y4OTRldmdwZWw1bw-32",
       "region": "global",
       "kind": "headline",
       "title": "Faisal Islam: Fears over the AI boom haven't gone away",
@@ -394,10 +448,11 @@
       "url": "https://www.bbc.co.uk/news/articles/c6894evgpel5o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-24T18:21:43.000Z",
       "summary": "There were legitimate fears before Huang's abrupt exit from Nvidia - and his return won't fix it",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/7ec8/live/8b0c59c0-e831-11f1-917e-35f1674fb52c.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-RpY3QtNjU3OTIxNg-31",
+      "id": "cna-business-RpY3QtNjU3OTIxNg-33",
       "region": "asean",
       "kind": "headline",
       "title": "Elon Musk asks US appeals court to throw out Twitter fraud verdict",
@@ -405,10 +460,11 @@
       "url": "https://www.channelnewsasia.com/business/elon-musk-asks-us-appeals-court-throw-out-twitter-fraud-verdict-6579216",
       "publishedAt": "2026-11-24T17:27:21.000Z",
       "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--qB6rcEtN--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-24T173253Z_2_LYNXNPEMAN1LQ_RTROPTP_3_MUSK-TWITTER-APPEAL.JPG?itok=veoGxeC7",
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-rN3YycjZqMXlsM28-32",
+      "id": "bbc-business-rN3YycjZqMXlsM28-34",
       "region": "global",
       "kind": "headline",
       "title": "Four generations of a family working in one factory",
@@ -416,29 +472,8 @@
       "url": "https://www.bbc.co.uk/news/videos/ck7v2r6j1yl3o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-24T16:42:46.000Z",
       "summary": "Four generations of the Avis family have now worked at Sweetnam & Bradley in Malmesbury.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/be8c/live/eae8fb80-e824-11f1-93d4-6d580946ad80.jpg",
       "sourceId": "bbc-business"
-    },
-    {
-      "id": "cna-business-zaG93LTY1NzkxMTE-33",
-      "region": "asean",
-      "kind": "headline",
-      "title": "Exclusive-Microsoft declares 'Code Red' after historic outage, internal memos show",
-      "publisher": "CNA",
-      "url": "https://www.channelnewsasia.com/business/exclusive-microsoft-declares-code-red-after-historic-outage-internal-memos-show-6579111",
-      "publishedAt": "2026-11-24T16:11:07.000Z",
-      "summary": "",
-      "sourceId": "cna-business"
-    },
-    {
-      "id": "cna-business-FsbHktNjU3OTEwNg-34",
-      "region": "asean",
-      "kind": "headline",
-      "title": "US lawmakers raise alarm at FAA decision to deploy aviation AI tool nationally",
-      "publisher": "CNA",
-      "url": "https://www.channelnewsasia.com/business/us-lawmakers-raise-alarm-faa-decision-deploy-aviation-ai-tool-nationally-6579106",
-      "publishedAt": "2026-11-24T16:07:21.000Z",
-      "summary": "",
-      "sourceId": "cna-business"
     },
     {
       "id": "bbc-business-03NTIzcHlrNzVsbw-35",
@@ -449,6 +484,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cm7523pyk75lo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-24T13:03:20.000Z",
       "summary": "The company says an \"excellent World Cup\" helped drive strong trading as annual profits rose by 18%.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/87ca/live/b659c4e0-e7fb-11f1-ab60-79086b6495b8.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -460,6 +496,7 @@
       "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html",
       "publishedAt": "2026-11-24T11:15:30.000Z",
       "summary": "Bank of France Governor Emmanuel Moulin told CNBC he still expects growth, pointing to resilience in sectors including defense, aerospace and electricity.",
+      "image": "https://image.cnbcfm.com/api/v1/image/108545221-1794127022121-gettyimages-2303992960-_dsf4095.jpeg?v=1795518919&w=1920&h=1080",
       "sourceId": "cnbc-economy"
     },
     {
@@ -471,6 +508,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-24T10:53:37.000Z",
       "summary": "Nvidia had come under pressure from President Trump to reappoint Huang, whose comeback helped add $1tn to the company's stock value.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/c94d/live/cfb736f0-e78a-11f1-a5c2-c57ab9df3111.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -482,6 +520,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c6n90g2l82d1o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-24T00:28:48.000Z",
       "summary": "Companies building flats that they then rent out could usher in big changes for renters.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8db7/live/089748f0-e7e7-11f1-99b6-a35a62fa4264.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -493,6 +532,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c8d36d43y8po?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-24T00:11:08.000Z",
       "summary": "The breeder's rating was downgraded but he continued to advertise as five-star, investigation finds.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bbbd/live/db7cd3b0-e7d4-11f1-939f-471cde339c0e.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -504,6 +544,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c6zjr3g13zkno?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-24T00:01:04.000Z",
       "summary": "Busy mothers on both sides of the Atlantic are paying companies to handle their to-do lists.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a207/live/9dc35180-e378-11f1-b879-03485a55c082.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -515,6 +556,7 @@
       "url": "https://www.bbc.co.uk/news/videos/ckp80d5nl586o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-23T21:40:30.000Z",
       "summary": "The BBC's business correspondent Michelle Fleury explains what role Trump's support played in Huang's comeback.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9328/live/2bcba8f0-e785-11f1-99b6-a35a62fa4264.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -526,6 +568,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cq62pn6j42jko?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-23T21:23:42.000Z",
       "summary": "The jump in Nvidia shares has also lifted stock markets, with the tech-heavy Nasdaq up 6.5%.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e297/live/7eb9d0a0-e776-11f1-a8a9-d7c9e8a923b4.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -537,6 +580,7 @@
       "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-trump-bessent-china.html",
       "publishedAt": "2026-11-23T21:00:59.000Z",
       "summary": "Treasury Secretary Scott Bessent was becoming the face of an emerging harder line on Nvidia— until he reversed course",
+      "image": "https://image.cnbcfm.com/api/v1/image/108366941-17901794762026-09-23t160042z_1309580215_rc24pnadya0l_rtrmadp_0_usa-china-bessent-he.jpeg?v=1790182158&w=1920&h=1080",
       "sourceId": "cnbc-economy"
     },
     {
@@ -548,6 +592,7 @@
       "url": "https://www.bbc.co.uk/news/videos/cq8r7e35mkzlo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-23T18:43:00.000Z",
       "summary": "The Nvidia CEO was reinstated after weeks of controversy over his affair with an alleged Chinese spy.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/caf3/live/63f423d0-e76a-11f1-99b6-a35a62fa4264.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -559,6 +604,7 @@
       "url": "https://www.bbc.co.uk/news/articles/c68798vdprwpo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-23T16:12:35.000Z",
       "summary": "The Nvidia chief executive has been at the centre of the artificial intelligence boom.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8241/live/e3e3a9c0-e2a7-11f1-8226-87dfa5049e9a.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -570,6 +616,7 @@
       "url": "https://www.bbc.co.uk/news/videos/cqze7lwdglngo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-23T14:51:05.000Z",
       "summary": "Senior US government officials backed Nvidia's decision to reinstate Jensen Huang, the company says in a statement.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/eb5f/live/44ab16f0-e74c-11f1-99b6-a35a62fa4264.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -581,6 +628,7 @@
       "url": "https://www.bbc.co.uk/sounds/play/w3ct8r4b?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-23T07:00:00.000Z",
       "summary": "In 1994, the agreement that created the World Trade Organization was signed in Morrocco",
+      "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0pnlfvs.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -592,6 +640,7 @@
       "url": "https://www.bbc.co.uk/news/articles/cqe9k09j9jv4o?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-23T00:08:00.000Z",
       "summary": "AI employees in the industry's epicentre - San Francisco - worry that the sector is overheated.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/06d6/live/b3d40440-e712-11f1-a094-5fdc692f3e33.jpg",
       "sourceId": "bbc-business"
     },
     {
@@ -603,6 +652,7 @@
       "url": "https://www.cnbc.com/2026/11/21/emergency-prep-spending-tech-outages.html",
       "publishedAt": "2026-11-21T15:04:56.000Z",
       "summary": "Recent technology outages have left some worried about AI cyberattacks and the U.S. electricity grid. The doomsday economy is heating up as a result.",
+      "image": "https://image.cnbcfm.com/api/v1/image/108556652-1795196759983-261119_cg_32_doomsday_preppers_2.jpg?v=1795196815&w=1920&h=1080",
       "sourceId": "cnbc-economy"
     },
     {
@@ -614,6 +664,7 @@
       "url": "https://www.cnbc.com/2026/11/16/kevin-warsh-fed-ai-jobs-productivity-interest-rateshtml.html",
       "publishedAt": "2026-11-20T21:07:08.000Z",
       "summary": "Kevin Warsh sees AI at a turning point. He faces tough questions on jobs and interest rates.",
+      "image": "https://image.cnbcfm.com/api/v1/image/108552211-1794920043911-108552211-1794850759211-gettyimages-2304954172-FEDERAL_RESERVE_CONFERENCE.jpg?v=1794920053&w=1920&h=1080",
       "sourceId": "cnbc-economy"
     },
     {
@@ -625,6 +676,7 @@
       "url": "https://thescoop.co/2026/11/20/from-hospital-halls-to-adaptive-sports-how-toyotas-tech-can-make-everyday-mobility-easier/?utm_source=rss&utm_medium=rss&utm_campaign=from-hospital-halls-to-adaptive-sports-how-toyotas-tech-can-make-everyday-mobility-easier",
       "publishedAt": "2026-11-20T02:43:09.000Z",
       "summary": "NAGOYA, JAPAN — At Toyota Memorial Hospital in Japan, 24 little helpers are going about their daily rounds — and they are not nurses or hospital staff. They are Potaro robots, moving through the halls to deliver medicine and assist nurses with routine tasks that would otherwise…",
+      "image": "https://thescoop.co/wp-content/uploads/2026/11/img_9726-1024x768.jpg",
       "sourceId": "the-scoop"
     },
     {
@@ -636,6 +688,7 @@
       "url": "https://thescoop.co/2026/11/19/xpeng-showcases-electric-vehicle-lineup-at-bibd-mega-carnival/?utm_source=rss&utm_medium=rss&utm_campaign=xpeng-showcases-electric-vehicle-lineup-at-bibd-mega-carnival",
       "publishedAt": "2026-11-19T02:44:46.000Z",
       "summary": "BANDAR SERI BEGAWAN – XPENG has brought its electric vehicle lineup to the public at the BIBD Mega Carnival, following its grand public launch by Imperial Motors on November 18. The launch ceremony was attended by Minister of Home Affairs Dato Ahmaddin Hj Abdul Rahman,…",
+      "image": "https://thescoop.co/wp-content/uploads/2026/11/XPENG-Brunei-PublicLaunch-129-1024x683.jpg",
       "sourceId": "the-scoop"
     },
     {
@@ -647,6 +700,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m838aqvv4g65hctpz8vnmjb0",
       "publishedAt": "2026-11-19T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -658,6 +712,7 @@
       "url": "https://thescoop.co/2026/11/19/byd-100-hours-sale-stand-a-chance-to-win-travel-tickets-travel-allowance-and-even-a-brand-new-home/?utm_source=rss&utm_medium=rss&utm_campaign=byd-100-hours-sale-stand-a-chance-to-win-travel-tickets-travel-allowance-and-even-a-brand-new-home",
       "publishedAt": "2026-11-18T20:35:15.000Z",
       "summary": "BANDAR SERI BEGAWAN – Maju Motors, the authorised distributor of BYD in Brunei Darussalam, is bringing exciting rewards to the BIBD Mega Karnival “Siuk Bah!” with its BYD “100 Hours Sale”, running from November 18-22. For five days only, customers who purchase an eligible BYD…",
+      "image": "https://thescoop.co/wp-content/uploads/2026/11/PXL_20261118_1015449227E2.jpg",
       "sourceId": "the-scoop"
     },
     {
@@ -669,6 +724,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m7p9dfn8ym4s92vehht59jrq",
       "publishedAt": "2026-11-18T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -680,6 +736,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m7kp85wd0atdr1954m0b9kq9",
       "publishedAt": "2026-11-17T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -691,6 +748,7 @@
       "url": "https://thescoop.co/2026/11/16/bruneis-stock-exchange-building-a-market-not-just-a-marketplace/?utm_source=rss&utm_medium=rss&utm_campaign=bruneis-stock-exchange-building-a-market-not-just-a-marketplace",
       "publishedAt": "2026-11-15T23:49:11.000Z",
       "summary": "Brunei Darussalam’s planned stock exchange could open new financing opportunities for businesses and give domestic savers more ways to invest. But its contribution to economic diversification will depend on more than the launch of a trading platform, the larger task is to build…",
+      "image": "https://thescoop.co/wp-content/uploads/2026/11/stock-market.png",
       "sourceId": "the-scoop"
     },
     {
@@ -702,6 +760,7 @@
       "url": "https://thescoop.co/2026/11/14/taib-group-showcase-brings-financial-takaful-and-travel-offerings-under-one-roof/?utm_source=rss&utm_medium=rss&utm_campaign=taib-group-showcase-brings-financial-takaful-and-travel-offerings-under-one-roof",
       "publishedAt": "2026-11-13T19:20:37.000Z",
       "summary": "BANDAR SERI BEGAWAN – The Perbadanan Tabung Amanah Islam Brunei (TAIB) Group of Companies is bringing its range of financial, takaful and travel services closer to the public through the three-day TAIB Group Showcase 2.0 at The Airport Mall. Running from November 13 to 15, the…",
+      "image": "https://thescoop.co/wp-content/uploads/2026/11/PXL_20261113_0232237947E2.jpg",
       "sourceId": "the-scoop"
     },
     {
@@ -713,6 +772,7 @@
       "url": "https://thescoop.co/2026/11/12/beyond-the-podium-how-para-athletes-le-van-cong-and-muhammad-ammar-are-driving-social-change/?utm_source=rss&utm_medium=rss&utm_campaign=beyond-the-podium-how-para-athletes-le-van-cong-and-muhammad-ammar-are-driving-social-change",
       "publishedAt": "2026-11-11T22:18:07.000Z",
       "summary": "NAGOYA, JAPAN – Vietnamese para powerlifter Lê Văn Công has achieved what most athletes can only dream of. He won gold at the 2016 Rio Paralympics, setting a Paralympic record with a 183kg lift in the men’s 49kg category. He later claimed bronze at the 2024 Paris Paralympics,…",
+      "image": "https://thescoop.co/wp-content/uploads/2026/11/MGL0516-1024x683.jpg",
       "sourceId": "the-scoop"
     },
     {
@@ -724,6 +784,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m71nysnp41ezmq169669nssb",
       "publishedAt": "2026-11-10T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -735,6 +796,7 @@
       "url": "https://thescoop.co/2026/11/07/xpeng-makes-official-brunei-debut-with-x9-l03-and-g6-bringing-a-new-era-of-intelligent-mobility/?utm_source=rss&utm_medium=rss&utm_campaign=xpeng-makes-official-brunei-debut-with-x9-l03-and-g6-bringing-a-new-era-of-intelligent-mobility",
       "publishedAt": "2026-11-07T03:25:53.000Z",
       "summary": "BANDAR SERI BEGAWAN – Brunei’s automotive market has a new name to watch, as XPENG officially made its debut on Friday with the launch of three models — the X9, L03 and G6. Unveiled by Imperial Motors at its showroom in Katok Point, the launch marks the arrival of a brand built…",
+      "image": "https://thescoop.co/wp-content/uploads/2026/11/img_0394-1-e1794175272192.jpg",
       "sourceId": "the-scoop"
     },
     {
@@ -746,6 +808,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m6n7ba2y6pyz0jqt4r6a38w1",
       "publishedAt": "2026-11-05T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -757,6 +820,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m6dphhhd8venxsfwjbrvyg46",
       "publishedAt": "2026-11-02T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -768,6 +832,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m6311vmg6vt66014hw4sfk0y",
       "publishedAt": "2026-10-29T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -779,6 +844,7 @@
       "url": "https://thescoop.co/2026/10/25/brunei-completes-10-liver-transplants-expanding-access-to-specialist-care/?utm_source=rss&utm_medium=rss&utm_campaign=brunei-completes-10-liver-transplants-expanding-access-to-specialist-care",
       "publishedAt": "2026-10-24T17:24:07.000Z",
       "summary": "BANDAR SERI BEGAWAN – Brunei has completed 10 living donor liver transplants since launching its local programme in February 2025, marking a milestone in the country’s ability to deliver specialised treatment. Led by the Ministry of Health (MOH) in collaboration with Jerudong…",
+      "image": "https://thescoop.co/wp-content/uploads/2026/10/IMG-20261024-WA0034.jpg",
       "sourceId": "the-scoop"
     },
     {
@@ -790,6 +856,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m5ggc7az656jf2211rqp86p7",
       "publishedAt": "2026-10-22T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -801,6 +868,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m5bgrd8mqwfe8yv3v1xmyavf",
       "publishedAt": "2026-10-20T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -812,6 +880,7 @@
       "url": "https://www.deps.gov.bn/2026/10/20/19-oktober-2026-kajian-tenaga-kerja-ktk-minggu-kedua/",
       "publishedAt": "2026-10-19T23:09:15.000Z",
       "summary": "JPES sedang menjalankan Kajian Tenaga Kerja (KTK) 2026 pada 5 Oktober hingga 1 November 2026. Pegawai-pegawai kajian yang dilantik oleh JPES akan mengunjungi isi rumah terpilih. Pastikan pegawai JPES sahih: * Mereka memakai pas kajian dan vest rasmi, * Mereka membawa surat…",
+      "image": "https://www.deps.gov.bn/wp-content/uploads/2026/10/KTK-2026-Photo-1-1024x768.jpeg",
       "sourceId": "deps"
     },
     {
@@ -823,6 +892,7 @@
       "url": "https://www.bdcb.gov.bn/publications/details?id=01m51wz9c9v4gqpq9adg0m9s86",
       "publishedAt": "2026-10-16T01:00:00.000Z",
       "summary": "",
+      "image": "",
       "sourceId": "bdcb-press"
     },
     {
@@ -834,6 +904,7 @@
       "url": "https://www.deps.gov.bn/2026/10/13/13-oktober-2026-kajian-tenaga-kerja-ktk/",
       "publishedAt": "2026-10-13T07:09:10.000Z",
       "summary": "",
+      "image": "https://www.deps.gov.bn/wp-content/uploads/2026/10/Pic-2-1024x718.jpg",
       "sourceId": "deps"
     }
   ]
