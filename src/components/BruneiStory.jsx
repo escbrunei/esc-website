@@ -83,7 +83,10 @@ export default function BruneiStory() {
       <div className="bs-panel container">
         <div className="bs-card" key={step} aria-live="polite">
           <span className="bs-step">{step + 1} / {steps.length}</span>
-          <h2>{cur.title}</h2>
+          <h2>{cur.title.includes(':') ? (<>
+            <span className="story-t1">{cur.title.split(':')[0]}:</span>
+            <span className="story-t2">{cur.title.split(':').slice(1).join(':').trim()}</span>
+          </>) : cur.title}</h2>
           <p>{cur.text}</p>
           {cur.stats.filter(Boolean).length > 0 && (
             <div className="bs-stats">
