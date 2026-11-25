@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T17:29:54.448Z",
-  "lastSuccessfulRefresh": "2026-11-25T17:29:54.448Z",
+  "generatedAt": "2026-11-25T17:31:15.846Z",
+  "lastSuccessfulRefresh": "2026-11-25T17:31:15.846Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:29:54.448Z",
+      "lastSuccess": "2026-11-25T17:31:15.846Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:29:54.448Z",
+      "lastSuccess": "2026-11-25T17:31:15.846Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:29:54.448Z",
+      "lastSuccess": "2026-11-25T17:31:15.846Z",
       "count": 9
     },
     {
@@ -36,21 +36,21 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:29:54.448Z",
+      "lastSuccess": "2026-11-25T17:31:15.846Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:29:54.448Z",
+      "lastSuccess": "2026-11-25T17:31:15.846Z",
       "count": 47
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:29:54.448Z",
+      "lastSuccess": "2026-11-25T17:31:15.846Z",
       "count": 30
     }
   ],
