@@ -8,6 +8,7 @@ export const VIDEOS = {
   dashboard: { src: 'https://videos.pexels.com/video-files/8480244/8480244-hd_1920_1080_25fps.mp4', by: 'ArtHouse Studio', page: 'https://www.pexels.com/video/video-of-a-stock-market-8480244/' },
   lab: { src: 'https://videos.pexels.com/video-files/8102869/8102869-hd_1920_1080_25fps.mp4', by: 'Mikhail Nilov', page: 'https://www.pexels.com/video/people-writing-on-whiteboard-8102869/' },
   contact: { src: 'https://videos.pexels.com/video-files/8170593/8170593-uhd_2560_1440_25fps.mp4', by: 'Kampus Production', page: 'https://www.pexels.com/video/group-of-people-shaking-hands-8170593/' },
+  merch: { src: 'https://videos.pexels.com/video-files/4517768/4517768-hd_1920_1080_30fps.mp4', by: 'Anvar Tushakov', page: 'https://www.pexels.com/video/mannequins-inside-the-shopping-mall-4517768/' },
   publications: { src: 'https://videos.pexels.com/video-files/8141649/8141649-uhd_2560_1440_25fps.mp4', by: 'Alena Darmel', page: 'https://www.pexels.com/video/workmates-analyzing-some-papers-8141649/' },
 };
 

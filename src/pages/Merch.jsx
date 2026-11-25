@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import merch from '../data/merch.json';
 import { CONFIG } from '../config.js';
+import HeroVideo from '../components/HeroVideo.jsx';
 import MerchSpin from '../components/MerchSpin.jsx';
 
 const SECTIONS = [
@@ -42,7 +43,8 @@ export default function Merch() {
   const items = (merch.items || []).filter((i) => i && i.name && i.views?.length);
   return (
     <div className="mstore">
-      <section className="page-hero">
+      <section className="page-hero video-hero">
+        <HeroVideo name="merch" />
         <div className="container">
           <p className="eyebrow">ESC Merch</p>
           <h1>Made for aspiring ekonomists.</h1>
