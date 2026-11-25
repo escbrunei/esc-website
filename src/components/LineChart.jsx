@@ -19,7 +19,10 @@ function niceTicks(min, max, count = 5) {
  * Multi-series line chart with tooltips (mouse, touch and keyboard).
  * series: [{ label, points: [{ x: year, y: number|null }] }]
  */
-export default function LineChart({ series, unit, sample, title }) {
+const fmtNum = (v) => (Math.abs(v) >= 1000 ? v.toLocaleString('en-GB', { maximumFractionDigits: 1 }) : String(v));
+const fmtTick = (v) => (Math.abs(v) >= 1e6 ? `${v / 1e6}M` : Math.abs(v) >= 1000 ? `${(v / 1000).toLocaleString('en-GB')}k` : String(v));
+
+export default function LineChart({ series, unit, sample, title, suffix = '%' }) {
   const wrapRef = useRef(null);
   const [width, setWidth] = useState(600);
   const [active, setActive] = useState(null);
@@ -85,7 +88,7 @@ export default function LineChart({ series, unit, sample, title }) {
           {ticks.map((t) => (
             <g key={t} transform={`translate(0,${yPos(t)})`}>
               <line x2={iw} className={t === 0 ? 'grid zero' : 'grid'} />
-              <text x={-8} dy="0.32em" textAnchor="end" className="tick">{t}</text>
+              <text x={-8} dy="0.32em" textAnchor="end" className="tick">{fmtTick(t)}</text>
             </g>
           ))}
           {xs.map((x, i) => ((i % labelEvery === 0 && xs.length - 1 - i >= Math.ceil(labelEvery / 2) + (labelEvery > 1 ? 0 : 0)) || i === xs.length - 1) && (
@@ -128,7 +131,7 @@ export default function LineChart({ series, unit, sample, title }) {
               <span key={s.label}>
                 <i style={{ background: COLORS[si % COLORS.length] }} />
                 {series.length > 1 ? `${s.label}: ` : ''}
-                {p && typeof p.y === 'number' ? `${p.y}%` : 'n/a'}
+                {p && typeof p.y === 'number' ? `${fmtNum(p.y)}${suffix}` : 'n/a'}
               </span>
             );
           })}

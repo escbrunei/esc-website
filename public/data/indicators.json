@@ -22,7 +22,8 @@
           "label": "DEPS – GDP Q4 & Annual 2025 media release",
           "url": "https://www.deps.gov.bn/wp-content/uploads/2026/03/GDP_Q42025_PR.pdf"
         }
-      ]
+      ],
+      "suffix": "%"
     },
     {
       "id": "inflation",
@@ -49,7 +50,8 @@
           "label": "IMF – 2023 Article IV consultation with Brunei (2018–2020 figures)",
           "url": "https://www.imf.org/en/News/Articles/2023/10/04/pr23336-brunei-imf-executive-board-concludes-2023-article-iv-consultation-with-brunei-darussalam"
         }
-      ]
+      ],
+      "suffix": "%"
     },
     {
       "id": "unemployment",
@@ -72,7 +74,8 @@
           "label": "DEPS – Labour Force Survey 2025",
           "url": "https://deps.mofe.gov.bn/labour-force/"
         }
-      ]
+      ],
+      "suffix": "%"
     },
     {
       "id": "oil-vs-non-oil-gdp",
@@ -102,6 +105,115 @@
         {
           "label": "DEPS – GDP Q4 & Annual 2025 media release (2025)",
           "url": "https://www.deps.gov.bn/wp-content/uploads/2026/03/GDP_Q42025_PR.pdf"
+        }
+      ],
+      "suffix": "%"
+    },
+    {
+      "id": "population",
+      "title": "Population",
+      "file": "population.csv",
+      "unit": "persons (mid-year estimate)",
+      "suffix": "",
+      "source": "DEPS, Population Estimates 2025",
+      "sourceUrl": "https://www.deps.gov.bn/wp-content/uploads/2026/04/POP_2025_RPT.pdf",
+      "sources": [
+        {
+          "label": "DEPS – Report of the Population Estimates 2025",
+          "url": "https://www.deps.gov.bn/wp-content/uploads/2026/04/POP_2025_RPT.pdf"
+        }
+      ],
+      "latestPeriod": "2025 (released April 2026)",
+      "note": "2021 is the Population and Housing Census count; other years are estimates. 72.5% live in Brunei-Muara District.",
+      "status": "official",
+      "series": [
+        {
+          "column": "value",
+          "label": "Population"
+        }
+      ]
+    },
+    {
+      "id": "gdp-current-prices",
+      "title": "GDP at current prices",
+      "file": "gdp-current-prices.csv",
+      "unit": "BND million",
+      "suffix": "",
+      "source": "DEPS, National Accounts annual summary",
+      "sourceUrl": "https://www.deps.gov.bn/national-accounts/",
+      "sources": [
+        {
+          "label": "DEPS – National Accounts (annual summary data)",
+          "url": "https://www.deps.gov.bn/national-accounts/"
+        }
+      ],
+      "latestPeriod": "2025 (latest revision)",
+      "note": "Nominal value of all goods and services produced; moves with oil and gas prices.",
+      "status": "official",
+      "series": [
+        {
+          "column": "value",
+          "label": "GDP (current prices)"
+        }
+      ]
+    },
+    {
+      "id": "gdp-per-capita",
+      "title": "GDP per capita",
+      "file": "gdp-per-capita.csv",
+      "unit": "BND per person (current prices)",
+      "suffix": "",
+      "source": "DEPS, National Accounts annual summary",
+      "sourceUrl": "https://www.deps.gov.bn/national-accounts/",
+      "sources": [
+        {
+          "label": "DEPS – National Accounts (annual summary data)",
+          "url": "https://www.deps.gov.bn/national-accounts/"
+        }
+      ],
+      "latestPeriod": "2025 (latest revision)",
+      "note": "GDP at current prices divided by population.",
+      "status": "official",
+      "series": [
+        {
+          "column": "value",
+          "label": "GDP per capita"
+        }
+      ]
+    },
+    {
+      "id": "merchandise-trade",
+      "title": "Merchandise trade",
+      "file": "merchandise-trade.csv",
+      "unit": "BND million",
+      "suffix": "",
+      "source": "DEPS, International Merchandise Trade Statistics",
+      "sourceUrl": "https://deps.mofe.gov.bn/wp-content/uploads/2026/02/IMTS_DEC2025_PR.pdf",
+      "sources": [
+        {
+          "label": "DEPS – IMTS December & Annual 2025 (2024–2025)",
+          "url": "https://deps.mofe.gov.bn/wp-content/uploads/2026/02/IMTS_DEC2025_PR.pdf"
+        },
+        {
+          "label": "DEPS – IMTS December 2023 report (2022–2023)",
+          "url": "https://deps.mofe.gov.bn/DEPD%20Documents%20Library/DOS/IMTS/2023/RPT_12.pdf"
+        }
+      ],
+      "latestPeriod": "2025 (released February 2026)",
+      "note": "Goods only. Uses the latest published annual totals for each year; trade balance = exports − imports.",
+      "status": "official",
+      "series": [
+        {
+          "column": "exports",
+          "label": "Exports"
+        },
+        {
+          "column": "imports",
+          "label": "Imports"
+        },
+        {
+          "column": "trade_balance",
+          "label": "Trade balance"
         }
       ]
     }

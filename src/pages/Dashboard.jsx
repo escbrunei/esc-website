@@ -119,7 +119,7 @@ function IndicatorCard({ ind, from, to }) {
         <h2 id={`h-${ind.id}`}>{ind.title}</h2>
         {sample ? <span className="badge badge-sample">Sample data</span> : <span className="badge badge-official">Official</span>}
       </header>
-      <LineChart series={series} unit={ind.unit} sample={sample} title={ind.title} />
+      <LineChart series={series} unit={ind.unit} sample={sample} title={ind.title} suffix={ind.suffix ?? '%'} />
       <dl className="meta">
         <div><dt>Source{(ind.sources || []).length > 1 ? 's' : ''}</dt><dd>
           {(ind.sources || [{ label: ind.source, url: ind.sourceUrl }]).map((src) => (
