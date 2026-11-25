@@ -56,7 +56,7 @@ function Viewer({ open, onClose }) {
 
 export default function Publications() {
   const series = pubs.series || [];
-  const [tab, setTab] = useState(series[0]?.id);
+  const [tab, setTab] = useState((series.find((s) => s.items?.length) || series[0])?.id);
   const [open, setOpen] = useState(null);
   const current = series.find((s) => s.id === tab) || series[0];
   const items = (current?.items || []).filter((i) => i && i.file && i.title);
@@ -106,7 +106,7 @@ export default function Publications() {
                       <Cover item={item} series={current} />
                     </button>
                     <div className="pub-body">
-                      {item.date && <p className="pub-date">{fmtDate(item.date)}</p>}
+                      {(item.date || item.pages) && <p className="pub-date">{[item.date && fmtDate(item.date), item.pages && `${item.pages} pages`].filter(Boolean).join(' · ')}</p>}
                       <h3>{item.title}</h3>
                       {item.summary && <p className="muted">{item.summary}</p>}
                       <div className="pub-btns">

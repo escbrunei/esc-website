@@ -18,7 +18,40 @@
       "id": "bitesize",
       "title": "ESC Bitesize Series",
       "blurb": "Short, easy reads that explain one economics idea at a time.",
-      "items": []
+      "items": [
+        {
+          "title": "The Twelfth National Development Plan (RKN12): What You Should Know",
+          "date": "",
+          "summary": "Brunei’s five-year development roadmap for 2024–2029: 302 projects, about BND4 billion, and the six thrusts supporting Wawasan 2035.",
+          "pages": 12,
+          "file": "publications/bitesize/rkn12-what-you-should-know.pdf",
+          "cover": "images/publications/rkn12-what-you-should-know.jpg"
+        },
+        {
+          "title": "Strengthening Brunei’s Food Production Industry",
+          "date": "",
+          "summary": "What would it take to build a stronger food industry in Brunei? Takeaways from the DPPMB Business Roundtable 2026, Forum 1.",
+          "pages": 7,
+          "file": "publications/bitesize/t1-food-production.pdf",
+          "cover": "images/publications/t1-food-production.jpg"
+        },
+        {
+          "title": "Brunei’s Tourism & Hospitality Economy",
+          "date": "",
+          "summary": "Turning growth into lasting local value. Takeaways from the DPPMB Business Roundtable 2026, Forum 1.",
+          "pages": 7,
+          "file": "publications/bitesize/t2-tourism-hospitality.pdf",
+          "cover": "images/publications/t2-tourism-hospitality.jpg"
+        },
+        {
+          "title": "Transforming Brunei’s Food & Beverage Industry",
+          "date": "",
+          "summary": "From stronger local businesses to wider market opportunities. Takeaways from the DPPMB Business Roundtable 2026, Forum 1.",
+          "pages": 7,
+          "file": "publications/bitesize/t3-food-beverage.pdf",
+          "cover": "images/publications/t3-food-beverage.jpg"
+        }
+      ]
     },
     {
       "id": "ihs-takeaways",
