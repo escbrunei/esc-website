@@ -139,7 +139,7 @@ export default function ESynC() {
                   <span className="msg-sources-label">Sources</span>
                   <ol>
                     {m.sources.map((src) => (
-                      <li key={src.url}><a href={src.url} target="_blank" rel="noopener noreferrer">{src.title}</a> <span className="src-host">{(() => { try { return new URL(src.url).hostname.replace(/^www\./, ''); } catch { return ''; } })()}</span></li>
+                      <li key={src.url + src.title}><a href={src.url} target="_blank" rel="noopener noreferrer">{src.title}</a> <span className="src-host">{(() => { try { return new URL(src.url).hostname.replace(/^www\./, ''); } catch { return ''; } })()}</span></li>
                     ))}
                   </ol>
                 </div>
