@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 /**
  * "ESCape the ordinary": a little street with shops and people walking by.
- * The ESynC robot cat walks up, the ESC door opens, and it steps inside.
+ * A student walks up, the ESC door opens, and it steps inside.
  * Plays when it scrolls into view; tap or hover the door to play again.
  */
 const PEOPLE = [
@@ -54,7 +54,7 @@ export default function EscapeDoor() {
         onMouseEnter={() => { if (run) replay(); }} aria-label="ESCape the ordinary: play the animation">
         <span className="escape-stage" aria-hidden="true">
           <span className="escape-frame" style={{ WebkitMaskImage: "url(images/esc-door-hd.png)", maskImage: "url(images/esc-door-hd.png)" }} />
-          <span className="escape-man"><span className="escape-cat"><img src="images/esc-cat.png" alt="" /></span></span>
+          <span className="escape-man"><span className="escape-person"><Person color="#62160d" scale={1.55} /></span></span>
           <span className="escape-door"><img src="images/esc-door-hd.png" alt="" /></span>
         </span>
         <span className="escape-tag"><b>ESC</b>ape the ordinary</span>
