@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>ESynC setup – copy code</title>
+<style>body{font-family:-apple-system,system-ui,sans-serif;margin:0;background:#fdf8ef;color:#2a1a14}header{background:#62160d;color:#FFC549;padding:1rem 1.2rem}h1{margin:0;font-size:1.2rem}main{padding:1rem 1.2rem;max-width:900px;margin:auto}button{font:inherit;font-size:1.2rem;background:#FFC549;color:#62160d;border:2px solid #62160d;border-radius:999px;padding:.8rem 1.6rem;cursor:pointer}#ok{margin-left:.8rem;color:#1f7a3a}pre{background:#fff;border:1px solid #e6d9c3;border-radius:12px;padding:1rem;overflow:auto;font-size:.75rem;max-height:60vh}</style></head>
+<body><header><h1>ESynC Worker code (version 2)</h1></header><main>
+<p>Tap the button, then in Cloudflare's code editor select everything (Cmd + A) and paste (Cmd + V), then Deploy.</p>
+<p><button id="b">Copy code</button><span id="ok"></span></p>
+<pre id="c">/**
+ * ESynC backend using Google&#x27;s Gemini API (free tier available).
+ * A Cloudflare Worker that keeps the API key secret and answers with sources
+ * found through Google Search grounding.
+ *
+ * Set in Cloudflare (Worker → Settings → Variables and Secrets):
+ *   GEMINI_API_KEY  (Secret)    from https://aistudio.google.com → Get API key
+ *   ALLOWED_ORIGIN  (Variable)  e.g. https://escbrunei.github.io
+ *   MODEL           (Variable, optional) default: gemini-3.5-flash
+ */
+
+const MAX_MESSAGES = 16;
+const MAX_CHARS = 4000;
+
+const SYSTEM_PROMPT = `You are ESynC, the economics assistant of the Economic Students&#x27; Chamber (ESC) (DPE) Brunei, a student-led economic association in Brunei Darussalam.
+
+How you help:
+- Explain economics in plain, friendly language for students. Define jargon.
+- Help students interpret Brunei&#x27;s economic data and guide calculations step by step.
+- Keep answers short: 2–5 short paragraphs or a short list. Use B$ for Brunei dollars.
+
+Reliable sources (very important):
+- For any fact, figure, date or current event, use Google Search and rely on official or reputable sources first: Department of Economic Planning and Statistics (deps.gov.bn / deps.mofe.gov.bn), Brunei Darussalam Central Bank (bdcb.gov.bn), Ministry of Finance and Economy (mofe.gov.bn), IMF, World Bank, ADB, ASEAN / ASEANstats, AMRO, OECD, then established news outlets.
+- For Brunei indicators, prefer the WEBSITE DATASETS below (official DEPS figures) and cite them with source and period, e.g. &quot;(DEPS, 2025)&quot;.
+- Never invent figures or sources. If you cannot find a reliable source, say so plainly.
+
+News items: separate &quot;What was reported&quot; from &quot;Possible effects&quot; (your reasoning), link the original article, and say when you only have the headline.
+
+Stay neutral on politics, give no personal financial advice, and say when you are unsure.`;
+
+function cors(origin, env) {
+  const allowed = (env.ALLOWED_ORIGIN || &#x27;&#x27;).split(&#x27;,&#x27;).map((s) =&gt; s.trim().replace(/\/+$/, &#x27;&#x27;).toLowerCase()).filter(Boolean);
+  const ok = !allowed.length || allowed.includes(origin.toLowerCase());
+  return {
+    &#x27;Access-Control-Allow-Origin&#x27;: origin || &#x27;*&#x27;, // the POST check below blocks other sites; reflecting lets them see why
+    &#x27;Access-Control-Allow-Methods&#x27;: &#x27;POST, OPTIONS&#x27;,
+    &#x27;Access-Control-Allow-Headers&#x27;: &#x27;Content-Type&#x27;,
+    &#x27;Access-Control-Max-Age&#x27;: &#x27;86400&#x27;,
+    Vary: &#x27;Origin&#x27;,
+  };
+}
+const json = (b, s, h) =&gt; new Response(JSON.stringify(b), { status: s, headers: { &#x27;Content-Type&#x27;: &#x27;application/json&#x27;, ...h } });
+
+export default {
+  async fetch(request, env) {
+    const origin = request.headers.get(&#x27;Origin&#x27;) || &#x27;&#x27;;
+    const h = cors(origin, env);
+    if (request.method === &#x27;OPTIONS&#x27;) return new Response(null, { status: 204, headers: h });
+    if (request.method !== &#x27;POST&#x27;) return json({ error: &#x27;Use POST&#x27; }, 405, h);
+    const allowed = (env.ALLOWED_ORIGIN || &#x27;&#x27;).split(&#x27;,&#x27;).map((s) =&gt; s.trim().replace(/\/+$/, &#x27;&#x27;).toLowerCase()).filter(Boolean);
+    if (allowed.length &amp;&amp; !allowed.includes(origin.toLowerCase())) return json({ error: &#x27;Origin not allowed&#x27; }, 403, h);
+    if (!env.GEMINI_API_KEY) return json({ error: &#x27;Server not configured&#x27; }, 500, h);
+
+    let body;
+    try { body = await request.json(); } catch { return json({ error: &#x27;Invalid JSON&#x27; }, 400, h); }
+    const msgs = (Array.isArray(body.messages) ? body.messages : [])
+      .filter((m) =&gt; (m.role === &#x27;user&#x27; || m.role === &#x27;assistant&#x27;) &amp;&amp; typeof m.content === &#x27;string&#x27; &amp;&amp; m.content.trim())
+      .slice(-MAX_MESSAGES);
+    while (msgs.length &amp;&amp; msgs[0].role !== &#x27;user&#x27;) msgs.shift();
+    if (!msgs.length) return json({ error: &#x27;No question&#x27; }, 400, h);
+
+    const system = `${SYSTEM_PROMPT}
+
+WHERE THE STUDENT OPENED ESYNC:
+${JSON.stringify(body.context || {}).slice(0, 6000)}
+
+WEBSITE DATASETS (official Brunei indicators on the ESC dashboard):
+${JSON.stringify(body.datasets || []).slice(0, 20000)}`;
+
+    const payload = {
+      systemInstruction: { parts: [{ text: system }] },
+      contents: msgs.map((m) =&gt; ({ role: m.role === &#x27;assistant&#x27; ? &#x27;model&#x27; : &#x27;user&#x27;, parts: [{ text: m.content.slice(0, MAX_CHARS) }] })),
+      tools: [{ google_search: {} }],
+      generationConfig: { maxOutputTokens: 1200, temperature: 0.4 },
+    };
+
+    try {
+      const model = env.MODEL || &#x27;gemini-3.5-flash&#x27;;
+      const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, {
+        method: &#x27;POST&#x27;,
+        headers: { &#x27;Content-Type&#x27;: &#x27;application/json&#x27;, &#x27;x-goog-api-key&#x27;: env.GEMINI_API_KEY },
+        body: JSON.stringify(payload),
+      });
+      if (res.status === 429) return json({ reply: &#x27;ESynC has reached today’s free question limit. Please try again tomorrow.&#x27;, sources: [] }, 200, h);
+      if (!res.ok) {
+        const t = await res.text();
+        console.log(&#x27;Gemini error&#x27;, res.status, t);
+        let msg = &#x27;&#x27;; try { msg = JSON.parse(t).error?.status || &#x27;&#x27;; } catch { /* ignore */ }
+        return json({ error: `AI service error ${res.status}${msg ? ` ${msg}` : &#x27;&#x27;}` }, 502, h);
+      }
+      const data = await res.json();
+      const cand = data.candidates?.[0] || {};
+      const reply = (cand.content?.parts || []).map((p) =&gt; p.text || &#x27;&#x27;).join(&#x27;&#x27;).trim();
+      const seen = new Set();
+      const sources = [];
+      for (const c of cand.groundingMetadata?.groundingChunks || []) {
+        const url = c.web?.uri; const title = c.web?.title || url;
+        if (url &amp;&amp; !seen.has(title)) { seen.add(title); sources.push({ title, url }); }
+      }
+      return json({ reply: reply || &#x27;Sorry, I could not find an answer. Please rephrase your question.&#x27;, sources: sources.slice(0, 6) }, 200, h);
+    } catch {
+      return json({ error: &#x27;AI service unreachable&#x27; }, 502, h);
+    }
+  },
+};
+</pre></main>
+<script>
+const t=document.getElementById('c').textContent;
+document.getElementById('b').onclick=async()=>{
+ try{await navigator.clipboard.writeText(t);}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();document.execCommand('copy');a.remove();}
+ document.getElementById('ok').textContent='✓ Copied ('+t.split('\n').length+' lines)';
+};
+</script></body></html>
