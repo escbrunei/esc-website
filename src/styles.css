@@ -1184,3 +1184,24 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .spin-views button.on { background: #fff; color: #1d1d1f; box-shadow: 0 1px 3px rgba(0,0,0,.12); }
 .spin-hint { margin: .3rem 0 0; font-size: .8rem; color: #86868b; }
 @media (prefers-reduced-motion: reduce) { .spin-img { transition: none; } }
+
+/* Headings: Apple-style system font (Plate Gothic kept only for the ESC name) */
+h1, h2, h3, .avatar-initials, .thumb-fallback, .footer-col h2, .merch-ph, .thumb-initials, .escape-tag {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-synthesis: none;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+}
+h1 { font-size: clamp(2.2rem, 4.6vw, 3.4rem); }
+h2 { font-size: clamp(1.6rem, 3vw, 2.25rem); }
+h3 { font-size: clamp(1.15rem, 1.8vw, 1.35rem); letter-spacing: -0.01em; }
+.section-title { text-transform: none; }
+.footer-col h2 { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; }
+.escape-tag { letter-spacing: .08em; }
+/* The ESC name stays in Plate Gothic */
+.brand-text, .hero-org, .footer-title { font-family: var(--font-head); font-weight: 400; letter-spacing: .04em; }
+/* Big homepage headline stays Times New Roman italic */
+.hero h1.hero-title { font-family: 'Times New Roman', Times, 'Liberation Serif', serif; letter-spacing: 0; line-height: 1.12; font-size: clamp(2.1rem, 5.2vw, 3.6rem); }
+.pub-cover-title { font-family: 'Times New Roman', Times, serif; }
+.brunei-story h2 { font-size: clamp(1.35rem, 2.2vw, 1.7rem); }
