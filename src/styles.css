@@ -1027,3 +1027,16 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   .hero-society { margin-top: -28px; }
 }
 @media (prefers-reduced-motion: reduce) { .soc-in, .soc-net, .soc-node, .soc-wave { animation: none; } }
+
+/* Phones/tablets: keep the full name beside the door logo, wrapped on two lines */
+@media (max-width: 900px) {
+  .brand-text { display: inline !important; white-space: normal; font-size: .78rem; line-height: 1.25; max-width: 210px; }
+  .brand { min-width: 0; flex: 1; margin-right: .5rem; }
+  .brand-door { height: 38px; }
+}
+/* Phones: show the "Chat with ESynC" bubble beside the cat too */
+@media (max-width: 640px) {
+  .float-label { display: inline-block; font-size: .85rem; padding: .4rem .75rem; }
+  .float-esync.is-open .float-label { display: inline-block; }
+}
+@media (max-width: 1020px) { .lead-break { display: none; } }
