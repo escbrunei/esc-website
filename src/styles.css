@@ -937,3 +937,16 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .street-spacer { flex: none; }
 .street-sun { top: 2.2rem; }
 @media (max-width: 640px) { .street-cta { padding: 2.2rem 0 1rem; } .street-spacer { margin-top: -40px; } }
+
+/* ===== News cards on phones: picture on top, text below (no overlap) ===== */
+@media (max-width: 640px) {
+  .news-item { display: flex !important; flex-direction: column; height: auto !important; gap: .8rem; padding: 1rem; overflow: hidden; }
+  .news-item .news-thumb { width: 100%; height: auto !important; aspect-ratio: 16 / 9 !important; flex: none; }
+  .news-item .news-thumb img { width: 100% !important; height: 100% !important; object-fit: cover; }
+  .news-item .thumb-logo { flex-direction: row; gap: .7rem; padding: .6rem; }
+  .news-item .thumb-logo img { width: 44px !important; height: 44px !important; }
+  .news-item .thumb-name { display: block; font-size: .9rem; }
+  .news-body { width: 100%; }
+  .news-item .card-actions { margin-left: 0 !important; flex-wrap: wrap; }
+  .news-item h3 { -webkit-line-clamp: 3; }
+}
