@@ -1014,15 +1014,16 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 /* Hero: students peeking out from behind the crest */
 .hero-community { position: relative; width: min(320px, 100%); aspect-ratio: 1; margin: 0 auto; }
 .hero-community .hero-crest { position: relative; z-index: 2; width: 100%; display: block; }
-.peekers { position: absolute; inset: 0; z-index: 1; }
+.peekers { position: absolute; inset: 0; z-index: 1; opacity: 0; animation: peek-show .3s ease 1.7s forwards; }
+@keyframes peek-show { to { opacity: 1; } }
 .peek-arm { position: absolute; left: 35%; width: 30%; top: 1%; height: 49%; transform-origin: 50% 100%; }
-.peek-who { position: absolute; left: 0; right: 0; top: 0; transform: translateY(40%); animation: peek 10s ease-in-out infinite; animation-delay: calc(1.8s + var(--i) * 2.5s); }
+.peek-who { position: absolute; left: 0; right: 0; top: 0; transform: translateY(80%); animation: peek 10s cubic-bezier(.45,0,.25,1) infinite both; animation-delay: calc(1.8s + var(--i) * 2.5s); }
 .peek-arm:nth-child(odd) .peek-who, .peek-arm:nth-child(odd) .peek-hand { animation-delay: calc(1.8s + var(--i) * 2.5s); }
 .peek-svg { display: block; width: 100%; height: auto; overflow: visible; }
 @keyframes peek {
-  0%, 2% { transform: translateY(40%); }
+  0%, 2% { transform: translateY(80%); }
   8%, 24% { transform: translateY(-58%); }
-  30%, 100% { transform: translateY(40%); }
+  30%, 100% { transform: translateY(80%); }
 }
 .peek-hand { transform-box: view-box; transform-origin: 17px -26px; animation: peek-wave 10s ease-in-out infinite; animation-delay: calc(1.8s + var(--i) * 2.5s); }
 @keyframes peek-wave {
@@ -1031,7 +1032,7 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   24%, 100% { transform: rotate(0); }
 }
 @media (max-width: 760px) { .hero-community { width: 190px; margin-top: 1.6rem; } }
-@media (prefers-reduced-motion: reduce) { .peek-who, .peek-hand { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .peek-who, .peek-hand { animation: none; } .peekers { display: none; } }
 
 /* Phones/tablets: keep the full name beside the door logo, wrapped on two lines */
 @media (max-width: 900px) {
