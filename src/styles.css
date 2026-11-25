@@ -633,3 +633,4 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   .bs-stat { padding: .35rem .6rem; }
   .bs-note { font-size: .72rem; max-width: 70%; }
 }
+.brand-door { height: 42px; width: auto; display: block; }
