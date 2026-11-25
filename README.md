@@ -273,6 +273,19 @@ Headings use **Plate Gothic Three Four** and body text uses **Glacial Indifferen
 
 ---
 
+## The Invisible Handshake: past sessions from Instagram
+
+Open `src/data/ihs-posts.json` and paste @theihs.esc post links into `posts` (newest first), e.g.
+
+```json
+"posts": [
+  "https://www.instagram.com/p/ABC123/",
+  "https://www.instagram.com/p/DEF456/"
+]
+```
+
+Each post appears on The Invisible Handshake page with its photos and caption, using Instagram's official embed, so edits on Instagram show up automatically.
+
 ## Merch
 
 Edit `src/data/merch.json` (see its `_example`). Upload product photos to `public/images/merch/`. Set one order link for everything in `src/config.js` → `MERCH_ORDER_URL`, or give a product its own `orderUrl`. With no link, the Order button emails the committee.

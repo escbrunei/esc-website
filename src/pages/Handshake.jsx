@@ -3,6 +3,8 @@ import { getEvents } from '../lib/events.js';
 import EventCard from '../components/EventCard.jsx';
 import { CONFIG } from '../config.js';
 import InstagramFeed from '../components/InstagramFeed.jsx';
+import InstagramPosts from '../components/InstagramEmbed.jsx';
+import ihs from '../data/ihs-posts.json';
 
 export const HANDSHAKE_INTRO = 'The Invisible Handshake is the Economic Students’ Chamber’s networking series connecting students with invited speakers from industry.';
 
@@ -36,10 +38,11 @@ export default function Handshake() {
       </section>
       <section className="section container" aria-labelledby="ih-past">
         <h2 id="ih-past" className="section-title">Past sessions</h2>
-        {done.length ? (
+        {done.length > 0 && <div className="card-grid" style={{ marginBottom: '1.5rem' }}>{done.map((e) => <EventCard key={e.id} ev={e} past />)}</div>}
+        {(ihs.posts || []).length > 0 ? (
           <>
-            <div className="card-grid">{done.map((e) => <EventCard key={e.id} ev={e} past />)}</div>
-            <p className="ig-more">More photos on <a href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{CONFIG.IHS_INSTAGRAM_HANDLE}</a></p>
+            <InstagramPosts urls={ihs.posts} />
+            <p className="ig-more">See every session on <a href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{CONFIG.IHS_INSTAGRAM_HANDLE}</a></p>
           </>
         ) : (
           <InstagramFeed feedUrl={CONFIG.IHS_INSTAGRAM_FEED_URL} handle={CONFIG.IHS_INSTAGRAM_HANDLE} url={CONFIG.IHS_INSTAGRAM_URL} title="Past sessions on Instagram" />

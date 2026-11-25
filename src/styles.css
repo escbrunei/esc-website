@@ -582,3 +582,7 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .merch-price { color: var(--maroon); font-size: 1.15rem; margin: 0; }
 .merch-options { list-style: none; padding: 0; margin: .2rem 0 .6rem; display: flex; flex-wrap: wrap; gap: .35rem; }
 .merch-options li { border: 1px solid var(--line); border-radius: 999px; padding: .05rem .6rem; font-size: .85rem; }
+
+/* Instagram post embeds */
+.ig-embeds { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); align-items: start; }
+.ig-embed .instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; }
