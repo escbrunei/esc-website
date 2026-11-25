@@ -23,7 +23,7 @@ export default function BruneiStory() {
       const latest = (id, col = 'value') => {
         const ind = by[id]; if (!ind) return null;
         const row = [...ind.rows].reverse().find((r) => typeof r[col] === 'number');
-        return row ? { year: row.year, value: row[col], sample: ind.status !== 'official' } : null;
+        return row ? { year: row.year, value: row[col], sample: ind.status !== 'official', source: ind.source, sourceUrl: ind.sourceUrl } : null;
       };
       setData({ gdp: latest('real-gdp-growth'), infl: latest('inflation'), unemp: latest('unemployment'),
         oil: latest('oil-vs-non-oil-gdp', 'oil_and_gas'), nonoil: latest('oil-vs-non-oil-gdp', 'non_oil_and_gas') });
@@ -31,11 +31,11 @@ export default function BruneiStory() {
   }, []);
 
   const fmt = (d) => (d ? `${d.value > 0 ? '+' : ''}${d.value}%` : '…');
-  const stat = (d, label) => d && { label: `${label}, ${d.year}`, value: label.startsWith('Unemployment') ? `${d.value}%` : fmt(d), sample: d.sample };
+  const stat = (d, label) => d && { label: `${label}, ${d.year}`, value: label.startsWith('Unemployment') ? `${d.value}%` : fmt(d), sample: d.sample, source: d.source, sourceUrl: d.sourceUrl };
   const steps = [
     { x: 380, name: 'Welcome', title: 'Welcome to Brunei’s economy', text: 'Start at the Omar Ali Saifuddien Mosque in Bandar Seri Begawan. Use the arrows or swipe to travel across the economy.', stats: [] },
     { x: 400, name: 'The capital', title: 'Jobs and prices in the capital', text: 'Bandar Seri Begawan is where most people work, shop and pay the bills. Two numbers matter most to households: how fast prices rise, and how many people can’t find work.', stats: [stat(data.infl, 'Inflation'), stat(data.unemp, 'Unemployment')] },
-    { x: 1010, name: 'Kampong Ayer', title: 'Kampong Ayer', text: 'One of the world’s largest water villages, and a reminder that heritage, culture and tourism are part of Brunei’s non-oil economy.', stats: [] },
+    { x: 1010, name: 'Visit Brunei 2027', title: 'Visit Brunei Year 2027', text: 'Brunei is preparing for Visit Brunei Year 2027, a national campaign to grow tourism and diversify the economy. Heritage sites like Kampong Ayer, one of the world’s largest water villages, are part of the draw.', stats: [], link: { href: 'https://www.thestar.com.my/aseanplus/aseanplus-news/2026/06/25/visit-brunei-year-to-be-held-in-2027', label: 'Read about the campaign' } },
     { x: 1620, name: 'Oil and gas', title: 'Oil and gas', text: 'Offshore platforms and LNG exports are still the backbone of the economy. Compare their growth with everything else.', stats: [stat(data.oil, 'Oil & gas GDP growth'), stat(data.nonoil, 'Non-oil & gas GDP growth')] },
     { x: 2150, name: 'Temburong', title: 'Temburong Bridge: the road ahead', text: 'New links and new sectors to diversify the economy. Overall, how fast is the economy growing?', stats: [stat(data.gdp, 'Real GDP growth')] },
   ];
@@ -88,10 +88,11 @@ export default function BruneiStory() {
           {cur.stats.filter(Boolean).length > 0 && (
             <div className="bs-stats">
               {cur.stats.filter(Boolean).map((s) => (
-                <div key={s.label} className="bs-stat"><span className="bs-value">{s.value}</span><span className="bs-label">{s.label}{s.sample ? ' · sample' : ''}</span></div>
+                <div key={s.label} className="bs-stat"><span className="bs-value">{s.value}</span><span className="bs-label">{s.label}{s.sample ? ' · sample' : ''}</span>{s.source && <a className="bs-src" href={s.sourceUrl} target="_blank" rel="noopener noreferrer">Source: {s.source}</a>}</div>
               ))}
             </div>
           )}
+          {cur.link && <a className="bs-link" href={cur.link.href} target="_blank" rel="noopener noreferrer">{cur.link.label} ↗</a>}
           {step === steps.length - 1 && <a className="btn btn-small" href="#/dashboard">Explore the data →</a>}
         </div>
         <div className="bs-controls">
@@ -181,6 +182,16 @@ function Scene({ sunX, sunY, tankerIn }) {
           <path d="M-6 10 q-12 4 -24 0" stroke="#e8f4f8" strokeWidth="3" fill="none" />
         </g>;
       })}
+
+      {/* Visit Brunei 2027 banner plane */}
+      <g className="bs-plane">
+        <line x1="940" y1="150" x2="1000" y2="150" stroke="#8a6a5c" strokeWidth="2" />
+        <rect x="700" y="128" width="240" height="44" rx="6" fill="#62160d" />
+        <text x="820" y="157" textAnchor="middle" fontFamily="Georgia, serif" fontSize="22" fill="#FFC549" letterSpacing="2">VISIT BRUNEI 2027</text>
+        <path d="M1000 150 l30 -10 h40 q14 0 14 10 q0 10 -14 10 h-40 z" fill="#fff6e6" stroke="#62160d" strokeWidth="2.5" />
+        <path d="M1040 140 l-14 -22 h14 l18 22 z M1040 160 l-14 22 h14 l18 -22 z" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
+        <path d="M1002 142 l-8 -12 h8 l8 12 z" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
+      </g>
 
       {/* ===== Offshore oil & gas ===== */}
       <g transform="translate(1440 0)">

@@ -45,7 +45,7 @@ export default function Nav({ path }) {
       <div className="container nav-bar">
         <a href="#/" className="brand" aria-label="ESC home">
           <img className="brand-door" src="images/esc-door.png" alt="" width="30" height="40" />
-          <span className="brand-text">Economic Students’ Chamber</span>
+          <span className="brand-text">Economic Students’ Chamber (DPE) Brunei</span>
         </a>
         <button className="nav-toggle" aria-expanded={open} aria-controls="site-nav" onClick={() => setOpen((o) => !o)}>
           <span className="sr-only">Menu</span>

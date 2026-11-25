@@ -661,3 +661,8 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   .bs-controls { justify-content: flex-start; }
 }
 @media (prefers-reduced-motion: reduce) { .brunei-story .bs-svg, .bs-tanker, .bs-sun { transition: none; } .bs-taxi { animation: none; } }
+.bs-plane { animation: bs-plane 4s ease-in-out infinite; }
+@keyframes bs-plane { 50% { translate: 0 -10px; } }
+.bs-link { display: inline-block; margin-bottom: .5rem; color: var(--maroon); }
+@media (prefers-reduced-motion: reduce) { .bs-plane { animation: none; } }
+.bs-src { font-size: .72rem; color: var(--maroon); margin-top: .15rem; }
