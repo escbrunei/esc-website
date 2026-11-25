@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T10:27:21.264Z",
-  "lastSuccessfulRefresh": "2026-11-25T10:27:21.264Z",
+  "generatedAt": "2026-11-25T10:29:43.283Z",
+  "lastSuccessfulRefresh": "2026-11-25T10:29:43.283Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:27:21.264Z",
+      "lastSuccess": "2026-11-25T10:29:43.283Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:27:21.264Z",
+      "lastSuccess": "2026-11-25T10:29:43.283Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:27:21.264Z",
+      "lastSuccess": "2026-11-25T10:29:43.283Z",
       "count": 9
     },
     {
@@ -36,21 +36,21 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:27:21.264Z",
+      "lastSuccess": "2026-11-25T10:29:43.283Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:27:21.264Z",
+      "lastSuccess": "2026-11-25T10:29:43.283Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:27:21.264Z",
+      "lastSuccess": "2026-11-25T10:29:43.283Z",
       "count": 30
     }
   ],
@@ -176,12 +176,12 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-LWNlby02NTgxMTE2-10",
+      "id": "cna-business-Rvd24tNjU4MTExNg-10",
       "region": "asean",
       "kind": "headline",
-      "title": "Walmart-owned Flipkart's Kalyan Krishnamurthy steps down as CEO",
+      "title": "Walmart-owned Flipkart CEO Kalyan Krishnamurthy to step down",
       "publisher": "CNA",
-      "url": "https://www.channelnewsasia.com/business/walmart-owned-flipkarts-kalyan-krishnamurthy-steps-down-ceo-6581116",
+      "url": "https://www.channelnewsasia.com/business/walmart-owned-flipkart-ceo-kalyan-krishnamurthy-step-down-6581116",
       "publishedAt": "2026-11-25T08:12:31.000Z",
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--xZZgt3Ca--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T081403Z_2_LYNXNPEMAO0K7_RTROPTP_3_FLIPKART-ONLINE-INDIA.JPG?itok=cZKMOJkq",
