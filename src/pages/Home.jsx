@@ -22,7 +22,7 @@ export default function Home() {
             <p className="hero-org">Economic Students’ Chamber <span>(DPE) Brunei</span></p>
             <h1 className="hero-title">Empowering and Mobilising Aspiring Ekonomist</h1>
             <p className="lead">
-              A leading student-led economic association shaping future economists and advancing national development.
+              A leading student-led economic association shaping{' '}<br className="lead-break" />future economists and advancing national development.
             </p>
             <div className="hero-actions">
               <a className="btn btn-gold btn-large" href="#/dashboard">Explore Brunei’s Economy</a>

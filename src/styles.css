@@ -886,3 +886,4 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .story-wrap .container { text-align: center; }
 .story-wrap .section-title::after { margin-left: auto; margin-right: auto; }
 .story-wrap .muted { margin-left: auto; margin-right: auto; }
+@media (max-width: 640px) { .lead-break { display: none; } }
