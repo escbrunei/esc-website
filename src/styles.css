@@ -341,3 +341,18 @@ h1, h2, h3, .brand-mark, .brand-text, .footer-title, .avatar-initials, .thumb-fa
   font-synthesis: none;
 }
 .news-item h3 { font-weight: 700; } /* news headlines use the body font */
+
+/* ESynC cat mascot */
+.esync-char { display: inline-block; position: relative; line-height: 0; }
+.esync-img { width: 100%; height: auto; display: block; user-select: none; -webkit-user-drag: none; }
+.esync-char.badge { border-radius: 50%; background: #fff8e8; border: 4px solid var(--gold); display: grid; place-items: center; overflow: hidden; }
+.esync-char.badge .esync-img { width: 72%; }
+.esync-char.peeking { overflow: hidden; vertical-align: bottom; }
+.esync-char.peeking .esync-img { position: absolute; top: 0; left: 0; }
+.hero-art .esync-char.badge { box-shadow: 0 12px 28px rgba(0,0,0,.25); animation: bob 4s ease-in-out infinite; }
+.peek-button { margin-bottom: 0; }
+.peek-button:hover { transform: translateY(-4px); }
+@media (max-width: 760px) { .hero-art .esync-char.badge { width: 130px !important; height: 130px !important; } }
+@media (prefers-reduced-motion: reduce) { .hero-art .esync-char.badge { animation: none; } }
+.chat-header .esync-char.badge { border-width: 3px; flex: none; }
+.chat-header .esync-char.badge .esync-img { width: 82%; }

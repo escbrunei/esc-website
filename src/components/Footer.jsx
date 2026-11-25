@@ -17,7 +17,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="footer-peek container">
         <button type="button" className="peek-button" onClick={() => openESynC({ origin: 'home' })} aria-label="Ask ESynC">
-          <ESynCCharacter size={92} peeking />
+          <ESynCCharacter size={130} peeking />
         </button>
         <button type="button" className="btn btn-gold footer-ask" onClick={() => openESynC({ origin: 'home' })}>
           Ask ESynC

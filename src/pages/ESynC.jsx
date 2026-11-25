@@ -122,7 +122,7 @@ export default function ESynC() {
     <section className="chat-page">
       <div className="container chat-wrap">
         <header className="chat-header">
-          <ESynCCharacter size={56} />
+          <ESynCCharacter size={64} badge />
           <div>
             <h1>ESynC</h1>
             <p className="muted">ESC’s economics assistant</p>

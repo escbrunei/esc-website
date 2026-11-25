@@ -28,7 +28,7 @@ export default function Home() {
             </p>
           </div>
           <div className="hero-art" aria-hidden="true">
-            <ESynCCharacter size={210} />
+            <ESynCCharacter size={230} badge />
           </div>
         </div>
       </section>
