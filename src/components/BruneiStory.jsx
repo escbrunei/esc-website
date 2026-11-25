@@ -194,8 +194,7 @@ function Scene({ sunX, sunY, tankerIn }) {
         <path d="M1040 140 l-14 -22 h14 l18 22 z M1040 160 l-14 22 h14 l18 -22 z" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
         <path d="M1002 142 l-8 -12 h8 l8 12 z" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
         <g className="bs-plane-hint">
-          <rect x="740" y="180" width="160" height="30" rx="15" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
-          <text x="820" y="200" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="15" fill="#62160d">Open website ↗</text>
+          <text x="820" y="192" textAnchor="middle" fontFamily="Arial, sans-serif" fontSize="11" fill="#62160d" opacity=".8">tap to visit ↗</text>
         </g>
       </g>
       </a>
