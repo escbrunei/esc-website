@@ -35,7 +35,7 @@ export default function BruneiStory() {
   const steps = [
     { x: 380, name: 'Welcome', title: 'Welcome to Brunei’s economy', text: 'Start at the Omar Ali Saifuddien Mosque in the capital, Bandar Seri Begawan. Use the arrows or swipe to travel across the economy.', stats: [] },
     { x: 400, name: 'Brunei-Muara', title: 'Brunei-Muara: where most people live', text: 'Home to the capital, Bandar Seri Begawan, and about three in four residents. Prices and jobs matter most to households.', stats: [{ label: 'Population living in Brunei-Muara, 2025', value: '72.5%', sample: false, source: 'DEPS Population Estimates 2025', sourceUrl: 'https://deps.mofe.gov.bn/wp-content/uploads/2026/04/POP_2025_RPT.pdf' }, stat(data.infl, 'Inflation'), stat(data.unemp, 'Unemployment')] },
-    { x: 1010, name: 'Visit Brunei 2027', title: 'Visit Brunei Year 2027', text: 'Brunei is preparing for Visit Brunei Year 2027, a national campaign to grow tourism and diversify the economy. Heritage sites like Kampong Ayer, one of the world’s largest water villages, are part of the draw.', stats: [], link: { href: 'https://www.thestar.com.my/aseanplus/aseanplus-news/2026/06/25/visit-brunei-year-to-be-held-in-2027', label: 'Read about the campaign' } },
+    { x: 1010, name: 'Visit Brunei 2027', title: 'Visit Brunei Year 2027', text: 'Brunei is preparing for Visit Brunei Year 2027, a national campaign to grow tourism and diversify the economy. Heritage sites like Kampong Ayer, one of the world’s largest water villages, are part of the draw.', stats: [], link: { href: 'https://www.bruneitourism.com/vby2027/', label: 'Visit the official VBY2027 website' } },
     { x: 1620, name: 'Oil and gas', title: 'Oil and gas', text: 'Offshore platforms and LNG exports are still the backbone of the economy. Compare their growth with everything else.', stats: [stat(data.oil, 'Oil & gas GDP growth'), stat(data.nonoil, 'Non-oil & gas GDP growth')] },
     { x: 2150, name: 'Temburong', title: 'Temburong Bridge: the road ahead', text: 'New links and new sectors to diversify the economy. Overall, how fast is the economy growing?', stats: [stat(data.gdp, 'Real GDP growth')] },
   ];
@@ -184,6 +184,8 @@ function Scene({ sunX, sunY, tankerIn }) {
       })}
 
       {/* Visit Brunei 2027 banner plane */}
+      <a href="https://www.bruneitourism.com/vby2027/" target="_blank" rel="noopener noreferrer" className="bs-plane-link" aria-label="Visit Brunei Year 2027 official website">
+      <title>Open the Visit Brunei Year 2027 website</title>
       <g className="bs-plane">
         <line x1="940" y1="150" x2="1000" y2="150" stroke="#8a6a5c" strokeWidth="2" />
         <rect x="700" y="128" width="240" height="44" rx="6" fill="#62160d" />
@@ -192,6 +194,7 @@ function Scene({ sunX, sunY, tankerIn }) {
         <path d="M1040 140 l-14 -22 h14 l18 22 z M1040 160 l-14 22 h14 l18 -22 z" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
         <path d="M1002 142 l-8 -12 h8 l8 12 z" fill="#FFC549" stroke="#62160d" strokeWidth="2" />
       </g>
+      </a>
 
       {/* ===== Offshore oil & gas ===== */}
       <g transform="translate(1440 0)">

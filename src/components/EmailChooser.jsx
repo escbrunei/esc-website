@@ -30,7 +30,6 @@ export default function EmailChooser({ email = CONFIG.ESC_EMAIL, subject = '', c
       </button>
       {open && (
         <span className="email-menu" role="menu">
-          <span className="email-menu-title">Write to {email}</span>
           {options.map((o) => (
             <a key={o.name} role="menuitem" href={o.href} {...(o.ext ? { target: '_blank', rel: 'noopener noreferrer' } : {})} onClick={() => setOpen(false)}>{o.name}</a>
           ))}

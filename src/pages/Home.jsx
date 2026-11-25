@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import EconomyRoad from '../components/EconomyRoad.jsx';
 import FeatureIcon from '../components/FeatureIcon.jsx';
 import BruneiStory from '../components/BruneiStory.jsx';
+import EscapeDoor from '../components/EscapeDoor.jsx';
 import { openESynC } from '../lib/esync.js';
 import { getEvents } from '../lib/events.js';
 import { HANDSHAKE_INTRO } from './Handshake.jsx';
@@ -78,7 +79,7 @@ export default function Home() {
 
       <section className="section container join-cta">
         <div className="join-grid">
-          <img className="join-art" src="images/escape-the-ordinary.png" alt="ESC door logo with a figure peeking out: ESCape the ordinary" width="320" height="350" loading="lazy" />
+          <EscapeDoor />
           <div className="join-text">
             <h2>Be part of ESC</h2>
             <p>Membership is open to students interested in economics and policy.</p>

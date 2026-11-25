@@ -680,3 +680,60 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .join-text p { font-size: 1.1rem; }
 @media (max-width: 640px) { .join-grid { grid-template-columns: 1fr; text-align: center; gap: 1.2rem; } .join-art { max-width: 230px; margin: 0 auto; } }
 @media (max-width: 760px) { .bs-stats { gap: .4rem; } .bs-stat { padding: .3rem .55rem; } .bs-label { font-size: .74rem; } }
+
+/* ===== Be part of ESC: centred, animated door ===== */
+.join-cta { text-align: center; }
+.join-grid { grid-template-columns: 1fr !important; justify-items: center; gap: 1rem !important; text-align: center !important; max-width: 640px; }
+.join-text p { max-width: 46ch; margin-inline: auto; }
+.escape { background: none; border: 0; padding: 0; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: .6rem; font: inherit; }
+.escape-stage { position: relative; display: block; width: 380px; height: 240px; perspective: 700px; }
+.escape-frame, .escape-door { position: absolute; left: 110px; bottom: 16px; width: 150px; height: 203px; border-radius: 75px 75px 0 0 / 82px 82px 0 0; }
+.escape-frame { background: radial-gradient(ellipse at 50% 70%, #ffe9a8 0%, #FFC549 35%, #b8860b 100%); box-shadow: inset 0 0 0 4px #4a0f08; }
+.escape-door { overflow: hidden; transform-origin: left center; transform-style: preserve-3d; z-index: 3; box-shadow: 4px 0 10px rgba(0,0,0,.15); }
+.escape-door img { width: 100%; height: 100%; display: block; }
+.escape-man { position: absolute; bottom: 10px; left: 0; width: 90px; z-index: 2; transform: translateX(290px); }
+.escape-man svg { display: block; }
+.escape-shadow { position: absolute; left: 30px; right: 30px; bottom: 8px; height: 10px; border-radius: 50%; background: rgba(98,22,13,.12); z-index: 0; }
+.leg, .arm { transform-origin: 45px 98px; }
+.arm { transform-origin: 45px 62px; }
+.leg.l1, .arm.a2 { transform: rotate(18deg); } .leg.l2, .arm.a1 { transform: rotate(-18deg); }
+.escape-tag { font-family: var(--font-head); color: var(--maroon); letter-spacing: .08em; font-size: 1.05rem; text-transform: uppercase; }
+.escape-tag b { font-weight: 400 !important; font-size: 1.35em; }
+
+/* timeline: walk in (0-45%), open door (45-58%), step in (58-78%), door closes (82-95%) */
+.escape.play .escape-man { animation: esc-walk 5s ease-in-out forwards; }
+.escape.play .leg.l1, .escape.play .arm.a2 { animation: esc-swing .5s ease-in-out 8 alternate; }
+.escape.play .leg.l2, .escape.play .arm.a1 { animation: esc-swing-b .5s ease-in-out 8 alternate; }
+.escape.play .escape-door { animation: esc-door 5s ease-in-out forwards; }
+.escape.play .escape-frame { animation: esc-glow 5s ease-in-out forwards; }
+@keyframes esc-walk {
+  0% { transform: translateX(300px); opacity: 1; }
+  45% { transform: translateX(185px); opacity: 1; }
+  58% { transform: translateX(185px); opacity: 1; }
+  78% { transform: translateX(140px) scale(.82); opacity: .0; }
+  100% { transform: translateX(140px) scale(.82); opacity: 0; }
+}
+@keyframes esc-swing { from { transform: rotate(22deg); } to { transform: rotate(-22deg); } }
+@keyframes esc-swing-b { from { transform: rotate(-22deg); } to { transform: rotate(22deg); } }
+@keyframes esc-door {
+  0%, 45% { transform: rotateY(0); }
+  58%, 80% { transform: rotateY(-78deg); }
+  95%, 100% { transform: rotateY(0); }
+}
+@keyframes esc-glow { 0%, 45% { filter: brightness(.9); } 60%, 80% { filter: brightness(1.15); } 100% { filter: brightness(1); } }
+/* the stickman walks behind the open door edge: keep him under the door, above the glow */
+@media (max-width: 480px) { .escape-stage { transform: scale(.82); margin: -18px 0; } }
+@media (prefers-reduced-motion: reduce) { .escape-man { transform: translateX(250px); } }
+.escape-man { z-index: 4; }
+@keyframes esc-walk {
+  0% { transform: translateX(300px); opacity: 1; }
+  40% { transform: translateX(190px); opacity: 1; }
+  52% { transform: translateX(140px); opacity: 1; }
+  74% { transform: translateX(140px) translateY(-6px) scale(.6); opacity: 0; }
+  100% { transform: translateX(140px) scale(.6); opacity: 0; }
+}
+@keyframes esc-door {
+  0%, 30% { transform: rotateY(0); }
+  42%, 78% { transform: rotateY(-80deg); }
+  94%, 100% { transform: rotateY(0); }
+}
