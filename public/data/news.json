@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T08:44:42.236Z",
-  "lastSuccessfulRefresh": "2026-11-25T08:44:42.236Z",
+  "generatedAt": "2026-11-25T08:46:56.051Z",
+  "lastSuccessfulRefresh": "2026-11-25T08:46:56.051Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:44:42.236Z",
+      "lastSuccess": "2026-11-25T08:46:56.051Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:44:42.236Z",
+      "lastSuccess": "2026-11-25T08:46:56.051Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:44:42.236Z",
+      "lastSuccess": "2026-11-25T08:46:56.051Z",
       "count": 9
     },
     {
@@ -36,27 +36,39 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:44:42.236Z",
+      "lastSuccess": "2026-11-25T08:46:56.051Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:44:42.236Z",
+      "lastSuccess": "2026-11-25T08:46:56.051Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:44:42.236Z",
+      "lastSuccess": "2026-11-25T08:46:56.051Z",
       "count": 30
     }
   ],
   "items": [
     {
-      "id": "bbc-business-0yMHFucTMzZTkwbw-0",
+      "id": "cna-business-b3JlYS02NTgxMTcx-0",
+      "region": "asean",
+      "kind": "headline",
+      "title": "Aramco, S-Oil inaugurate $7 billion petrochemicals complex in South Korea",
+      "publisher": "CNA",
+      "url": "https://www.channelnewsasia.com/business/aramco-s-oil-inaugurate-7-billion-petrochemicals-complex-in-south-korea-6581171",
+      "publishedAt": "2026-11-25T08:42:25.000Z",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--q38D1eHQ--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T084225Z_2_LYNXNPEMAO0M6_RTROPTP_3_IRAN-CRISIS-ARAMCO-PIPELINE.JPG?itok=-qV05OJZ",
+      "sourceId": "cna-business"
+    },
+    {
+      "id": "bbc-business-0yMHFucTMzZTkwbw-1",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills to rise by 26% from January",
@@ -68,7 +80,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-vcGVlLTY1ODEwODY-1",
+      "id": "cna-business-vcGVlLTY1ODEwODY-2",
       "region": "asean",
       "kind": "headline",
       "title": "'Crazy moves only look good in hindsight': Forrest Li on Singapore football, Shopee and a new era of e-commerce",
@@ -80,7 +92,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-LWNlby02NTgxMTE2-2",
+      "id": "cna-business-LWNlby02NTgxMTE2-3",
       "region": "asean",
       "kind": "headline",
       "title": "Walmart-owned Flipkart's Kalyan Krishnamurthy steps down as CEO",
@@ -92,7 +104,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-cml0eS02NTgxMDkx-3",
+      "id": "cna-business-cml0eS02NTgxMDkx-4",
       "region": "asean",
       "kind": "headline",
       "title": "Japan's JBIC, QatarEnergy sign MOU to strengthen energy security",
@@ -104,7 +116,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-EtdmktNjU4MTAzMQ-4",
+      "id": "cna-business-EtdmktNjU4MTAzMQ-5",
       "region": "asean",
       "kind": "headline",
       "title": "CD Projekt RED sees no material fourth-quarter hit from GTA VI",
@@ -116,7 +128,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-LXNheS02NTgxMDIx-5",
+      "id": "cna-business-LXNheS02NTgxMDIx-6",
       "region": "asean",
       "kind": "headline",
       "title": "Meta officials meet India's opposition Congress amid protests on content curbs, sources say",
@@ -128,7 +140,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-0ZW50LTY1ODA5NzY-6",
+      "id": "cna-business-0ZW50LTY1ODA5NzY-7",
       "region": "asean",
       "kind": "headline",
       "title": "Australia passes law forcing internet platforms to take down harmful content",
@@ -140,7 +152,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tc2F5LTY1ODA5MjY-7",
+      "id": "cna-business-tc2F5LTY1ODA5MjY-8",
       "region": "asean",
       "kind": "headline",
       "title": "Cognizant in talks to take over parts of S&P Global's Capital IQ operations, sources say",
@@ -152,7 +164,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-QtdXMtNjU4MDg1MQ-8",
+      "id": "cna-business-QtdXMtNjU4MDg1MQ-9",
       "region": "asean",
       "kind": "headline",
       "title": "Amazon to launch Amazon Autos in UK in early 2027 in first expansion beyond US",
@@ -164,7 +176,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cnbc-economy-9teS1vaWwuaHRtbA-9",
+      "id": "cnbc-economy-9teS1vaWwuaHRtbA-10",
       "region": "global",
       "kind": "headline",
       "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
@@ -176,7 +188,7 @@
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "bbc-business-JwZHcxcXg3amd4bw-10",
+      "id": "bbc-business-JwZHcxcXg3amd4bw-11",
       "region": "global",
       "kind": "headline",
       "title": "US attorney general dodges questions about Nvidia investigation",
@@ -188,7 +200,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-b3J0cy02NTgwNDYx-11",
+      "id": "cna-business-b3J0cy02NTgwNDYx-12",
       "region": "asean",
       "kind": "headline",
       "title": "Starbucks to engage banks for sale of Japan business, Bloomberg News reports",
@@ -200,7 +212,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-yc2VzLTY1ODA0NTE-12",
+      "id": "cna-business-yc2VzLTY1ODA0NTE-13",
       "region": "asean",
       "kind": "headline",
       "title": "Tech firms back in crosshairs as Huang rally reverses",
@@ -212,7 +224,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tYW5kLTY1ODA0MzE-13",
+      "id": "cna-business-tYW5kLTY1ODA0MzE-14",
       "region": "asean",
       "kind": "headline",
       "title": "Goldman says US data center boom through 2028 will lift power and gas demand",
@@ -224,7 +236,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-15NDluZ3lkcXpwbw-14",
+      "id": "bbc-business-15NDluZ3lkcXpwbw-15",
       "region": "global",
       "kind": "headline",
       "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
@@ -236,7 +248,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-0aW55LTY1Nzk0MTE-15",
+      "id": "cna-business-0aW55LTY1Nzk0MTE-16",
       "region": "asean",
       "kind": "headline",
       "title": "Nvidia board joins Jensen Huang under scrutiny after reinstating embattled CEO",
@@ -248,7 +260,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-bHVtcC02NTgwMDk2-16",
+      "id": "cna-business-bHVtcC02NTgwMDk2-17",
       "region": "asean",
       "kind": "headline",
       "title": "Dollar rallies before key inflation reading; Aussie and sterling slump",
@@ -260,7 +272,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-tqMDVtMnpkeXJ5bw-17",
+      "id": "bbc-business-tqMDVtMnpkeXJ5bw-18",
       "region": "global",
       "kind": "headline",
       "title": "Trump's rescue of Nvidia's Huang brings political risks",
@@ -272,7 +284,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-15MHhqNDFrbDUwbw-18",
+      "id": "bbc-business-15MHhqNDFrbDUwbw-19",
       "region": "global",
       "kind": "headline",
       "title": "The rising cost of putting food on the table in India",
@@ -284,7 +296,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-g5M3I5a2U1cDk3bw-19",
+      "id": "bbc-business-g5M3I5a2U1cDk3bw-20",
       "region": "global",
       "kind": "headline",
       "title": "US preparing to unveil plan for new tariffs on global trading partners",
@@ -296,7 +308,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-13eTlqbmUwZzdxbw-20",
+      "id": "bbc-business-13eTlqbmUwZzdxbw-21",
       "region": "global",
       "kind": "headline",
       "title": "Why tiny cars are taking off across Europe",
@@ -308,7 +320,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-Y2RkMjl2OG1wOWpv-21",
+      "id": "bbc-business-Y2RkMjl2OG1wOWpv-22",
       "region": "global",
       "kind": "headline",
       "title": "What will the energy cap changes mean for my bills?",
@@ -320,7 +332,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-gyMHFuem5rcm40bw-22",
+      "id": "bbc-business-gyMHFuem5rcm40bw-23",
       "region": "global",
       "kind": "headline",
       "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down",
@@ -332,7 +344,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-BvbGwtNjU3OTkxMQ-23",
+      "id": "cna-business-BvbGwtNjU3OTkxMQ-24",
       "region": "asean",
       "kind": "headline",
       "title": "Japan's Nikkei to rise next year but fall short of record as investors reassess AI trade: Reuters poll",
@@ -344,7 +356,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-aGlnaC02NTc5ODkx-24",
+      "id": "cna-business-aGlnaC02NTc5ODkx-25",
       "region": "asean",
       "kind": "headline",
       "title": "Japan's key services inflation gauge hits 36-year high",
@@ -356,7 +368,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-FpbXMtNjU3OTEzMQ-25",
+      "id": "cna-business-FpbXMtNjU3OTEzMQ-26",
       "region": "asean",
       "kind": "headline",
       "title": "Shein to pay US$100 million to settle US shipping, customer service claims",
@@ -368,7 +380,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "the-scoop-uZy1pbi1icnVuZWk-26",
+      "id": "the-scoop-uZy1pbi1icnVuZWk-27",
       "region": "brunei",
       "kind": "headline",
       "title": "Heavyweight charm: Sumo legend Hakuho Sho steps into the ring in Brunei",
@@ -380,7 +392,7 @@
       "sourceId": "the-scoop"
     },
     {
-      "id": "cna-business-ydW1wLTY1Nzc3NTY-27",
+      "id": "cna-business-ydW1wLTY1Nzc3NTY-28",
       "region": "asean",
       "kind": "headline",
       "title": "Commentary: Jensen Huang should never have been too big to fail at Nvidia",
@@ -392,7 +404,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tYW5kLTY1Nzk1NTY-28",
+      "id": "cna-business-tYW5kLTY1Nzk1NTY-29",
       "region": "asean",
       "kind": "headline",
       "title": "Dell lifts annual forecasts after record quarter on surging AI server demand",
@@ -404,7 +416,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-NheXMtNjU3OTQ5Ng-29",
+      "id": "cna-business-NheXMtNjU3OTQ5Ng-30",
       "region": "asean",
       "kind": "headline",
       "title": "AI consumes less water per dollar spent than almond milk or golf, Enverus report says",
@@ -413,18 +425,6 @@
       "publishedAt": "2026-11-24T20:38:33.000Z",
       "summary": "",
       "image": "https://dam.mediacorp.sg/image/upload/s--JnhlKwtm--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-24T205338Z_2_LYNXNPEMAN1V9_RTROPTP_3_FRANCE-DATACENTERS.JPG?itok=guEjQK6g",
-      "sourceId": "cna-business"
-    },
-    {
-      "id": "cna-business-ZlcnktNjU3OTQ2MQ-30",
-      "region": "asean",
-      "kind": "headline",
-      "title": "Brazil zoo hails birth of Spix's macaw chick as boost for species' recovery",
-      "publisher": "CNA",
-      "url": "https://www.channelnewsasia.com/business/brazil-zoo-hails-birth-spixs-macaw-chick-boost-species-recovery-6579461",
-      "publishedAt": "2026-11-24T20:19:20.000Z",
-      "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--iWbIXJzm--/c_fill,g_auto,h_676,w_1200/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/v1/one-cms/core/2026-11-24T201802Z_1_LYNXNPEMAN1U2_RTROPTP_3_BRAZIL-MACAW.JPG?itok=v8TB78uJ",
       "sourceId": "cna-business"
     },
     {
