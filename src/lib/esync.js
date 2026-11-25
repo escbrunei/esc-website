@@ -3,6 +3,13 @@ import { navigate } from './router.js';
 
 const CTX_KEY = 'esync-context';
 const listeners = new Set();
+const openers = new Set();
+
+// The floating popup registers here so ESynC opens in place.
+export function onOpenRequest(fn) {
+  openers.add(fn);
+  return () => openers.delete(fn);
+}
 
 export function getContext() {
   try { return JSON.parse(sessionStorage.getItem(CTX_KEY)) || { origin: 'home' }; }
@@ -25,5 +32,6 @@ export function onContextChange(fn) {
  */
 export function openESynC(context = { origin: 'home' }) {
   setContext({ ...context, openedAt: Date.now() });
-  navigate('/esync');
+  if (openers.size) openers.forEach((fn) => fn());
+  else navigate('/esync');
 }
