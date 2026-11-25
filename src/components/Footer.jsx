@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="container footer-grid">
           <div className="footer-brand">
             <p className="footer-title">Economic Students’ Chamber</p>
-            <p className="footer-sub">(DPE) Brunei · Student-led, non-profit · Bandar Seri Begawan</p>
+            <p className="footer-sub">(DPE) Brunei · Student-led, non-profit · Brunei Darussalam</p>
           </div>
           <div className="footer-col">
             <h2>Explore</h2>

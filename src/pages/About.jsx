@@ -23,8 +23,7 @@ export default function About() {
           <p className="eyebrow">About Us</p>
           <h1>Who We Are</h1>
           <p className="lead">
-            The Economic Students’ Chamber (DPE) Brunei is a student-led, non-profit organisation founded in 2026 and
-            based in Bandar Seri Begawan. We bring together students interested in economics and policy to learn from one
+            The Economic Students’ Chamber (DPE) Brunei is a student-led, non-profit organisation established in 2026 and based in Brunei Darussalam. We bring together students interested in economics and policy to learn from one
             another, meet practitioners, and contribute to conversations about Brunei’s development.
           </p>
         </div>
