@@ -39,10 +39,7 @@ export default function NewsSection({ showTitle = true }) {
       <div className="container">
         <h2 id="news-h" className={showTitle ? 'section-title' : 'sr-only'}>Economic News &amp; Releases</h2>
         <p className="muted">
-          Latest headlines and official economic releases. Items are labelled
-          <span className="kind kind-official">Official release</span> or
-          <span className="kind kind-headline">Headline</span>.
-          Each links to the original source.
+          Latest headlines and official economic releases.
         </p>
         <p className="refresh">
           {data?.lastSuccessfulRefresh
