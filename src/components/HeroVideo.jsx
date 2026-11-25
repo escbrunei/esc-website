@@ -8,7 +8,7 @@ export const VIDEOS = {
   dashboard: { src: 'https://videos.pexels.com/video-files/8480244/8480244-hd_1920_1080_25fps.mp4', by: 'ArtHouse Studio', page: 'https://www.pexels.com/video/video-of-a-stock-market-8480244/' },
   lab: { src: 'https://videos.pexels.com/video-files/8102869/8102869-hd_1920_1080_25fps.mp4', by: 'Mikhail Nilov', page: 'https://www.pexels.com/video/people-writing-on-whiteboard-8102869/' },
   contact: { src: 'https://videos.pexels.com/video-files/8170593/8170593-uhd_2560_1440_25fps.mp4', by: 'Kampus Production', page: 'https://www.pexels.com/video/group-of-people-shaking-hands-8170593/' },
-  merch: { src: 'https://videos.pexels.com/video-files/7578643/7578643-uhd_2732_1440_25fps.mp4', by: 'Tima Miroshnichenko', page: 'https://www.pexels.com/video/man-working-as-a-stock-market-7578643/' },
+  merch: { src: 'https://videos.pexels.com/video-files/7580445/7580445-uhd_2732_1440_25fps.mp4', by: 'Tima Miroshnichenko', page: 'https://www.pexels.com/video/close-up-video-of-a-paper-7580445/' },
   publications: { src: 'https://videos.pexels.com/video-files/8141649/8141649-uhd_2560_1440_25fps.mp4', by: 'Alena Darmel', page: 'https://www.pexels.com/video/workmates-analyzing-some-papers-8141649/' },
 };
 
