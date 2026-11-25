@@ -1220,3 +1220,10 @@ h3 { font-size: clamp(1.15rem, 1.8vw, 1.35rem); letter-spacing: -0.01em; }
 .video-hero .container { position: relative; }
 .mstore .page-hero { font-family: var(--font-body); }
 .mstore .page-hero h1 { color: #fff; }
+
+/* Merch: clean product photos on white */
+.spin { margin: 1.2rem 0 .4rem; }
+.spin-stage { height: clamp(260px, 26vw, 360px); }
+.spin-img { inset: 0 8% 4% 8%; width: 84%; height: 96%; mix-blend-mode: multiply; transform: none !important; }
+.spin-shadow { display: none; }
+.mp { padding-top: 2.2rem; }

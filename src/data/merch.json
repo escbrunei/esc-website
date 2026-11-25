@@ -8,11 +8,11 @@
       "views": [
         {
           "name": "Maroon",
-          "front": "images/merch/hd/zip-maroon.webp"
+          "front": "images/merch/photo/zip-maroon.jpg"
         },
         {
           "name": "Cream",
-          "front": "images/merch/hd/zip-cream.webp"
+          "front": "images/merch/photo/zip-cream.jpg"
         }
       ],
       "tagline": "Warm, smart and made for every season."
@@ -24,11 +24,11 @@
       "views": [
         {
           "name": "Maroon",
-          "front": "images/merch/hd/polo-maroon.webp"
+          "front": "images/merch/photo/polo-maroon.jpg"
         },
         {
           "name": "Cream",
-          "front": "images/merch/hd/polo-cream.webp"
+          "front": "images/merch/photo/polo-cream.jpg"
         }
       ],
       "tagline": "A classic polo for meetings, events and campus."
@@ -40,8 +40,8 @@
       "views": [
         {
           "name": "Maroon",
-          "front": "images/merch/hd/dfc-front.webp",
-          "back": "images/merch/hd/dfc-back.webp"
+          "front": "images/merch/photo/dfc-front.jpg",
+          "back": "images/merch/photo/dfc-back.jpg"
         }
       ],
       "tagline": "Lightweight sports fabric with a sharp collar."
@@ -53,8 +53,8 @@
       "views": [
         {
           "name": "Maroon",
-          "front": "images/merch/hd/dfr-front.webp",
-          "back": "images/merch/hd/dfr-back.webp"
+          "front": "images/merch/photo/dfr-front.jpg",
+          "back": "images/merch/photo/dfr-back.jpg"
         }
       ],
       "tagline": "Breathable, light and ready for anything."
@@ -66,8 +66,8 @@
       "views": [
         {
           "name": "Cream",
-          "front": "images/merch/hd/tote1.webp",
-          "back": "images/merch/hd/tote1-back.webp"
+          "front": "images/merch/photo/tote1.jpg",
+          "back": "images/merch/photo/tote1-back.jpg"
         }
       ],
       "tagline": "Peeking cat design"
@@ -79,8 +79,8 @@
       "views": [
         {
           "name": "Cream",
-          "front": "images/merch/hd/tote2.webp",
-          "back": "images/merch/hd/tote2-back.webp"
+          "front": "images/merch/photo/tote2.jpg",
+          "back": "images/merch/photo/tote2-back.jpg"
         }
       ],
       "tagline": "ESC door design"
@@ -92,8 +92,8 @@
       "views": [
         {
           "name": "Maroon and yellow",
-          "front": "images/merch/hd/lan-front.webp",
-          "back": "images/merch/hd/lan-back.webp"
+          "front": "images/merch/photo/lan-front.jpg",
+          "back": "images/merch/photo/lan-back.jpg"
         }
       ],
       "tagline": "Maroon front, yellow back."
