@@ -1,5 +1,5 @@
 {
-  "_howToEdit": "Each item has one or more colours, each with a front and back picture in public/images/merch/. category is \"apparel\" or \"accessories\"; the Order button uses the matching Google Form from src/config.js (MERCH_APPAREL_URL / MERCH_ACCESSORIES_URL). Add \"price\" (number, B$) to show a price.",
+  "_howToEdit": "Each item has one or more colours, each with a front picture and (optionally) a back picture in public/images/merch/ (transparent PNGs, front and back the same size). category is \"apparel\" or \"accessories\"; the order buttons use MERCH_APPAREL_URL / MERCH_ACCESSORIES_URL in src/config.js. Add \"price\" (number, B$) to show a price.",
   "items": [
     {
       "id": "quarter-zip",
@@ -8,15 +8,14 @@
       "views": [
         {
           "name": "Maroon",
-          "front": "images/merch/zip-maroon.png",
-          "back": "images/merch/zip-maroon-back.png"
+          "front": "images/merch/zip-maroon.png"
         },
         {
           "name": "Cream",
-          "front": "images/merch/zip-cream.png",
-          "back": "images/merch/zip-cream-back.png"
+          "front": "images/merch/zip-cream.png"
         }
-      ]
+      ],
+      "tagline": "Warm, smart and made for every season."
     },
     {
       "id": "polo",
@@ -25,15 +24,14 @@
       "views": [
         {
           "name": "Maroon",
-          "front": "images/merch/polo-maroon.png",
-          "back": "images/merch/polo-maroon-back.png"
+          "front": "images/merch/polo-maroon.png"
         },
         {
           "name": "Cream",
-          "front": "images/merch/polo-cream.png",
-          "back": "images/merch/polo-cream-back.png"
+          "front": "images/merch/polo-cream.png"
         }
-      ]
+      ],
+      "tagline": "A classic polo for meetings, events and campus."
     },
     {
       "id": "dryfit-collared",
@@ -45,7 +43,8 @@
           "front": "images/merch/dfc-front.png",
           "back": "images/merch/dfc-back.png"
         }
-      ]
+      ],
+      "tagline": "Lightweight sports fabric with a sharp collar."
     },
     {
       "id": "dryfit-roundneck",
@@ -57,33 +56,34 @@
           "front": "images/merch/dfr-front.png",
           "back": "images/merch/dfr-back.png"
         }
-      ]
+      ],
+      "tagline": "Breathable, light and ready for anything."
     },
     {
       "id": "totebag-cat",
       "category": "accessories",
       "name": "Totebag",
-      "note": "Peeking cat design",
       "views": [
         {
           "name": "Cream",
           "front": "images/merch/tote1.png",
           "back": "images/merch/tote1-back.png"
         }
-      ]
+      ],
+      "tagline": "Peeking cat design"
     },
     {
       "id": "totebag-door",
       "category": "accessories",
       "name": "Totebag",
-      "note": "ESC door design",
       "views": [
         {
           "name": "Cream",
           "front": "images/merch/tote2.png",
           "back": "images/merch/tote2-back.png"
         }
-      ]
+      ],
+      "tagline": "ESC door design"
     },
     {
       "id": "lanyard",
@@ -91,11 +91,12 @@
       "name": "Lanyard",
       "views": [
         {
-          "name": "Yellow and maroon",
+          "name": "Maroon and yellow",
           "front": "images/merch/lan-front.png",
           "back": "images/merch/lan-back.png"
         }
-      ]
+      ],
+      "tagline": "Maroon front, yellow back."
     }
   ]
 }
