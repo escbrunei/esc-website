@@ -14,7 +14,7 @@ export const CONFIG = {
 
   // Membership registration link. Every "Join ESC" button opens this.
   // Leave empty to use the built-in form on the Join page instead.
-  JOIN_URL: 'https://tr.ee/2A6wBxUWjK',
+  JOIN_URL: 'https://docs.google.com/forms/d/e/1FAIpQLSdtmCNuFZ17RNhnbyEDyWUtd6DnvGy68laRsuifOLy_AQEd8g/viewform',
 
   // Membership form endpoint (Google Apps Script web app URL or Formspree URL).
   // Leave empty until it is set up; the form then shows the ESC email instead.
