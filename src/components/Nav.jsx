@@ -4,6 +4,7 @@ import { openESynC } from '../lib/esync.js';
 const LINKS = [
   ['/', 'Home'],
   ['/dashboard', 'Brunei Economy'],
+  ['/news', 'News'],
   ['/lab', 'Economics Lab'],
   ['/events', 'Events'],
   ['/about', 'About Us'],

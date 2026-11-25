@@ -9,7 +9,7 @@ const TABS = [
   ['global', 'Global'],
 ];
 
-export default function NewsSection() {
+export default function NewsSection({ showTitle = true }) {
   const [data, setData] = useState(null);
   const [failed, setFailed] = useState(false);
   const [tab, setTab] = useState('brunei');
@@ -37,7 +37,7 @@ export default function NewsSection() {
   return (
     <section id="news" className="section news-section" aria-labelledby="news-h">
       <div className="container">
-        <h2 id="news-h" className="section-title">Economic News &amp; Releases</h2>
+        <h2 id="news-h" className={showTitle ? 'section-title' : 'sr-only'}>Economic News &amp; Releases</h2>
         <p className="muted">
           Latest headlines and official economic releases. Items are labelled
           <span className="kind kind-official">Official release</span> or

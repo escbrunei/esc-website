@@ -36,8 +36,13 @@ export default function Home() {
         <div className="feature-grid">
           <a className="card feature" href="#/dashboard">
             <h2>Brunei Economy Dashboard</h2>
-            <p>GDP growth, inflation, unemployment and the oil and gas economy in interactive charts, plus the latest news and official releases.</p>
+            <p>GDP growth, inflation, unemployment and the oil and gas economy in interactive charts you can filter, download and ask about.</p>
             <span className="more">Open the dashboard →</span>
+          </a>
+          <a className="card feature" href="#/news">
+            <h2>Economic News</h2>
+            <p>Hourly headlines and official DEPS and BDCB releases for Brunei, ASEAN and the world.</p>
+            <span className="more">Read the news →</span>
           </a>
           <a className="card feature" href="#/lab">
             <h2>Economics Lab</h2>

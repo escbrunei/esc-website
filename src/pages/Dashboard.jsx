@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import LineChart from '../components/LineChart.jsx';
 import AskButton from '../components/AskButton.jsx';
-import NewsSection from '../components/NewsSection.jsx';
 import { loadIndicators } from '../lib/data.js';
 import { toCSV, downloadText } from '../lib/csv.js';
 
@@ -35,9 +34,7 @@ export default function Dashboard() {
           <p className="eyebrow">Brunei Economy Dashboard</p>
           <h1>Explore Brunei’s Economy</h1>
           <p className="lead">Key indicators with their sources. Tap or hover over a chart to read the values, then download the data or ask ESynC what it means.</p>
-          <a className="btn btn-outline-light" href="#/dashboard" onClick={(e) => { e.preventDefault(); document.getElementById('news')?.scrollIntoView({ behavior: 'smooth' }); }}>
-            Jump to Economic News &amp; Releases
-          </a>
+          <a className="btn btn-outline-light" href="#/news">Latest economic news →</a>
         </div>
       </section>
 
@@ -72,7 +69,6 @@ export default function Dashboard() {
         )}
       </section>
 
-      <NewsSection />
     </>
   );
 }

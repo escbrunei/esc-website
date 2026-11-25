@@ -5,6 +5,7 @@ import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import Lab from './pages/Lab.jsx';
+import News from './pages/News.jsx';
 import ESynC from './pages/ESynC.jsx';
 import Events from './pages/Events.jsx';
 import Handshake from './pages/Handshake.jsx';
@@ -15,6 +16,7 @@ import Contact from './pages/Contact.jsx';
 const PAGES = {
   '/': Home,
   '/dashboard': Dashboard,
+  '/news': News,
   '/lab': Lab,
   '/esync': ESynC,
   '/events': Events,

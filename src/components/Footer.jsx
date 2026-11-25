@@ -34,6 +34,7 @@ export default function Footer() {
             <ul>
               <li><a href="#/">Home</a></li>
               <li><a href="#/dashboard">Brunei Economy Dashboard</a></li>
+              <li><a href="#/news">Economic News</a></li>
               <li><a href="#/lab">Economics Lab</a></li>
               <li><a href="#/events">Events</a></li>
               <li><a href="#/about">About Us</a></li>
