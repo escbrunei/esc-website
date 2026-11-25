@@ -1,12 +1,12 @@
 import React from 'react';
 
-// ESynC mascot: ESC's cat illustration (public/images/esync.png).
+// ESynC mascot: ESC's cat illustration (public/images/esync-robot.png).
 // badge: shows the cat in a cream circle (use on maroon backgrounds).
 // peeking: crops the cat's lower body so it looks over the edge of the footer.
 export default function ESynCCharacter({ size = 96, peeking = false, badge = false, className = '' }) {
   const img = (
     <img
-      src="images/esync.png"
+      src="images/esync-robot.png"
       alt="ESynC, the ESC economics assistant"
       width={size}
       height={Math.round(size * 1.14)}

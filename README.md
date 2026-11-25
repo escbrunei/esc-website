@@ -298,7 +298,7 @@ After going live, re-check on a real phone: open Ask ESynC, open the membership 
 public/data/*.csv              dashboard datasets (one per indicator)
 public/data/indicators.json    source, unit, status for each dataset
 public/data/news.json          news feed (written by the workflow)
-public/images/esync.png        ESynC cat mascot
+public/images/esync-robot.png  ESynC robot-cat mascot
 public/images/esc-crest.png    ESC crest (homepage)
 public/fonts/                  brand font files
 public/images/committee/       committee photos

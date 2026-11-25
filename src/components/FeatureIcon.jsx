@@ -44,7 +44,7 @@ export default function FeatureIcon({ kind }) {
   // ESynC: the cat with a speech bubble
   return (
     <span className="ficon ficon-esync" aria-hidden="true">
-      <img src="images/esync.png" alt="" />
+      <img src="images/esync-robot.png" alt="" />
       <span className="f-bubble">?</span>
     </span>
   );
