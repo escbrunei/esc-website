@@ -1,6 +1,7 @@
 import React from 'react';
 import members from '../data/members.json';
 import Avatar from '../components/Avatar.jsx';
+import ObjectiveIcon from '../components/ObjectiveIcon.jsx';
 import { CONFIG } from '../config.js';
 import { LinkedInLink } from '../components/Footer.jsx';
 import { joinProps } from '../lib/join.js';
@@ -40,7 +41,7 @@ export default function About() {
 
       <section className="section container" aria-labelledby="obj-h">
         <h2 id="obj-h" className="section-title">Our Objectives</h2>
-        <ol className="objectives">{OBJECTIVES.map((o) => <li key={o}>{o}</li>)}</ol>
+        <ol className="objectives obj-grid">{OBJECTIVES.map((o, i) => <li key={o}><ObjectiveIcon n={i + 1} /><span>{o}</span></li>)}</ol>
       </section>
 
       <section className="section band">

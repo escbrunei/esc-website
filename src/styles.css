@@ -892,3 +892,40 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .bs-stats { justify-content: center; }
 .bs-stat { align-items: center; text-align: center; }
 .bs-card .btn, .bs-link { margin-left: auto; margin-right: auto; }
+
+/* Objectives with animated icons */
+.obj-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); }
+.obj-grid li { padding: 1.2rem 1.2rem 1.3rem; text-align: center; display: flex; flex-direction: column; align-items: center; gap: .6rem; }
+.obj-grid li::before { position: absolute; left: 1rem; top: 1rem; }
+.obj-icon { width: 120px; height: 90px; }
+.obj-1 .draw { stroke-dasharray: 70; animation: obj-draw 3s ease-in-out infinite; }
+@keyframes obj-draw { 0% { stroke-dashoffset: 70; } 50%, 100% { stroke-dashoffset: 0; } }
+.obj-1 .spin { animation: obj-spin 4s linear infinite; }
+@keyframes obj-spin { to { transform: rotate(360deg); } }
+.obj-2 .talk-a { animation: obj-talk 3s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom left; }
+.obj-2 .talk-b { animation: obj-talk 3s ease-in-out infinite 1.5s; transform-box: fill-box; transform-origin: bottom right; }
+@keyframes obj-talk { 0%, 100% { transform: scale(.92); opacity: .65; } 25%, 45% { transform: scale(1); opacity: 1; } }
+.obj-2 .dot { animation: obj-dot 1s ease-in-out infinite; }
+.obj-2 .d1 { animation-delay: .15s; } .obj-2 .d2 { animation-delay: .3s; }
+@keyframes obj-dot { 50% { transform: translateY(-3px); } }
+.obj-3 .link { animation: obj-dash 1.2s linear infinite; }
+@keyframes obj-dash { to { stroke-dashoffset: -16; } }
+.obj-3 .node { animation: obj-pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.obj-3 .n1 { animation-delay: .6s; } .obj-3 .n2 { animation-delay: 1.2s; } .obj-3 .n3 { animation-delay: 1.8s; }
+@keyframes obj-pulse { 0%, 100% { transform: scale(1); } 20% { transform: scale(1.25); } }
+.obj-4 .grow { animation: obj-grow 3.2s ease-in-out infinite; }
+@keyframes obj-grow { 0% { transform: scaleY(.15); opacity: .4; } 50%, 100% { transform: scaleY(1); opacity: 1; } }
+.obj-5 .person { animation: obj-bob 1.6s ease-in-out infinite; }
+.obj-5 .p1 { animation-delay: .25s; } .obj-5 .p2 { animation-delay: .5s; }
+@keyframes obj-bob { 50% { transform: translateY(-4px); } }
+.obj-5 .heart { animation: obj-heart 2.4s ease-out infinite; }
+@keyframes obj-heart { 0% { transform: translateY(8px) scale(.6); opacity: 0; } 30% { opacity: 1; } 100% { transform: translateY(-10px) scale(1); opacity: 0; } }
+.obj-6 .bar { animation: obj-bar 3s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom; }
+.obj-6 .b1 { animation-delay: .2s; } .obj-6 .b2 { animation-delay: .4s; }
+@keyframes obj-bar { 0% { transform: scaleY(.3); } 40%, 100% { transform: scaleY(1); } }
+.obj-6 .rise { stroke-dasharray: 120; animation: obj-rise 3s ease-in-out infinite; }
+.obj-6 .rise polyline, .obj-6 .rise path { stroke-dasharray: 120; animation: obj-draw2 3s ease-in-out infinite; }
+@keyframes obj-draw2 { 0%, 30% { stroke-dashoffset: 120; } 70%, 100% { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .obj-icon * { animation: none !important; } }
+/* centre the tagline exactly over the door */
+.escape-street .escape-tag { left: 185px !important; right: auto !important; width: max-content; }
