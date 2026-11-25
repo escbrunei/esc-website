@@ -334,3 +334,10 @@ select:focus, input:focus, textarea:focus { border-color: var(--maroon); outline
 @media (max-width: 640px) {
   .news-summary { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 }
+
+/* Plate Gothic Three Four: regular weight only (bold is too heavy) */
+h1, h2, h3, .brand-mark, .brand-text, .footer-title, .avatar-initials, .thumb-fallback, .footer-col h2 {
+  font-weight: 400;
+  font-synthesis: none;
+}
+.news-item h3 { font-weight: 700; } /* news headlines use the body font */
