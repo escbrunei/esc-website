@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import EconomyRoad from '../components/EconomyRoad.jsx';
 import FeatureIcon from '../components/FeatureIcon.jsx';
 import { openESynC } from '../lib/esync.js';
@@ -9,7 +9,8 @@ import { joinProps } from '../lib/join.js';
 
 export default function Home() {
   const [hover, setHover] = useState(null);
-  const hv = (i) => ({ onMouseEnter: () => setHover(i), onMouseLeave: () => setHover(null), onFocus: () => setHover(i), onBlur: () => setHover(null) });
+  const cardRefs = useRef([]);
+  const hv = (i) => ({ ref: (el) => { cardRefs.current[i] = el; }, onMouseEnter: () => setHover(i), onMouseLeave: () => setHover(null), onFocus: () => setHover(i), onBlur: () => setHover(null) });
   const next = getEvents().upcoming.find((e) => e.series === 'invisible-handshake');
   return (
     <>
@@ -48,7 +49,7 @@ export default function Home() {
           <a className="card feature" href="#/news" {...hv(1)}>
             <FeatureIcon kind="news" />
             <h2>Economic News</h2>
-            <p>Hourly headlines and official DEPS and BDCB releases for Brunei, ASEAN and the world.</p>
+            <p>Daily headlines and official DEPS and BDCB releases for Brunei, ASEAN and the world.</p>
             <span className="more">Read the news →</span>
           </a>
           <a className="card feature" href="#/lab" {...hv(2)}>
@@ -57,15 +58,9 @@ export default function Home() {
             <p>Shift supply and demand to see what happens to prices, and practise calculating inflation from CPI.</p>
             <span className="more">Start experimenting →</span>
           </a>
-          <button type="button" className="card feature as-button" onClick={() => openESynC({ origin: 'home' })} {...hv(3)}>
-            <FeatureIcon kind="esync" />
-            <h2>Ask ESynC</h2>
-            <p>Get plain-language explanations, help reading Brunei’s data and step-by-step guidance on calculations.</p>
-            <span className="more">Start a chat →</span>
-          </button>
         </div>
-        <EconomyRoad target={hover} />
       </section>
+      <EconomyRoad targetEl={hover != null ? cardRefs.current[hover] : null} />
 
       <section className="section band">
         <div className="container handshake-feature">

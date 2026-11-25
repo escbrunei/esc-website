@@ -102,7 +102,7 @@ export default function ESynC() {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      setMessages([...next, { role: 'assistant', content: data.reply || 'Sorry, I didn’t get an answer. Please try again.' }]);
+      setMessages([...next, { role: 'assistant', content: data.reply || 'Sorry, I didn’t get an answer. Please try again.', sources: data.sources || [] }]);
     } catch {
       setMessages([...next, { role: 'assistant', system: true, content: 'Sorry, ESynC couldn’t be reached. Please check your connection and try again.' }]);
     } finally {
@@ -134,6 +134,16 @@ export default function ESynC() {
             <li key={i} className={`msg ${m.role} ${m.system ? 'system' : ''}`}>
               <span className="sr-only">{m.role === 'user' ? 'You said:' : 'ESynC said:'}</span>
               <RichText text={m.content} />
+              {m.sources?.length > 0 && (
+                <div className="msg-sources">
+                  <span className="msg-sources-label">Sources</span>
+                  <ol>
+                    {m.sources.map((src) => (
+                      <li key={src.url}><a href={src.url} target="_blank" rel="noopener noreferrer">{src.title}</a> <span className="src-host">{(() => { try { return new URL(src.url).hostname.replace(/^www\./, ''); } catch { return ''; } })()}</span></li>
+                    ))}
+                  </ol>
+                </div>
+              )}
             </li>
           ))}
           {busy && <li className="msg assistant typing"><span className="sr-only">ESynC is typing</span><i /><i /><i /></li>}

@@ -3,6 +3,9 @@ export const CONFIG = {
   ESC_EMAIL: 'info.escbrunei@gmail.com',
   INSTAGRAM_HANDLE: '@escbrunei',
   INSTAGRAM_URL: 'https://www.instagram.com/escbrunei/',
+  // Merch: one link for all orders (Google Form, WhatsApp, etc.). A product's own orderUrl wins.
+  MERCH_ORDER_URL: '',
+
   // Live Instagram feeds (JSON feed URLs from behold.so, e.g. 'https://feeds.behold.so/AbC123').
   // Leave empty to show a simple Follow card instead.
   INSTAGRAM_FEED_URL: '',

@@ -79,7 +79,7 @@ export default function NewsSection({ showTitle = true }) {
           {!data && !failed && <p className="muted">Loading news…</p>}
           {data && items.length === 0 && (
             <div className="empty">
-              <p>No items here yet. The news feed refreshes every hour.</p>
+              <p>No items here yet. The news feed refreshes once a day.</p>
               <p>For ESC announcements, follow <a href={CONFIG.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{CONFIG.INSTAGRAM_HANDLE}</a>.</p>
             </div>
           )}

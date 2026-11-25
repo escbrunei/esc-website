@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="container">
           <p className="eyebrow">Contact Us</p>
           <h1>Get in touch</h1>
-          <p className="lead">Questions, partnerships or speaking at an event: we’d love to hear from you.</p>
+          <p className="lead">Questions or partnerships: we’d love to hear from you.</p>
         </div>
       </section>
       <section className="section container">

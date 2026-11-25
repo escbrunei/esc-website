@@ -34,7 +34,7 @@ You need a free GitHub account.
 4. Go to the **Actions** tab. Open **Update news and deploy to GitHub Pages** and click **Run workflow** (or wait for the next save to `main`).
 5. After about two minutes the site is live at `https://YOUR-USERNAME.github.io/esc-website/`. The link also appears in **Settings → Pages**.
 
-From then on, **every change saved to the `main` branch republishes the site automatically**, and the news feed refreshes every hour.
+From then on, **every change saved to the `main` branch republishes the site automatically**, and the news feed refreshes once a day.
 
 **Custom domain (optional):** Settings → Pages → Custom domain. Follow GitHub's DNS instructions.
 
@@ -182,7 +182,7 @@ The CPI practice data in the Economics Lab is in `src/pages/Lab.jsx` (the `CPI` 
 
 ## News & releases: add or change sources
 
-The workflow `.github/workflows/deploy.yml` runs **every hour**. It runs `scripts/fetch-news.mjs`, which:
+The workflow `.github/workflows/deploy.yml` runs **once a day** (07:07 Brunei time). It runs `scripts/fetch-news.mjs`, which:
 
 - reads the sources listed in `scripts/news-sources.json`
 - removes duplicates (same link or same headline)
@@ -272,6 +272,10 @@ Set a monthly spending limit in the Anthropic console.
 Headings use **Plate Gothic Three Four** and body text uses **Glacial Indifference**. Upload the font files to `public/fonts/` with the names listed in `public/fonts/README.md`. Until then, similar system fonts are used. Glacial Indifference is free. Check that your Plate Gothic licence allows web use.
 
 ---
+
+## Merch
+
+Edit `src/data/merch.json` (see its `_example`). Upload product photos to `public/images/merch/`. Set one order link for everything in `src/config.js` → `MERCH_ORDER_URL`, or give a product its own `orderUrl`. With no link, the Order button emails the committee.
 
 ## Testing checklist
 

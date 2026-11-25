@@ -9,12 +9,13 @@ const GROUPS = [
     type: 'menu', id: 'explore', label: 'Explore',
     items: [
       { to: '/dashboard', label: 'Brunei Economy', hint: 'Charts and data' },
-      { to: '/news', label: 'News', hint: 'Hourly headlines and releases' },
+      { to: '/news', label: 'News', hint: 'Daily headlines and releases' },
       { to: '/lab', label: 'Economics Lab', hint: 'Simulator and exercises' },
       { esync: true, label: 'Ask ESynC', hint: 'Our economics assistant' },
     ],
   },
   { type: 'link', to: '/events', label: 'Events' },
+  { type: 'link', to: '/merch', label: 'Merch' },
   {
     type: 'menu', id: 'about', label: 'About',
     items: [

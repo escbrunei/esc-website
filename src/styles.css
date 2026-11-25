@@ -546,3 +546,39 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 }
 @media (prefers-reduced-motion: reduce) { .float-body, .float-label, .float-shadow, .float-spark { animation: none; } }
 .float-label { border: 2px solid var(--gold); }
+
+/* Full-width road */
+.features { padding-bottom: 1.2rem; }
+.eco-road { margin-top: 0; border-radius: 0; border-left: 0; border-right: 0; width: 100%; }
+.eco-flip { position: relative; transition: transform .25s; }
+.eco-logo { position: absolute; left: 4px; top: 6px; width: 70px; height: 38px; display: grid; place-items: center; font-family: Georgia, serif; font-size: 16px; letter-spacing: 2px; color: #FFC549; pointer-events: none; }
+.eco-flip[style*="scaleX(-1)"] + .eco-logo { left: 46px; }
+.feature-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+/* ESynC answer sources */
+.msg-sources { margin-top: .7rem; padding-top: .6rem; border-top: 1px dashed var(--line); font-size: .88rem; }
+.msg-sources-label { display: inline-block; background: var(--gold-soft); border: 1px solid #f1d491; color: var(--maroon); border-radius: 999px; padding: 0 .6rem; font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; }
+.msg-sources ol { margin: .4rem 0 0; padding-left: 1.2rem; }
+.msg-sources li { margin-bottom: .2rem; }
+.src-host { color: var(--muted); font-size: .8rem; }
+
+/* Footer: Follow Us icons */
+.social-row { display: flex !important; flex-wrap: wrap; gap: .7rem !important; }
+.footer-col .social { position: relative; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; color: var(--maroon) !important; background: var(--gold); text-decoration: none !important; transition: transform .2s, background .2s; }
+.footer-col .social:hover, .footer-col .social:focus-visible { transform: translateY(-3px); background: #fff; }
+.social-tag { position: absolute; bottom: -6px; right: -8px; background: var(--maroon); color: var(--gold); border: 1.5px solid var(--gold); border-radius: 999px; font-size: .62rem; padding: 0 .3rem; line-height: 1.4; }
+.footer-email { margin-top: .9rem; font-size: .9rem; }
+.footer-email a { color: #f3e3e0 !important; }
+
+/* Merch */
+.merch-grid { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+.merch-card { display: flex; flex-direction: column; gap: .3rem; }
+.merch-card .btn { margin-top: auto; align-self: flex-start; }
+.merch-img { position: relative; aspect-ratio: 1 / 1; border-radius: 12px; overflow: hidden; background: var(--gold-soft); margin-bottom: .6rem; }
+.merch-img img { width: 100%; height: 100%; object-fit: cover; }
+.merch-ph { display: grid; place-items: center; height: 100%; font-family: var(--font-head); color: var(--maroon); font-size: 2rem; letter-spacing: .1em; }
+.merch-status { position: absolute; top: 10px; left: 10px; background: var(--maroon); color: var(--gold); border-radius: 999px; padding: .1rem .65rem; font-size: .78rem; }
+.merch-status.soldout { background: #6d5b57; color: #fff; }
+.merch-price { color: var(--maroon); font-size: 1.15rem; margin: 0; }
+.merch-options { list-style: none; padding: 0; margin: .2rem 0 .6rem; display: flex; flex-wrap: wrap; gap: .35rem; }
+.merch-options li { border: 1px solid var(--line); border-radius: 999px; padding: .05rem .6rem; font-size: .85rem; }

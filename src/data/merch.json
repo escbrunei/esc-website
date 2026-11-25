@@ -1,0 +1,14 @@
+{
+  "_howToEdit": "Add one object per product to \"items\". Put photos in public/images/merch/ and write them as \"images/merch/your-photo.jpg\". price is in Brunei dollars (number). status: \"available\", \"preorder\" or \"soldout\". orderUrl is the link buyers use to order (Google Form, WhatsApp link, Instagram DM, etc.); leave it empty to use MERCH_ORDER_URL from src/config.js, or the ESC email if that is empty too. Copy _example into items to start.",
+  "_example": {
+    "id": "esc-tee-maroon",
+    "name": "ESC T-shirt (Maroon)",
+    "price": 15,
+    "image": "images/merch/esc-tee-maroon.jpg",
+    "description": "Soft cotton tee with the ESC crest.",
+    "options": ["S", "M", "L", "XL"],
+    "status": "available",
+    "orderUrl": ""
+  },
+  "items": []
+}

@@ -12,7 +12,6 @@ export function LinkedInLink({ className = '' }) {
 }
 
 export default function Footer() {
-  const speakMail = `mailto:${CONFIG.ESC_EMAIL}?subject=${encodeURIComponent('Speaking at an ESC event')}`;
   return (
     <footer className="site-footer">
       <div className="footer-inner">
@@ -37,21 +36,33 @@ export default function Footer() {
             <ul>
               <li><a {...joinProps}>Join ESC</a></li>
               <li><a href="#/invisible-handshake">The Invisible Handshake</a></li>
-              <li><a href={speakMail}>Speak at an ESC event</a></li>
+              <li><a href="#/merch">Merch</a></li>
               <li><button type="button" className="linklike" onClick={() => openESynC({ origin: 'home' })}>Ask ESynC</button></li>
             </ul>
           </div>
           <div className="footer-col">
-            <h2>Contact Us</h2>
-            <ul>
-              <li><span className="lbl">Email</span><a href={`mailto:${CONFIG.ESC_EMAIL}`}>{CONFIG.ESC_EMAIL}</a></li>
-              <li><span className="lbl">Instagram</span><a href={CONFIG.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{CONFIG.INSTAGRAM_HANDLE}</a></li>
-              <li><span className="lbl">LinkedIn</span><LinkedInLink /></li>
+            <h2>Follow Us</h2>
+            <ul className="social-row">
+              <li><a className="social" href={`mailto:${CONFIG.ESC_EMAIL}`} aria-label={`Email ${CONFIG.ESC_EMAIL}`} title={CONFIG.ESC_EMAIL}><MailIcon /></a></li>
+              <li><a className="social" href={CONFIG.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Instagram ${CONFIG.INSTAGRAM_HANDLE}`} title={CONFIG.INSTAGRAM_HANDLE}><InstagramIcon /></a></li>
+              {CONFIG.LINKEDIN_URL && <li><a className="social" href={CONFIG.LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="ESC on LinkedIn" title="LinkedIn"><LinkedInIcon /></a></li>}
+              <li><a className="social" href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`The Invisible Handshake on Instagram ${CONFIG.IHS_INSTAGRAM_HANDLE}`} title={`The Invisible Handshake ${CONFIG.IHS_INSTAGRAM_HANDLE}`}><InstagramIcon /><span className="social-tag">IHS</span></a></li>
             </ul>
+            <p className="footer-email"><a href={`mailto:${CONFIG.ESC_EMAIL}`}>{CONFIG.ESC_EMAIL}</a></p>
           </div>
         </div>
         <div className="container footer-bottom">© {new Date().getFullYear()} Economic Students’ Chamber (DPE) Brunei</div>
       </div>
     </footer>
   );
+}
+
+function MailIcon() {
+  return (<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5" fill="none" stroke="currentColor" strokeWidth="1.8" /><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" /></svg>);
+}
+function InstagramIcon() {
+  return (<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" strokeWidth="1.8" /><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" strokeWidth="1.8" /><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor" /></svg>);
+}
+function LinkedInIcon() {
+  return (<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" strokeWidth="1.8" /><rect x="7" y="10" width="2.2" height="7" fill="currentColor" /><circle cx="8.1" cy="7.3" r="1.3" fill="currentColor" /><path d="M11.5 17v-7h2.1v1c.5-.8 1.4-1.2 2.4-1.2 1.8 0 2.7 1.1 2.7 3.2V17h-2.2v-3.6c0-1-.4-1.6-1.3-1.6s-1.5.6-1.5 1.7V17z" fill="currentColor" /></svg>);
 }

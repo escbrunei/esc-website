@@ -15,7 +15,6 @@ const OBJECTIVES = [
 ];
 
 export default function About() {
-  const speakMail = `mailto:${CONFIG.ESC_EMAIL}?subject=${encodeURIComponent('Speaking at an ESC event')}`;
 
   return (
     <>
@@ -65,7 +64,7 @@ export default function About() {
         <h2 id="gi-h" className="section-title">Get Involved</h2>
         <div className="hero-actions">
           <a className="btn btn-large" {...joinProps}>Join ESC</a>
-          <a className="btn btn-large btn-ghost" href={speakMail}>Speak at an ESC Event</a>
+          <a className="btn btn-large btn-ghost" href="#/merch">Shop ESC Merch</a>
         </div>
         <p className="muted">Instagram: <a href={CONFIG.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{CONFIG.INSTAGRAM_HANDLE}</a> · LinkedIn: <LinkedInLink /></p>
       </section>
