@@ -887,3 +887,8 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .story-wrap .section-title::after { margin-left: auto; margin-right: auto; }
 .story-wrap .muted { margin-left: auto; margin-right: auto; }
 @media (max-width: 640px) { .lead-break { display: none; } }
+/* panorama card: centre everything inside it */
+.bs-card { text-align: center; }
+.bs-stats { justify-content: center; }
+.bs-stat { align-items: center; text-align: center; }
+.bs-card .btn, .bs-link { margin-left: auto; margin-right: auto; }
