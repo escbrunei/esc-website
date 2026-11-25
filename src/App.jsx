@@ -2,6 +2,7 @@ import React from 'react';
 import { useRoute } from './lib/router.js';
 import Nav from './components/Nav.jsx';
 import Footer from './components/Footer.jsx';
+import FloatingESynC from './components/FloatingESynC.jsx';
 import Home from './pages/Home.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import Lab from './pages/Lab.jsx';
@@ -37,6 +38,7 @@ export default function App() {
         <Page params={route.params} />
       </main>
       <Footer />
+      <FloatingESynC path={route.path} />
     </>
   );
 }

@@ -524,3 +524,25 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
   .nav-group.is-open .nav-menu { display: block; transform: none; }
   .site-nav .nav-item { border-bottom: 0; padding: .6rem .8rem; font-size: 1rem; }
 }
+
+/* ===== Floating ESynC robot cat (fixed bottom-right) ===== */
+.site-footer { margin-top: 3rem; }
+.float-esync { position: fixed; right: 18px; bottom: 16px; z-index: 45; display: flex; align-items: center; gap: .5rem; background: none; border: 0; padding: 0; cursor: pointer; font: inherit; }
+.float-body { position: relative; display: block; width: 92px; animation: float-fly 3.2s ease-in-out infinite; filter: drop-shadow(0 6px 10px rgba(98,22,13,.25)); }
+.float-body img { width: 100%; height: auto; display: block; transition: transform .25s; }
+.float-esync:hover .float-body img, .float-esync:focus-visible .float-body img { transform: scale(1.08) rotate(-4deg); }
+.float-shadow { position: absolute; right: 20px; bottom: -6px; width: 56px; height: 10px; border-radius: 50%; background: rgba(98,22,13,.22); filter: blur(2px); animation: float-shadow 3.2s ease-in-out infinite; }
+.float-label { background: var(--maroon); color: var(--gold); padding: .45rem .9rem; border-radius: 999px 999px 4px 999px; box-shadow: 0 6px 14px rgba(98,22,13,.25); white-space: nowrap; animation: float-fly 3.2s ease-in-out infinite; animation-delay: -.4s; }
+.float-spark { position: absolute; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 6px 2px rgba(255,197,73,.8); opacity: 0; animation: float-spark 2.4s ease-in-out infinite; }
+.float-spark.s1 { top: 4%; left: 58%; }
+.float-spark.s2 { top: 30%; right: -4px; animation-delay: 1.2s; }
+@keyframes float-fly { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-10px) rotate(2deg); } }
+@keyframes float-shadow { 0%, 100% { transform: scaleX(1); opacity: .9; } 50% { transform: scaleX(.75); opacity: .5; } }
+@keyframes float-spark { 0%, 100% { opacity: 0; transform: scale(.4); } 40% { opacity: 1; transform: scale(1); } }
+@media (max-width: 640px) {
+  .float-body { width: 68px; }
+  .float-label { display: none; }
+  .float-esync { right: 12px; bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { .float-body, .float-label, .float-shadow, .float-spark { animation: none; } }
+.float-label { border: 2px solid var(--gold); }

@@ -1,7 +1,6 @@
 import React from 'react';
 import { CONFIG } from '../config.js';
 import { openESynC } from '../lib/esync.js';
-import ESynCCharacter from './ESynCCharacter.jsx';
 import { joinProps } from '../lib/join.js';
 
 export function LinkedInLink({ className = '' }) {
@@ -16,14 +15,6 @@ export default function Footer() {
   const speakMail = `mailto:${CONFIG.ESC_EMAIL}?subject=${encodeURIComponent('Speaking at an ESC event')}`;
   return (
     <footer className="site-footer">
-      <div className="footer-peek container">
-        <button type="button" className="peek-button" onClick={() => openESynC({ origin: 'home' })} aria-label="Ask ESynC">
-          <ESynCCharacter size={130} peeking />
-        </button>
-        <button type="button" className="btn btn-gold footer-ask" onClick={() => openESynC({ origin: 'home' })}>
-          Ask ESynC
-        </button>
-      </div>
       <div className="footer-inner">
         <div className="container footer-grid">
           <div className="footer-brand">
