@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T17:09:18.999Z",
-  "lastSuccessfulRefresh": "2026-11-25T17:09:18.999Z",
+  "generatedAt": "2026-11-25T17:14:01.077Z",
+  "lastSuccessfulRefresh": "2026-11-25T17:14:01.077Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:09:18.999Z",
+      "lastSuccess": "2026-11-25T17:14:01.077Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:09:18.999Z",
+      "lastSuccess": "2026-11-25T17:14:01.077Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:09:18.999Z",
+      "lastSuccess": "2026-11-25T17:14:01.077Z",
       "count": 9
     },
     {
@@ -36,21 +36,21 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:09:18.999Z",
+      "lastSuccess": "2026-11-25T17:14:01.077Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:09:18.999Z",
+      "lastSuccess": "2026-11-25T17:14:01.077Z",
       "count": 47
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:09:18.999Z",
+      "lastSuccess": "2026-11-25T17:14:01.077Z",
       "count": 30
     }
   ],
@@ -62,7 +62,7 @@
       "title": "Poundland collapses putting 11,000 jobs at risk",
       "publisher": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T17:00:15.000Z",
+      "publishedAt": "2026-11-25T17:11:09.000Z",
       "summary": "The discount chain has collapsed into administration after its owners failed to find a buyer.",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9b3b/live/67717ce0-e8ed-11f1-8808-1d4222955d7e.jpg",
       "sourceId": "bbc-business"
@@ -112,7 +112,7 @@
       "url": "https://www.bbc.co.uk/news/videos/ckregn0gq2ydo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T16:24:30.000Z",
       "summary": "The retail chain has collapsed just one year after being bought for £1 by an American firm.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fcdf/live/9552fe90-e8f2-11f1-8808-1d4222955d7e.jpg",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bc81/live/3c9523e0-e8f3-11f1-a094-5fdc692f3e33.jpg",
       "sourceId": "bbc-business"
     },
     {
