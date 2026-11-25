@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T15:50:14.400Z",
-  "lastSuccessfulRefresh": "2026-11-25T15:50:14.400Z",
+  "generatedAt": "2026-11-25T16:25:02.692Z",
+  "lastSuccessfulRefresh": "2026-11-25T16:25:02.692Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T15:50:14.400Z",
+      "lastSuccess": "2026-11-25T16:25:02.692Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T15:50:14.400Z",
+      "lastSuccess": "2026-11-25T16:25:02.692Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T15:50:14.400Z",
+      "lastSuccess": "2026-11-25T16:25:02.692Z",
       "count": 9
     },
     {
@@ -36,48 +36,48 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T15:50:14.400Z",
+      "lastSuccess": "2026-11-25T16:25:02.692Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T15:50:14.400Z",
-      "count": 46
+      "lastSuccess": "2026-11-25T16:25:02.692Z",
+      "count": 47
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T15:50:14.400Z",
+      "lastSuccess": "2026-11-25T16:25:02.692Z",
       "count": 30
     }
   ],
   "items": [
     {
-      "id": "bbc-business-EwbWQ4ZzE0enJ5bw-0",
+      "id": "bbc-business-0zdmdkbjAzN3o0bw-0",
       "region": "global",
       "kind": "headline",
-      "title": "US stocks fall further as fears over AI intensify",
+      "title": "Poundland collapses putting 11,000 jobs at risk",
       "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T15:24:34.000Z",
-      "summary": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/76b3/live/acdb5650-e8e0-11f1-a3b9-79c60ec9ab33.jpg",
+      "url": "https://www.bbc.co.uk/news/articles/cm3vgdn037z4o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T16:24:30.000Z",
+      "summary": "The discount chain has collapsed into administration after its owners failed to find a buyer.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6eda/live/616fb5d0-e8bd-11f1-ac76-db9e97f93d67.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "cnbc-economy-QtZ2lmdHMuaHRtbA-1",
+      "id": "bbc-business-rcmVnbjBncTJ5ZG8-1",
       "region": "global",
       "kind": "headline",
-      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
-      "publisher": "CNBC",
-      "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
-      "publishedAt": "2026-11-25T14:55:10.000Z",
-      "summary": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
-      "image": "https://image.cnbcfm.com/api/v1/image/108559208-1795612724128-108559208-1795612564049-gettyimages-2306242882-BLACK_FRIDAY_SHOPPING.jpg?v=1795612731&w=1920&h=1080",
-      "sourceId": "cnbc-economy"
+      "title": "Why has Poundland collapsed and what happens next?",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/videos/ckregn0gq2ydo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T16:24:30.000Z",
+      "summary": "The retail chain has collapsed just one year after being bought for £1 by an American firm.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ab50/live/540f97f0-e8ec-11f1-99b6-a35a62fa4264.jpg",
+      "sourceId": "bbc-business"
     },
     {
       "id": "bbc-business-g5M3I5a2U1cDk3bw-2",
@@ -86,13 +86,61 @@
       "title": "US announces new tariffs on host of countries including China",
       "publisher": "BBC News",
       "url": "https://www.bbc.co.uk/news/articles/c893r9ke5p97o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T14:52:22.000Z",
+      "publishedAt": "2026-11-25T16:21:34.000Z",
       "summary": "The new levies would hit many of America's biggest trading partners, including China and the EU.",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/511d/live/da29c130-e860-11f1-a330-6153c8fb2fad.jpg",
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-c2F5cy02NTgyMjEx-3",
+      "id": "cnbc-economy-QtZ2lmdHMuaHRtbA-3",
+      "region": "global",
+      "kind": "headline",
+      "title": "Even the price of toys is on the rise. How Americans are scaling back holiday plans",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/25/holiday-inflation-thanksgiving-travel-food-gifts.html",
+      "publishedAt": "2026-11-25T16:17:13.000Z",
+      "summary": "U.S. consumers face higher food, travel and gift costs in 2026 as inflation and Iran-war energy shocks pressure holiday budgets.",
+      "image": "https://image.cnbcfm.com/api/v1/image/108559208-1795612724128-108559208-1795612564049-gettyimages-2306242882-BLACK_FRIDAY_SHOPPING.jpg?v=1795612731&w=1920&h=1080",
+      "sourceId": "cnbc-economy"
+    },
+    {
+      "id": "cna-business-maXRzLTY1ODI0MDY-4",
+      "region": "asean",
+      "kind": "headline",
+      "title": "Anthropic's slide tests Wall Street's lofty bets on future AI profits",
+      "publisher": "CNA",
+      "url": "https://www.channelnewsasia.com/business/anthropics-slide-tests-wall-streets-lofty-bets-future-ai-profits-6582406",
+      "publishedAt": "2026-11-25T16:12:55.000Z",
+      "summary": "",
+      "image": "https://dam.mediacorp.sg/image/upload/s--VMXC_3oJ--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T161255Z_1_LYNXNPEMAO1HM_RTROPTP_3_ANTHROPIC-IPO-GREENSHOE.JPG?itok=1vNh8WS3",
+      "sourceId": "cna-business"
+    },
+    {
+      "id": "bbc-business-EwbWQ4ZzE0enJ5bw-5",
+      "region": "global",
+      "kind": "headline",
+      "title": "US stocks fall further as fears over AI intensify",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T16:07:26.000Z",
+      "summary": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/76b3/live/acdb5650-e8e0-11f1-a3b9-79c60ec9ab33.jpg",
+      "sourceId": "bbc-business"
+    },
+    {
+      "id": "bbc-business-01eTFnNDJ4Mnd6bw-6",
+      "region": "global",
+      "kind": "headline",
+      "title": "Energy price increase 'could put me in hospital'",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y1g42x2wzo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T16:06:25.000Z",
+      "summary": "People on Teesside share their views on the news energy bills are expected to increase by 26%.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/e42d/live/92f87c80-e8e1-11f1-99b6-a35a62fa4264.jpg",
+      "sourceId": "bbc-business"
+    },
+    {
+      "id": "cna-business-c2F5cy02NTgyMjEx-7",
       "region": "asean",
       "kind": "headline",
       "title": "US FinCEN takes some systems offline after cyber incident, official says",
@@ -104,7 +152,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-Zycmdxa253MGpsbw-4",
+      "id": "bbc-business-Zycmdxa253MGpsbw-8",
       "region": "global",
       "kind": "headline",
       "title": "Fuel price hike will make life 'almost impossible'",
@@ -116,7 +164,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cnbc-economy-VyLTIwMjYuaHRtbA-5",
+      "id": "cnbc-economy-VyLTIwMjYuaHRtbA-9",
       "region": "global",
       "kind": "headline",
       "title": "Fed’s preferred inflation gauge accelerated to 3.8% in October, raising the 2027 stakes for the central bank",
@@ -128,7 +176,7 @@
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "cna-business-aW50cy02NTgyMDYx-6",
+      "id": "cna-business-aW50cy02NTgyMDYx-10",
       "region": "asean",
       "kind": "headline",
       "title": "Nio says AI use could lift gross margin by 10 %age points",
@@ -140,7 +188,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tc2F5LTY1ODIwMDY-7",
+      "id": "cna-business-tc2F5LTY1ODIwMDY-11",
       "region": "asean",
       "kind": "headline",
       "title": "Exclusive-UK advances plans for BBC iPlayer expansion to allow advertising and rival content, sources say",
@@ -152,7 +200,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-0yMHFucTMzZTkwbw-8",
+      "id": "bbc-business-0yMHFucTMzZTkwbw-12",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills to rise by 26% from January after gas prices surge",
@@ -164,7 +212,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-tM3dnNDdnbmpubm8-9",
+      "id": "bbc-business-tM3dnNDdnbmpubm8-13",
       "region": "global",
       "kind": "headline",
       "title": "Why are bills going up?",
@@ -176,7 +224,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-1MzlnejRubWptOW8-10",
+      "id": "bbc-business-1MzlnejRubWptOW8-14",
       "region": "global",
       "kind": "headline",
       "title": "My husband lives off sandwiches due to energy costs",
@@ -188,19 +236,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-ZqcmVuMDMwOHh6bw-11",
-      "region": "global",
-      "kind": "headline",
-      "title": "Salon owner's chore woes prompt skill-swapping app",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6jren0308xzo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T13:04:13.000Z",
-      "summary": "A salon owner sets up a skill-swapping app after she and clients were \"moaning\" about chores and admin.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9b68/live/5115a160-e8b6-11f1-9e64-bddd508b9881.jpg",
-      "sourceId": "bbc-business"
-    },
-    {
-      "id": "cna-business-b3N0cy02NTgxNjkx-12",
+      "id": "cna-business-b3N0cy02NTgxNjkx-15",
       "region": "asean",
       "kind": "headline",
       "title": "AI stocks slide on fears over infrastructure buildout costs",
@@ -212,7 +248,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-gyMHFuem5rcm40bw-13",
+      "id": "bbc-business-gyMHFuem5rcm40bw-16",
       "region": "global",
       "kind": "headline",
       "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down",
@@ -224,7 +260,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-zYXlzLTY1ODE1NDE-14",
+      "id": "cna-business-zYXlzLTY1ODE1NDE-17",
       "region": "asean",
       "kind": "headline",
       "title": "Walmart-backed PhonePe restarts IPO process, eyes up to $15 billion valuation in market debut, source says",
@@ -236,7 +272,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-15NDluZ3lkcXpwbw-15",
+      "id": "bbc-business-15NDluZ3lkcXpwbw-18",
       "region": "global",
       "kind": "headline",
       "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
@@ -248,7 +284,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-dGVjaC02NTgxNDQx-16",
+      "id": "cna-business-dGVjaC02NTgxNDQx-19",
       "region": "asean",
       "kind": "headline",
       "title": "EU postpones discussion to approve Tesla's self-driving tech",
@@ -260,7 +296,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-17",
+      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-20",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills will soar - here's how you can ease the pain",
@@ -272,7 +308,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-Yml0ZS02NTgxNDEx-18",
+      "id": "cna-business-Yml0ZS02NTgxNDEx-21",
       "region": "asean",
       "kind": "headline",
       "title": "Shein warns recovery will take time as e-commerce fees bite",
@@ -284,7 +320,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-dXJlZC02NTgxMzYx-19",
+      "id": "cna-business-dXJlZC02NTgxMzYx-22",
       "region": "asean",
       "kind": "headline",
       "title": "Retailers face rising AI cyberattack threat ahead of Black Friday, many uninsured",
@@ -296,7 +332,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-9ybXMtNjU4MTM3MQ-20",
+      "id": "cna-business-9ybXMtNjU4MTM3MQ-23",
       "region": "asean",
       "kind": "headline",
       "title": "LG Electronics to offload up to 2% in Indian unit to meet public float norms",
@@ -308,7 +344,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-NycmdxajJ6eDV5bw-21",
+      "id": "bbc-business-NycmdxajJ6eDV5bw-24",
       "region": "global",
       "kind": "headline",
       "title": "Zoe Kleinman: Nobody is irreplaceable - unless you're Jensen Huang",
@@ -320,7 +356,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-2eDI5dm5lN2xua28-22",
+      "id": "bbc-business-2eDI5dm5lN2xua28-25",
       "region": "global",
       "kind": "headline",
       "title": "Interest rate affect on Guernsey's housing market",
@@ -332,7 +368,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-Y2RkMjl2OG1wOWpv-23",
+      "id": "bbc-business-Y2RkMjl2OG1wOWpv-26",
       "region": "global",
       "kind": "headline",
       "title": "What will the energy cap changes mean for my bills?",
@@ -344,7 +380,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-5lcnktNjU4MDI2MQ-24",
+      "id": "cna-business-5lcnktNjU4MDI2MQ-27",
       "region": "asean",
       "kind": "headline",
       "title": "Oil prices rise over 1% after Houthis say they attacked Saudi refinery",
@@ -356,7 +392,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-b3JlYS02NTgxMTcx-25",
+      "id": "cna-business-b3JlYS02NTgxMTcx-28",
       "region": "asean",
       "kind": "headline",
       "title": "Aramco, S-Oil inaugurate $7 billion petrochemicals complex in South Korea",
@@ -368,7 +404,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-vcGVlLTY1ODEwODY-26",
+      "id": "cna-business-vcGVlLTY1ODEwODY-29",
       "region": "asean",
       "kind": "headline",
       "title": "'Crazy moves only look good in hindsight': Forrest Li on Singapore football, Shopee and a new era of e-commerce",
@@ -380,7 +416,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-Rvd24tNjU4MTExNg-27",
+      "id": "cna-business-Rvd24tNjU4MTExNg-30",
       "region": "asean",
       "kind": "headline",
       "title": "Walmart-owned Flipkart CEO Kalyan Krishnamurthy to step down",
@@ -392,7 +428,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-cml0eS02NTgxMDkx-28",
+      "id": "cna-business-cml0eS02NTgxMDkx-31",
       "region": "asean",
       "kind": "headline",
       "title": "Japan's JBIC, QatarEnergy sign MOU to strengthen energy security",
@@ -404,7 +440,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-EtdmktNjU4MTAzMQ-29",
+      "id": "cna-business-EtdmktNjU4MTAzMQ-32",
       "region": "asean",
       "kind": "headline",
       "title": "CD Projekt RED sees no material fourth-quarter hit from GTA VI",
@@ -416,7 +452,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-LXNheS02NTgxMDIx-30",
+      "id": "cna-business-LXNheS02NTgxMDIx-33",
       "region": "asean",
       "kind": "headline",
       "title": "Meta officials meet India's opposition Congress amid protests on content curbs, sources say",
@@ -428,7 +464,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-0ZW50LTY1ODA5NzY-31",
+      "id": "cna-business-0ZW50LTY1ODA5NzY-34",
       "region": "asean",
       "kind": "headline",
       "title": "Australia passes law forcing internet platforms to take down harmful content",
@@ -440,7 +476,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tc2F5LTY1ODA5MjY-32",
+      "id": "cna-business-tc2F5LTY1ODA5MjY-35",
       "region": "asean",
       "kind": "headline",
       "title": "Cognizant in talks to take over parts of S&P Global's Capital IQ operations, sources say",
@@ -452,7 +488,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-QtdXMtNjU4MDg1MQ-33",
+      "id": "cna-business-QtdXMtNjU4MDg1MQ-36",
       "region": "asean",
       "kind": "headline",
       "title": "Amazon to launch Amazon Autos in UK in early 2027 in first expansion beyond US",
@@ -464,7 +500,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cnbc-economy-9teS1vaWwuaHRtbA-34",
+      "id": "cnbc-economy-9teS1vaWwuaHRtbA-37",
       "region": "global",
       "kind": "headline",
       "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
@@ -476,7 +512,7 @@
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "bbc-business-JwZHcxcXg3amd4bw-35",
+      "id": "bbc-business-JwZHcxcXg3amd4bw-38",
       "region": "global",
       "kind": "headline",
       "title": "US attorney general dodges questions about Nvidia investigation",
@@ -488,19 +524,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-b3J0cy02NTgwNDYx-36",
-      "region": "asean",
-      "kind": "headline",
-      "title": "Starbucks to engage banks for sale of Japan business, Bloomberg News reports",
-      "publisher": "CNA",
-      "url": "https://www.channelnewsasia.com/business/starbucks-engage-banks-sale-japan-business-bloomberg-news-reports-6580461",
-      "publishedAt": "2026-11-25T03:32:50.000Z",
-      "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--jgqU8DiU--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T033250Z_2_LYNXNPEMAO08F_RTROPTP_3_GLOBAL-TRADE.JPG?itok=sFT2e-AM",
-      "sourceId": "cna-business"
-    },
-    {
-      "id": "bbc-business-tqMDVtMnpkeXJ5bw-37",
+      "id": "bbc-business-tqMDVtMnpkeXJ5bw-39",
       "region": "global",
       "kind": "headline",
       "title": "Trump's rescue of Nvidia's Huang brings political risks",
@@ -512,7 +536,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-13eTlqbmUwZzdxbw-38",
+      "id": "bbc-business-13eTlqbmUwZzdxbw-40",
       "region": "global",
       "kind": "headline",
       "title": "Why tiny cars are taking off across Europe",
@@ -524,7 +548,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "the-scoop-uZy1pbi1icnVuZWk-39",
+      "id": "the-scoop-uZy1pbi1icnVuZWk-41",
       "region": "brunei",
       "kind": "headline",
       "title": "Heavyweight charm: Sumo legend Hakuho Sho steps into the ring in Brunei",
@@ -536,7 +560,7 @@
       "sourceId": "the-scoop"
     },
     {
-      "id": "bbc-business-bGF5L3czY3Q5OHN5-40",
+      "id": "bbc-business-bGF5L3czY3Q5OHN5-42",
       "region": "global",
       "kind": "headline",
       "title": "Business Daily",
@@ -548,7 +572,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-M1eW44eDc0OGU5bw-41",
+      "id": "bbc-business-M1eW44eDc0OGU5bw-43",
       "region": "global",
       "kind": "headline",
       "title": "Will I get the £100 energy payment and when will I receive it?",
@@ -560,7 +584,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cnbc-economy-1pZHRlcm0uaHRtbA-42",
+      "id": "cnbc-economy-1pZHRlcm0uaHRtbA-44",
       "region": "global",
       "kind": "headline",
       "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
@@ -572,7 +596,7 @@
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "bbc-business-Y4OTRldmdwZWw1bw-43",
+      "id": "bbc-business-Y4OTRldmdwZWw1bw-45",
       "region": "global",
       "kind": "headline",
       "title": "Faisal Islam: Fears over the AI boom haven't gone away",
@@ -584,7 +608,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-rN3YycjZqMXlsM28-44",
+      "id": "bbc-business-rN3YycjZqMXlsM28-46",
       "region": "global",
       "kind": "headline",
       "title": "Four generations of a family working in one factory",
@@ -596,7 +620,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-03NTIzcHlrNzVsbw-45",
+      "id": "bbc-business-03NTIzcHlrNzVsbw-47",
       "region": "global",
       "kind": "headline",
       "title": "World Cup drove profits surge, says Marston's",
@@ -608,7 +632,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cnbc-economy-pc2stcG1pLmh0bWw-46",
+      "id": "cnbc-economy-pc2stcG1pLmh0bWw-48",
       "region": "global",
       "kind": "headline",
       "title": "Why France is at risk of recession — and what could keep it out of one",
@@ -620,7 +644,7 @@
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "bbc-business-E1eTFrOGV6NDA3bw-47",
+      "id": "bbc-business-E1eTFrOGV6NDA3bw-49",
       "region": "global",
       "kind": "headline",
       "title": "Trump faces backlash after saying he 'convinced' Nvidia to reinstate CEO Jensen Huang",
@@ -632,7 +656,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-bGF5L3czY3Q4bWpr-48",
+      "id": "bbc-business-bGF5L3czY3Q4bWpr-50",
       "region": "global",
       "kind": "headline",
       "title": "The Global Story",
@@ -641,30 +665,6 @@
       "publishedAt": "2026-11-24T10:00:00.000Z",
       "summary": "How did the entire global economy become dependent on one man?",
       "image": "https://ichef.bbci.co.uk/images/ic/240x135/p0ppl2rh.jpg",
-      "sourceId": "bbc-business"
-    },
-    {
-      "id": "bbc-business-ZuOTBnMmw4MmQxbw-49",
-      "region": "global",
-      "kind": "headline",
-      "title": "The shake-up facing renters as a new kind of landlord emerges",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c6n90g2l82d1o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-24T00:28:48.000Z",
-      "summary": "Companies building flats that they then rent out could usher in big changes for renters.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/8db7/live/089748f0-e7e7-11f1-99b6-a35a62fa4264.jpg",
-      "sourceId": "bbc-business"
-    },
-    {
-      "id": "bbc-business-YzhkMzZkNDN5OHBv-50",
-      "region": "global",
-      "kind": "headline",
-      "title": "BBC secret filming shows dog breeder selling sick puppies for £2k each",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c8d36d43y8po?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-24T00:11:08.000Z",
-      "summary": "The breeder's rating was downgraded but he continued to advertise as five-star, investigation finds.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/bbbd/live/db7cd3b0-e7d4-11f1-939f-471cde339c0e.jpg",
       "sourceId": "bbc-business"
     },
     {
