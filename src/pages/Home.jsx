@@ -63,7 +63,11 @@ export default function Home() {
         </div>
       </section>
       <EconomyRoad targetEl={hover != null ? cardRefs.current[hover] : null} />
-      <BruneiStory />
+      <section className="section container story-wrap" aria-labelledby="story-h">
+        <h2 id="story-h" className="section-title">Brunei’s economy at a glance</h2>
+        <p className="muted">Travel across Brunei with the arrows, or swipe. Every figure links to its official source.</p>
+        <BruneiStory />
+      </section>
 
       <section className="section band">
         <div className="container handshake-feature">

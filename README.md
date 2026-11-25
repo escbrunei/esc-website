@@ -311,7 +311,7 @@ After going live, re-check on a real phone: open Ask ESynC, open the membership 
 ## Where things live
 
 ```
-.github/workflows/deploy.yml   hourly news refresh + automatic deploy to GitHub Pages
+.github/workflows/deploy.yml   daily news refresh (07:07 Brunei time) + automatic deploy to GitHub Pages
 public/data/*.csv              dashboard datasets (one per indicator)
 public/data/indicators.json    source, unit, status for each dataset
 public/data/news.json          news feed (written by the workflow)

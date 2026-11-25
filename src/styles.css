@@ -742,3 +742,49 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .bs-plane-link:hover .bs-plane, .bs-plane-link:focus-visible .bs-plane { filter: drop-shadow(0 4px 8px rgba(98,22,13,.35)); }
 .bs-plane-hint { animation: bs-hint 2s ease-in-out infinite; }
 @keyframes bs-hint { 50% { opacity: .55; } }
+
+/* ESCape door v2: HD door, robot cat walks in, no highlight on ESC */
+.escape-tag b { background: none !important; padding: 0 !important; }
+.escape-man { width: 96px; bottom: 14px; }
+.escape-cat { display: block; transform: scaleX(-1); }            /* face the door (left) */
+.escape-cat img { width: 96px; height: auto; display: block; filter: drop-shadow(0 3px 3px rgba(98,22,13,.18)); }
+.escape.play .escape-cat { animation: esc-trot .32s ease-in-out 14 alternate; }
+@keyframes esc-trot { from { transform: scaleX(-1) translateY(0) rotate(0deg); } to { transform: scaleX(-1) translateY(-6px) rotate(-4deg); } }
+.escape-door img { image-rendering: auto; }
+
+/* ===== ESCape street scene ===== */
+.escape-street { position: relative; height: 300px; border-radius: var(--radius); overflow: hidden; border: 1px solid #f1d491; background: #fff8e8; margin-bottom: 1.4rem; }
+.street-bg { position: absolute; left: 0; bottom: 34px; width: 100%; height: 266px; }
+.street-curb { position: absolute; left: 0; right: 0; bottom: 0; height: 34px; background: #b9a397; border-top: 4px solid #8a6a5c; z-index: 0; }
+.street-people { position: absolute; left: 0; right: 0; bottom: 30px; height: 80px; z-index: 1; pointer-events: none; }
+.walker { position: absolute; bottom: 0; left: 0; animation: walk-r linear infinite; will-change: transform; }
+.walker.rev { animation-name: walk-l; }
+.walker.rev svg { transform: scaleX(-1); }
+@keyframes walk-r { from { transform: translateX(-60px); } to { transform: translateX(calc(1200px + 60px)); } }
+@keyframes walk-l { from { transform: translateX(calc(1200px + 60px)); } to { transform: translateX(-60px); } }
+.w-leg.a { animation: leg-a .55s ease-in-out infinite alternate; }
+.w-leg.b { animation: leg-b .55s ease-in-out infinite alternate; }
+.w-arm { animation: leg-b .55s ease-in-out infinite alternate; }
+@keyframes leg-a { from { transform: rotate(20deg); } to { transform: rotate(-20deg); } }
+@keyframes leg-b { from { transform: rotate(-20deg); } to { transform: rotate(20deg); } }
+
+/* door group centred on the pavement */
+.escape-street .escape { position: absolute; left: 50%; bottom: 26px; transform: translateX(-50%); z-index: 2; }
+.escape-street .escape-stage { width: 380px; height: 230px; }
+.escape-street .escape-shadow { display: none; }
+.escape-frame { box-shadow: none !important; -webkit-mask-size: 100% 100%; mask-size: 100% 100%; -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat; }
+.escape-street .escape-tag { position: absolute; left: 0; right: 0; bottom: 6px; margin: 0; z-index: 3; color: #fff8e8; font-size: .95rem; }
+@media (max-width: 640px) {
+  .escape-street { height: 270px; }
+  .escape-street .escape { transform: translateX(-50%) scale(.85); transform-origin: bottom center; }
+}
+@media (prefers-reduced-motion: reduce) { .walker, .w-leg, .w-arm { animation: none; } .walker { left: 30%; } .walker.rev { left: 70%; } }
+.join-grid { max-width: none !important; }
+.escape-street { width: 100%; justify-self: stretch; }
+.join-text { max-width: 640px; }
+
+/* Panorama as its own framed section, separate from the truck road */
+.story-wrap { padding-top: 3.5rem; }
+.story-wrap .brunei-story { border-radius: var(--radius); border: 1px solid #f1d491; box-shadow: var(--shadow); margin-top: 1rem; }
+.story-wrap .bs-panel { width: auto; padding-left: 1.25rem; padding-right: 1.25rem; }
+.story-wrap .brunei-story .bs-note { left: 1.25rem; }
