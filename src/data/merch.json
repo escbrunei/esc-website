@@ -1,14 +1,101 @@
 {
-  "_howToEdit": "Add one object per product to \"items\". Put photos in public/images/merch/ and write them as \"images/merch/your-photo.jpg\". price is in Brunei dollars (number). status: \"available\", \"preorder\" or \"soldout\". orderUrl is the link buyers use to order (Google Form, WhatsApp link, Instagram DM, etc.); leave it empty to use MERCH_ORDER_URL from src/config.js, or the ESC email if that is empty too. Copy _example into items to start.",
-  "_example": {
-    "id": "esc-tee-maroon",
-    "name": "ESC T-shirt (Maroon)",
-    "price": 15,
-    "image": "images/merch/esc-tee-maroon.jpg",
-    "description": "Soft cotton tee with the ESC crest.",
-    "options": ["S", "M", "L", "XL"],
-    "status": "available",
-    "orderUrl": ""
-  },
-  "items": []
+  "_howToEdit": "Each item has one or more colours, each with a front and back picture in public/images/merch/. category is \"apparel\" or \"accessories\"; the Order button uses the matching Google Form from src/config.js (MERCH_APPAREL_URL / MERCH_ACCESSORIES_URL). Add \"price\" (number, B$) to show a price.",
+  "items": [
+    {
+      "id": "quarter-zip",
+      "category": "apparel",
+      "name": "Quarter Zip-Up",
+      "views": [
+        {
+          "name": "Maroon",
+          "front": "images/merch/zip-maroon.png",
+          "back": "images/merch/zip-maroon-back.png"
+        },
+        {
+          "name": "Cream",
+          "front": "images/merch/zip-cream.png",
+          "back": "images/merch/zip-cream-back.png"
+        }
+      ]
+    },
+    {
+      "id": "polo",
+      "category": "apparel",
+      "name": "Polo Shirt",
+      "views": [
+        {
+          "name": "Maroon",
+          "front": "images/merch/polo-maroon.png",
+          "back": "images/merch/polo-maroon-back.png"
+        },
+        {
+          "name": "Cream",
+          "front": "images/merch/polo-cream.png",
+          "back": "images/merch/polo-cream-back.png"
+        }
+      ]
+    },
+    {
+      "id": "dryfit-collared",
+      "category": "apparel",
+      "name": "Dry Fit (Collared)",
+      "views": [
+        {
+          "name": "Maroon",
+          "front": "images/merch/dfc-front.png",
+          "back": "images/merch/dfc-back.png"
+        }
+      ]
+    },
+    {
+      "id": "dryfit-roundneck",
+      "category": "apparel",
+      "name": "Dry Fit (Round Neck)",
+      "views": [
+        {
+          "name": "Maroon",
+          "front": "images/merch/dfr-front.png",
+          "back": "images/merch/dfr-back.png"
+        }
+      ]
+    },
+    {
+      "id": "totebag-cat",
+      "category": "accessories",
+      "name": "Totebag",
+      "note": "Peeking cat design",
+      "views": [
+        {
+          "name": "Cream",
+          "front": "images/merch/tote1.png",
+          "back": "images/merch/tote1-back.png"
+        }
+      ]
+    },
+    {
+      "id": "totebag-door",
+      "category": "accessories",
+      "name": "Totebag",
+      "note": "ESC door design",
+      "views": [
+        {
+          "name": "Cream",
+          "front": "images/merch/tote2.png",
+          "back": "images/merch/tote2-back.png"
+        }
+      ]
+    },
+    {
+      "id": "lanyard",
+      "category": "accessories",
+      "name": "Lanyard",
+      "views": [
+        {
+          "name": "Yellow and maroon",
+          "front": "images/merch/lan-front.png",
+          "back": "images/merch/lan-back.png"
+        }
+      ]
+    }
+  ]
 }

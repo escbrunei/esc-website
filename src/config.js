@@ -5,6 +5,9 @@ export const CONFIG = {
   INSTAGRAM_URL: 'https://www.instagram.com/escbrunei/',
   // Merch: one link for all orders (Google Form, WhatsApp, etc.). A product's own orderUrl wins.
   MERCH_ORDER_URL: '',
+  // Order forms for the merch page
+  MERCH_APPAREL_URL: 'https://docs.google.com/forms/d/e/1FAIpQLSfwXgJpqwG45blofMb0_lcicwaIxgUEgtOF70TemjJ4mrW5TA/viewform',
+  MERCH_ACCESSORIES_URL: 'https://docs.google.com/forms/d/e/1FAIpQLSfui_yz3jg4nLWop2PcYLIfxzu1IwhflNL1TmYxrESXzaHRew/viewform',
 
   // Live Instagram feeds (JSON feed URLs from behold.so, e.g. 'https://feeds.behold.so/AbC123').
   // Leave empty to show a simple Follow card instead.
