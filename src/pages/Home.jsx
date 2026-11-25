@@ -4,7 +4,6 @@ import FeatureIcon from '../components/FeatureIcon.jsx';
 import BruneiStory from '../components/BruneiStory.jsx';
 import EscapeDoor from '../components/EscapeDoor.jsx';
 import HeroSociety from '../components/HeroSociety.jsx';
-import { openESynC } from '../lib/esync.js';
 import { getEvents } from '../lib/events.js';
 import { HANDSHAKE_INTRO } from './Handshake.jsx';
 import { bruneiDate } from '../lib/time.js';
@@ -29,10 +28,6 @@ export default function Home() {
               <a className="btn btn-gold btn-large" href="#/dashboard">Explore Brunei’s Economy</a>
               <a className="btn btn-outline-light btn-large" href="#/lab">Open Economics Lab</a>
             </div>
-            <p className="hero-links">
-              <button type="button" className="linklike light" onClick={() => openESynC({ origin: 'home' })}>Ask ESynC, our AI assistant →</button>
-              <a {...joinProps} className="light">Join ESC →</a>
-            </p>
           </div>
           <div className="hero-art">
             <div className="hero-community">
