@@ -12,7 +12,17 @@
       "id": "dpe-insight",
       "title": "DPE Insight Reports",
       "blurb": "In-depth reports from Dewan Pelajar Ekonomi on Brunei’s economy and policy.",
-      "items": []
+      "items": [
+        {
+          "title": "DPE Brief Report No.1",
+          "date": "2026-11",
+          "summary": "How exposed is Brunei’s plate? With a very strong El Niño under way, this brief looks at our reliance on imported food, where it comes from, the buffers already in place and three ways to make our food supply more secure.",
+          "pages": 9,
+          "file": "publications/dpe-insight/dpe-brief-report-no1.pdf",
+          "downloadName": "DPE Brief Report No.1.pdf",
+          "cover": "images/publications/dpe-brief-report-no1.jpg"
+        }
+      ]
     },
     {
       "id": "bitesize",

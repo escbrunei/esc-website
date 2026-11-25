@@ -10,6 +10,10 @@ const ICON = {
 
 const fmtDate = (d) => {
   if (!d) return '';
+  if (/^\d{4}-\d{2}$/.test(d)) {
+    const m = new Date(`${d}-01T00:00:00`);
+    return m.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+  }
   const t = new Date(`${d}T00:00:00`);
   return Number.isNaN(t.getTime()) ? d : t.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 };
@@ -44,7 +48,7 @@ function Viewer({ open, onClose }) {
           </div>
           <div className="pdf-actions">
             <a className="btn btn-small btn-ghost" href={open.file} target="_blank" rel="noopener noreferrer">Full screen ↗</a>
-            <a className="btn btn-small" href={open.file} download>Download</a>
+            <a className="btn btn-small" href={open.file} download={open.downloadName || true}>Download</a>
             <button type="button" className="esync-close" onClick={onClose} aria-label="Close">×</button>
           </div>
         </header>
@@ -104,7 +108,7 @@ export default function Publications() {
                       {item.summary && <p className="muted">{item.summary}</p>}
                       <div className="pub-btns">
                         <button type="button" className="btn btn-small" onClick={() => read(item, cur)}>Read</button>
-                        <a className="btn btn-small btn-ghost" href={item.file} download>Download PDF</a>
+                        <a className="btn btn-small btn-ghost" href={item.file} download={item.downloadName || true}>Download PDF</a>
                       </div>
                     </div>
                   </article>
