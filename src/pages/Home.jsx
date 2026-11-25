@@ -4,6 +4,7 @@ import FeatureIcon from '../components/FeatureIcon.jsx';
 import BruneiStory from '../components/BruneiStory.jsx';
 import EscapeDoor from '../components/EscapeDoor.jsx';
 import HeroVideo from '../components/HeroVideo.jsx';
+import HeroSociety from '../components/HeroSociety.jsx';
 import { getEvents } from '../lib/events.js';
 import { HANDSHAKE_INTRO } from './Handshake.jsx';
 import { bruneiDate } from '../lib/time.js';
@@ -28,6 +29,12 @@ export default function Home() {
             <div className="hero-actions">
               <a className="btn btn-gold btn-large" href="#/dashboard">Explore Brunei’s Economy</a>
               <a className="btn btn-outline-light btn-large" href="#/lab">Open Economics Lab</a>
+            </div>
+          </div>
+          <div className="hero-art">
+            <div className="hero-community">
+              <HeroSociety />
+              <img className="hero-crest" src="images/esc-crest-v2.png" alt="Economic Students’ Chamber crest — Dewan Pelajar Ekonomi" width="320" height="320" />
             </div>
           </div>
         </div>
