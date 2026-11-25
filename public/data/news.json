@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T10:00:56.311Z",
-  "lastSuccessfulRefresh": "2026-11-25T10:00:56.311Z",
+  "generatedAt": "2026-11-25T10:09:01.959Z",
+  "lastSuccessfulRefresh": "2026-11-25T10:09:01.959Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:00:56.311Z",
+      "lastSuccess": "2026-11-25T10:09:01.959Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:00:56.311Z",
+      "lastSuccess": "2026-11-25T10:09:01.959Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:00:56.311Z",
+      "lastSuccess": "2026-11-25T10:09:01.959Z",
       "count": 9
     },
     {
@@ -36,27 +36,39 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:00:56.311Z",
+      "lastSuccess": "2026-11-25T10:09:01.959Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:00:56.311Z",
+      "lastSuccess": "2026-11-25T10:09:01.959Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T10:00:56.311Z",
+      "lastSuccess": "2026-11-25T10:09:01.959Z",
       "count": 30
     }
   ],
   "items": [
     {
-      "id": "bbc-business-2eDI5dm5lN2xua28-0",
+      "id": "bbc-business-gyMHFuem5rcm40bw-0",
+      "region": "global",
+      "kind": "headline",
+      "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down",
+      "publisher": "BBC News",
+      "url": "https://www.bbc.co.uk/news/articles/c820qnznkrn4o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T10:04:55.000Z",
+      "summary": "The BBC speaks to three people about steps they take to keep their energy bills under control.",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a8e/live/565f9af0-e806-11f1-a094-5fdc692f3e33.jpg",
+      "sourceId": "bbc-business"
+    },
+    {
+      "id": "bbc-business-2eDI5dm5lN2xua28-1",
       "region": "global",
       "kind": "headline",
       "title": "Interest rate affect on Guernsey's housing market",
@@ -68,7 +80,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-0yMHFucTMzZTkwbw-1",
+      "id": "bbc-business-0yMHFucTMzZTkwbw-2",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills to rise by 26% from January after gas prices surge",
@@ -80,7 +92,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-Y2RkMjl2OG1wOWpv-2",
+      "id": "bbc-business-Y2RkMjl2OG1wOWpv-3",
       "region": "global",
       "kind": "headline",
       "title": "What will the energy cap changes mean for my bills?",
@@ -92,7 +104,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-3",
+      "id": "bbc-business-Y3JtNHJ5Z2w0bTNv-4",
       "region": "global",
       "kind": "headline",
       "title": "Energy bills will soar - here's how you can ease the pain",
@@ -104,7 +116,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-VhcnMtNjU4MDI2MQ-4",
+      "id": "cna-business-VhcnMtNjU4MDI2MQ-5",
       "region": "asean",
       "kind": "headline",
       "title": "Oil slips 1% as supply glut prospect offsets Middle East disruption fears",
@@ -116,7 +128,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-b3JlYS02NTgxMTcx-5",
+      "id": "cna-business-b3JlYS02NTgxMTcx-6",
       "region": "asean",
       "kind": "headline",
       "title": "Aramco, S-Oil inaugurate $7 billion petrochemicals complex in South Korea",
@@ -128,7 +140,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-vcGVlLTY1ODEwODY-6",
+      "id": "cna-business-vcGVlLTY1ODEwODY-7",
       "region": "asean",
       "kind": "headline",
       "title": "'Crazy moves only look good in hindsight': Forrest Li on Singapore football, Shopee and a new era of e-commerce",
@@ -140,7 +152,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-LWNlby02NTgxMTE2-7",
+      "id": "cna-business-LWNlby02NTgxMTE2-8",
       "region": "asean",
       "kind": "headline",
       "title": "Walmart-owned Flipkart's Kalyan Krishnamurthy steps down as CEO",
@@ -152,7 +164,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-cml0eS02NTgxMDkx-8",
+      "id": "cna-business-cml0eS02NTgxMDkx-9",
       "region": "asean",
       "kind": "headline",
       "title": "Japan's JBIC, QatarEnergy sign MOU to strengthen energy security",
@@ -164,7 +176,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-EtdmktNjU4MTAzMQ-9",
+      "id": "cna-business-EtdmktNjU4MTAzMQ-10",
       "region": "asean",
       "kind": "headline",
       "title": "CD Projekt RED sees no material fourth-quarter hit from GTA VI",
@@ -176,7 +188,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-LXNheS02NTgxMDIx-10",
+      "id": "cna-business-LXNheS02NTgxMDIx-11",
       "region": "asean",
       "kind": "headline",
       "title": "Meta officials meet India's opposition Congress amid protests on content curbs, sources say",
@@ -188,7 +200,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-0ZW50LTY1ODA5NzY-11",
+      "id": "cna-business-0ZW50LTY1ODA5NzY-12",
       "region": "asean",
       "kind": "headline",
       "title": "Australia passes law forcing internet platforms to take down harmful content",
@@ -200,7 +212,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tc2F5LTY1ODA5MjY-12",
+      "id": "cna-business-tc2F5LTY1ODA5MjY-13",
       "region": "asean",
       "kind": "headline",
       "title": "Cognizant in talks to take over parts of S&P Global's Capital IQ operations, sources say",
@@ -212,7 +224,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-QtdXMtNjU4MDg1MQ-13",
+      "id": "cna-business-QtdXMtNjU4MDg1MQ-14",
       "region": "asean",
       "kind": "headline",
       "title": "Amazon to launch Amazon Autos in UK in early 2027 in first expansion beyond US",
@@ -224,7 +236,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cnbc-economy-9teS1vaWwuaHRtbA-14",
+      "id": "cnbc-economy-9teS1vaWwuaHRtbA-15",
       "region": "global",
       "kind": "headline",
       "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
@@ -236,7 +248,7 @@
       "sourceId": "cnbc-economy"
     },
     {
-      "id": "bbc-business-JwZHcxcXg3amd4bw-15",
+      "id": "bbc-business-JwZHcxcXg3amd4bw-16",
       "region": "global",
       "kind": "headline",
       "title": "US attorney general dodges questions about Nvidia investigation",
@@ -248,7 +260,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-b3J0cy02NTgwNDYx-16",
+      "id": "cna-business-b3J0cy02NTgwNDYx-17",
       "region": "asean",
       "kind": "headline",
       "title": "Starbucks to engage banks for sale of Japan business, Bloomberg News reports",
@@ -260,7 +272,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-yc2VzLTY1ODA0NTE-17",
+      "id": "cna-business-yc2VzLTY1ODA0NTE-18",
       "region": "asean",
       "kind": "headline",
       "title": "Tech firms back in crosshairs as Huang rally reverses",
@@ -272,7 +284,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-tYW5kLTY1ODA0MzE-18",
+      "id": "cna-business-tYW5kLTY1ODA0MzE-19",
       "region": "asean",
       "kind": "headline",
       "title": "Goldman says US data center boom through 2028 will lift power and gas demand",
@@ -284,7 +296,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-15NDluZ3lkcXpwbw-19",
+      "id": "bbc-business-15NDluZ3lkcXpwbw-20",
       "region": "global",
       "kind": "headline",
       "title": "Huawei found guilty of stealing US trade secrets but acquitted of racketeering",
@@ -296,7 +308,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "cna-business-0aW55LTY1Nzk0MTE-20",
+      "id": "cna-business-0aW55LTY1Nzk0MTE-21",
       "region": "asean",
       "kind": "headline",
       "title": "Nvidia board joins Jensen Huang under scrutiny after reinstating embattled CEO",
@@ -308,7 +320,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "cna-business-bHVtcC02NTgwMDk2-21",
+      "id": "cna-business-bHVtcC02NTgwMDk2-22",
       "region": "asean",
       "kind": "headline",
       "title": "Dollar rallies before key inflation reading; Aussie and sterling slump",
@@ -320,7 +332,7 @@
       "sourceId": "cna-business"
     },
     {
-      "id": "bbc-business-tqMDVtMnpkeXJ5bw-22",
+      "id": "bbc-business-tqMDVtMnpkeXJ5bw-23",
       "region": "global",
       "kind": "headline",
       "title": "Trump's rescue of Nvidia's Huang brings political risks",
@@ -332,7 +344,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-15MHhqNDFrbDUwbw-23",
+      "id": "bbc-business-15MHhqNDFrbDUwbw-24",
       "region": "global",
       "kind": "headline",
       "title": "The rising cost of putting food on the table in India",
@@ -344,7 +356,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-g5M3I5a2U1cDk3bw-24",
+      "id": "bbc-business-g5M3I5a2U1cDk3bw-25",
       "region": "global",
       "kind": "headline",
       "title": "US preparing to unveil plan for new tariffs on global trading partners",
@@ -356,7 +368,7 @@
       "sourceId": "bbc-business"
     },
     {
-      "id": "bbc-business-13eTlqbmUwZzdxbw-25",
+      "id": "bbc-business-13eTlqbmUwZzdxbw-26",
       "region": "global",
       "kind": "headline",
       "title": "Why tiny cars are taking off across Europe",
@@ -365,18 +377,6 @@
       "publishedAt": "2026-11-25T00:34:05.000Z",
       "summary": "Once seen as a car for elderly, rural people, tiny cars are being embraced by a younger demographic.",
       "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/2edb/live/5d054030-ddcf-11f1-b441-2b33b063138f.jpg",
-      "sourceId": "bbc-business"
-    },
-    {
-      "id": "bbc-business-gyMHFuem5rcm40bw-26",
-      "region": "global",
-      "kind": "headline",
-      "title": "'I only use the washing machine on a Sunday' - how we're keeping our energy bills down",
-      "publisher": "BBC News",
-      "url": "https://www.bbc.co.uk/news/articles/c820qnznkrn4o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T00:30:52.000Z",
-      "summary": "The BBC speaks to three people about steps they take to keep their energy bills under control.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/4a8e/live/565f9af0-e806-11f1-a094-5fdc692f3e33.jpg",
       "sourceId": "bbc-business"
     },
     {
