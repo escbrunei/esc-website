@@ -10,10 +10,10 @@ const GROUPS = [
     items: [
       { to: '/dashboard', label: 'Brunei Economy', hint: 'Charts and data' },
       { to: '/lab', label: 'Economics Lab', hint: 'Simulator and exercises' },
-      { to: '/publications', label: 'Publications', hint: 'DPE Insight, Bitesize, IHS Takeaways' },
     ],
   },
   { type: 'link', to: '/news', label: 'News' },
+  { type: 'link', to: '/publications', label: 'Publications' },
   { type: 'link', to: '/merch', label: 'Merch' },
   {
     type: 'menu', id: 'about', label: 'About',
