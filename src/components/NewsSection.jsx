@@ -111,7 +111,7 @@ function NewsItem({ item, sample }) {
   return (
     <li className="card news-item">
       <a className="news-thumb" href={item.url} target="_blank" rel="noopener noreferrer" tabIndex={-1} aria-hidden="true">
-        <Thumb src={item.image} publisher={item.publisher} official={official} />
+        <Thumb src={item.image} publisher={item.publisher} official={official} url={item.url} />
       </a>
       <div className="news-body">
         <span className={`kind ${official ? 'kind-official' : 'kind-headline'}`}>{official ? 'Official release' : 'Headline'}</span>
@@ -138,15 +138,23 @@ function initials(name = '') {
   return words.map((w) => w[0]).join('').slice(0, 4).toUpperCase();
 }
 
-// Publisher's picture, or a branded tile when there is none or it fails to load.
-function Thumb({ src, publisher, official }) {
+// Publisher's picture; if none, the publisher's own logo (site icon) on a clean tile.
+function hostOf(url) { try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return ''; } }
+function Thumb({ src, publisher, official, url }) {
   const [failed, setFailed] = useState(false);
+  const [logoFailed, setLogoFailed] = useState(false);
   if (src && !failed) {
     return <img src={src} alt="" loading="lazy" referrerPolicy="no-referrer" onError={() => setFailed(true)} />;
   }
+  const host = hostOf(url);
   return (
-    <span className={`thumb-fallback ${official ? 'official' : ''}`}>
-      <span>{initials(publisher) || 'ESC'}</span>
+    <span className={`thumb-logo ${official ? 'official' : ''}`}>
+      {host && !logoFailed ? (
+        <img src={`https://www.google.com/s2/favicons?domain=${host}&sz=128`} alt="" loading="lazy" onError={() => setLogoFailed(true)} />
+      ) : (
+        <span className="thumb-initials">{initials(publisher) || 'ESC'}</span>
+      )}
+      <span className="thumb-name">{publisher}</span>
     </span>
   );
 }
