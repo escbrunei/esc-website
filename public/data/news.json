@@ -1,35 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T08:01:25.679Z",
-  "lastSuccessfulRefresh": "2026-11-25T08:01:25.679Z",
+  "generatedAt": "2026-11-25T08:02:32.566Z",
+  "lastSuccessfulRefresh": "2026-11-25T08:02:32.566Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:01:25.679Z",
+      "lastSuccess": "2026-11-25T08:02:32.566Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:01:25.679Z",
+      "lastSuccess": "2026-11-25T08:02:32.566Z",
       "count": 10
-    },
-    {
-      "id": "borneo-bulletin-business",
-      "name": "Borneo Bulletin – Business",
-      "ok": false,
-      "error": "HTTP 403",
-      "lastSuccess": null,
-      "keptFromLastSuccess": 0
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:01:25.679Z",
+      "lastSuccess": "2026-11-25T08:02:32.566Z",
       "count": 9
     },
     {
@@ -44,30 +36,22 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:01:25.679Z",
+      "lastSuccess": "2026-11-25T08:02:32.566Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:01:25.679Z",
+      "lastSuccess": "2026-11-25T08:02:32.566Z",
       "count": 43
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T08:01:25.679Z",
+      "lastSuccess": "2026-11-25T08:02:32.566Z",
       "count": 30
-    },
-    {
-      "id": "imf-news",
-      "name": "IMF press releases",
-      "ok": false,
-      "error": "HTTP 404",
-      "lastSuccess": null,
-      "keptFromLastSuccess": 0
     }
   ],
   "items": [
