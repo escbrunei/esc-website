@@ -11,7 +11,6 @@ const GROUPS = [
       { to: '/dashboard', label: 'Brunei Economy', hint: 'Charts and data' },
       { to: '/news', label: 'News', hint: 'Daily headlines and releases' },
       { to: '/lab', label: 'Economics Lab', hint: 'Simulator and exercises' },
-      { esync: true, label: 'Ask ESynC', hint: 'Our economics assistant' },
     ],
   },
   { type: 'link', to: '/events', label: 'Events' },

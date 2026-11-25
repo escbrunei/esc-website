@@ -16,7 +16,13 @@
         }
       ],
       "latestPeriod": "2025 (released March 2026)",
-      "note": "Latest DEPS revisions. Q1 2026 growth was 0.3% year on year."
+      "note": "Latest DEPS revisions. Q1 2026 growth was 0.3% year on year.",
+      "sources": [
+        {
+          "label": "DEPS – GDP Q4 & Annual 2025 media release",
+          "url": "https://www.deps.gov.bn/wp-content/uploads/2026/03/GDP_Q42025_PR.pdf"
+        }
+      ]
     },
     {
       "id": "inflation",
@@ -33,7 +39,17 @@
         }
       ],
       "latestPeriod": "2025 (released January 2026)",
-      "note": "Annual average change in the CPI (Jan 2015 = 100)."
+      "note": "Annual average change in the CPI (Jan 2015 = 100).",
+      "sources": [
+        {
+          "label": "DEPS – CPI December & Annual 2025 media release",
+          "url": "https://www.deps.gov.bn/wp-content/uploads/2026/01/CPI_DEC2025_PR.pdf"
+        },
+        {
+          "label": "IMF – 2023 Article IV consultation with Brunei (2018–2020 figures)",
+          "url": "https://www.imf.org/en/News/Articles/2023/10/04/pr23336-brunei-imf-executive-board-concludes-2023-article-iv-consultation-with-brunei-darussalam"
+        }
+      ]
     },
     {
       "id": "unemployment",
@@ -50,7 +66,13 @@
         }
       ],
       "latestPeriod": "2025 (released July 2026)",
-      "note": "Population aged 18 and over. Shown from 2023 because earlier surveys used a different age basis."
+      "note": "Population aged 18 and over. Shown from 2023 because earlier surveys used a different age basis.",
+      "sources": [
+        {
+          "label": "DEPS – Labour Force Survey 2025",
+          "url": "https://deps.mofe.gov.bn/labour-force/"
+        }
+      ]
     },
     {
       "id": "oil-vs-non-oil-gdp",
@@ -71,7 +93,17 @@
         }
       ],
       "latestPeriod": "2025 (released March 2026)",
-      "note": "Growth at constant prices by sector."
+      "note": "Growth at constant prices by sector.",
+      "sources": [
+        {
+          "label": "DEPS – Brunei Darussalam Key Indicators 2024 (2022–2024)",
+          "url": "https://deps.mofe.gov.bn/wp-content/uploads/2025/10/BDKI-2024.pdf"
+        },
+        {
+          "label": "DEPS – GDP Q4 & Annual 2025 media release (2025)",
+          "url": "https://www.deps.gov.bn/wp-content/uploads/2026/03/GDP_Q42025_PR.pdf"
+        }
+      ]
     }
   ]
 }

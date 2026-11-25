@@ -788,3 +788,4 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .story-wrap .brunei-story { border-radius: var(--radius); border: 1px solid #f1d491; box-shadow: var(--shadow); margin-top: 1rem; }
 .story-wrap .bs-panel { width: auto; padding-left: 1.25rem; padding-right: 1.25rem; }
 .story-wrap .brunei-story .bs-note { left: 1.25rem; }
+.src-link { display: block; margin-bottom: .25rem; }

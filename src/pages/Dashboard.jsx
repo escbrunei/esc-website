@@ -121,12 +121,17 @@ function IndicatorCard({ ind, from, to }) {
       </header>
       <LineChart series={series} unit={ind.unit} sample={sample} title={ind.title} />
       <dl className="meta">
-        <div><dt>Source</dt><dd><a href={ind.sourceUrl} target="_blank" rel="noopener noreferrer">{ind.source}</a></dd></div>
+        <div><dt>Source{(ind.sources || []).length > 1 ? 's' : ''}</dt><dd>
+          {(ind.sources || [{ label: ind.source, url: ind.sourceUrl }]).map((src) => (
+            <a key={src.url + src.label} className="src-link" href={src.url} target="_blank" rel="noopener noreferrer">{src.label} <span aria-hidden="true">↗</span></a>
+          ))}
+        </dd></div>
         <div><dt>Unit</dt><dd>{ind.unit}</dd></div>
         <div><dt>Latest available period</dt><dd>{ind.latestPeriod}{sample ? ' (sample)' : ''}</dd></div>
         {ind.note && <div><dt>Note</dt><dd>{ind.note}</dd></div>}
       </dl>
       <div className="card-actions">
+        <a className="btn btn-small btn-ghost" href={(ind.sources?.[0]?.url) || ind.sourceUrl} target="_blank" rel="noopener noreferrer">View source ↗</a>
         <button className="btn btn-small btn-ghost" onClick={download}>Download CSV</button>
         <AskButton className="btn-small" context={context} />
       </div>
