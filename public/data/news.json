@@ -1,27 +1,27 @@
 {
   "sample": false,
-  "generatedAt": "2026-11-25T17:06:04.090Z",
-  "lastSuccessfulRefresh": "2026-11-25T17:06:04.090Z",
+  "generatedAt": "2026-11-25T17:07:19.102Z",
+  "lastSuccessfulRefresh": "2026-11-25T17:07:19.102Z",
   "sources": [
     {
       "id": "deps",
       "name": "DEPS releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:06:04.090Z",
+      "lastSuccess": "2026-11-25T17:07:19.102Z",
       "count": 2
     },
     {
       "id": "bdcb-press",
       "name": "BDCB press releases",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:06:04.090Z",
+      "lastSuccess": "2026-11-25T17:07:19.102Z",
       "count": 10
     },
     {
       "id": "the-scoop",
       "name": "The Scoop",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:06:04.090Z",
+      "lastSuccess": "2026-11-25T17:07:19.102Z",
       "count": 9
     },
     {
@@ -36,21 +36,21 @@
       "id": "cna-business",
       "name": "CNA Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:06:04.090Z",
+      "lastSuccess": "2026-11-25T17:07:19.102Z",
       "count": 20
     },
     {
       "id": "bbc-business",
       "name": "BBC Business",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:06:04.090Z",
+      "lastSuccess": "2026-11-25T17:07:19.102Z",
       "count": 47
     },
     {
       "id": "cnbc-economy",
       "name": "CNBC Economy",
       "ok": true,
-      "lastSuccess": "2026-11-25T17:06:04.090Z",
+      "lastSuccess": "2026-11-25T17:07:19.102Z",
       "count": 30
     }
   ],
@@ -76,7 +76,7 @@
       "url": "https://www.channelnewsasia.com/business/us-authorizes-spacex-deploy-1-million-satellites-data-centers-in-space-6582471",
       "publishedAt": "2026-11-25T16:57:25.000Z",
       "summary": "",
-      "image": "https://dam.mediacorp.sg/image/upload/s--jeTB4Lna--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T165725Z_1_LYNXNPEMAO1JS_RTROPTP_3_SPACEX-CHINA-AI.JPG?itok=GQTx1CqD",
+      "image": "https://dam.mediacorp.sg/image/upload/s--7D5uaaIp--/fl_relative,g_south_east,l_mediacorp:cna:watermark:2024-04:reuters_1,w_0.1/f_auto,q_auto/c_fill,g_auto,h_468,w_830/v1/one-cms/core/2026-11-25T170153Z_2_LYNXNPEMAO1JS_RTROPTP_3_SPACEX-CHINA-AI.JPG?itok=URKXp-hj",
       "sourceId": "cna-business"
     },
     {
@@ -112,7 +112,7 @@
       "url": "https://www.bbc.co.uk/news/videos/ckregn0gq2ydo?at_medium=RSS&at_campaign=rss",
       "publishedAt": "2026-11-25T16:24:30.000Z",
       "summary": "The retail chain has collapsed just one year after being bought for £1 by an American firm.",
-      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/ab50/live/540f97f0-e8ec-11f1-99b6-a35a62fa4264.jpg",
+      "image": "https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/fcdf/live/9552fe90-e8f2-11f1-8808-1d4222955d7e.jpg",
       "sourceId": "bbc-business"
     },
     {
