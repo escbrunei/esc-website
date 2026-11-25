@@ -1,6 +1,7 @@
 import React from 'react';
 import { CONFIG } from '../config.js';
 import { LinkedInLink } from '../components/Footer.jsx';
+import EmailChooser from '../components/EmailChooser.jsx';
 import InstagramFeed from '../components/InstagramFeed.jsx';
 
 export default function Contact() {
@@ -17,7 +18,7 @@ export default function Contact() {
         <ul className="contact-list">
           <li className="card">
             <h2>Email</h2>
-            <a href={`mailto:${CONFIG.ESC_EMAIL}`}>{CONFIG.ESC_EMAIL}</a>
+            <EmailChooser />
           </li>
           <li className="card">
             <h2>Instagram</h2>

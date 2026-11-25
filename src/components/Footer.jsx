@@ -1,6 +1,7 @@
 import React from 'react';
 import { CONFIG } from '../config.js';
 import { openESynC } from '../lib/esync.js';
+import EmailChooser from './EmailChooser.jsx';
 import { joinProps } from '../lib/join.js';
 
 export function LinkedInLink({ className = '' }) {
@@ -41,14 +42,14 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-col">
-            <h2>Follow Us</h2>
+            <h2>Contact Us</h2>
+            <EmailChooser className="footer-email-chooser" />
+            <h2 className="follow-h">Follow Us</h2>
             <ul className="social-row">
-              <li><a className="social" href={`mailto:${CONFIG.ESC_EMAIL}`} aria-label={`Email ${CONFIG.ESC_EMAIL}`} title={CONFIG.ESC_EMAIL}><MailIcon /></a></li>
               <li><a className="social" href={CONFIG.INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`Instagram ${CONFIG.INSTAGRAM_HANDLE}`} title={CONFIG.INSTAGRAM_HANDLE}><InstagramIcon /></a></li>
               {CONFIG.LINKEDIN_URL && <li><a className="social" href={CONFIG.LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="ESC on LinkedIn" title="LinkedIn"><LinkedInIcon /></a></li>}
               <li><a className="social" href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label={`The Invisible Handshake on Instagram ${CONFIG.IHS_INSTAGRAM_HANDLE}`} title={`The Invisible Handshake ${CONFIG.IHS_INSTAGRAM_HANDLE}`}><InstagramIcon /><span className="social-tag">IHS</span></a></li>
             </ul>
-            <p className="footer-email"><a href={`mailto:${CONFIG.ESC_EMAIL}`}>{CONFIG.ESC_EMAIL}</a></p>
           </div>
         </div>
         <div className="container footer-bottom">© {new Date().getFullYear()} Economic Students’ Chamber (DPE) Brunei</div>

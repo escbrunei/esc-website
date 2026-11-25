@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import EconomyRoad from '../components/EconomyRoad.jsx';
 import FeatureIcon from '../components/FeatureIcon.jsx';
+import BruneiStory from '../components/BruneiStory.jsx';
 import { openESynC } from '../lib/esync.js';
 import { getEvents } from '../lib/events.js';
 import { HANDSHAKE_INTRO } from './Handshake.jsx';
@@ -61,6 +62,7 @@ export default function Home() {
         </div>
       </section>
       <EconomyRoad targetEl={hover != null ? cardRefs.current[hover] : null} />
+      <BruneiStory />
 
       <section className="section band">
         <div className="container handshake-feature">

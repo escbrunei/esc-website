@@ -2,6 +2,9 @@ import React from 'react';
 import { getEvents } from '../lib/events.js';
 import EventCard from '../components/EventCard.jsx';
 import { CONFIG } from '../config.js';
+import InstagramFeed from '../components/InstagramFeed.jsx';
+import InstagramPosts from '../components/InstagramEmbed.jsx';
+import ihs from '../data/ihs-posts.json';
 
 export default function Events() {
   const { upcoming, past } = getEvents();
@@ -28,10 +31,14 @@ export default function Events() {
       </section>
       <section className="section container" aria-labelledby="past-h">
         <h2 id="past-h" className="section-title">Past Events</h2>
-        {past.length ? (
-          <div className="card-grid">{past.map((e) => <EventCard key={e.id} ev={e} past />)}</div>
+        {past.length > 0 && <div className="card-grid" style={{ marginBottom: '1.5rem' }}>{past.map((e) => <EventCard key={e.id} ev={e} past />)}</div>}
+        {(ihs.posts || []).length > 0 ? (
+          <>
+            <InstagramPosts urls={ihs.posts} />
+            <p className="ig-more">More photos on <a href={CONFIG.IHS_INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">{CONFIG.IHS_INSTAGRAM_HANDLE}</a></p>
+          </>
         ) : (
-          <div className="empty"><p>Recaps of past events will appear here.</p></div>
+          <InstagramFeed feedUrl={CONFIG.IHS_INSTAGRAM_FEED_URL} handle={CONFIG.IHS_INSTAGRAM_HANDLE} url={CONFIG.IHS_INSTAGRAM_URL} title="Past events on Instagram" />
         )}
       </section>
     </>

@@ -586,3 +586,50 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 /* Instagram post embeds */
 .ig-embeds { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); align-items: start; }
 .ig-embed .instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; }
+
+/* ===== Brunei scroll story ===== */
+.brunei-story { position: relative; height: 420vh; background: #fff3d1; }
+.bs-sticky { position: sticky; top: 66px; height: calc(100vh - 66px); overflow: hidden; }
+.bs-scene { position: absolute; inset: 0; overflow: hidden; }
+.bs-svg { position: absolute; top: 0; left: 0; height: 100%; width: auto; min-width: 100%; aspect-ratio: 4 / 1; will-change: transform; --bs-pan: 0.75; }
+.bs-panel { position: relative; height: 100%; display: flex; flex-direction: column; justify-content: flex-start; padding-top: 2rem; pointer-events: none; }
+.bs-card { pointer-events: auto; max-width: 420px; background: rgba(255,255,255,.92); border: 1px solid #f1d491; border-left: 6px solid var(--maroon); border-radius: var(--radius); padding: 1.1rem 1.25rem; box-shadow: 0 12px 28px rgba(98,22,13,.16); animation: bs-in .45s ease both; }
+.bs-card h2 { color: var(--maroon); margin-bottom: .3rem; }
+.bs-card p { margin-bottom: .6rem; }
+.bs-step { display: inline-block; font-size: .78rem; color: var(--muted); letter-spacing: .08em; margin-bottom: .2rem; }
+.bs-stats { display: flex; flex-wrap: wrap; gap: .6rem; margin: .4rem 0 .8rem; }
+.bs-stat { background: var(--gold-soft); border-radius: 12px; padding: .45rem .75rem; display: flex; flex-direction: column; }
+.bs-value { font-size: 1.6rem; color: var(--maroon); line-height: 1.1; }
+.bs-label { font-size: .8rem; color: var(--muted); }
+.bs-dots { display: flex; gap: .4rem; margin-top: .8rem; }
+.bs-dots i { width: 10px; height: 10px; border-radius: 50%; background: rgba(98,22,13,.25); transition: all .3s; }
+.bs-dots i.on { background: var(--maroon); width: 26px; border-radius: 999px; }
+.bs-note { margin-top: auto; margin-bottom: 1rem; font-size: .8rem; color: var(--maroon); background: rgba(255,255,255,.8); align-self: flex-start; padding: .2rem .6rem; border-radius: 999px; pointer-events: auto; }
+.bs-flame { transform-box: fill-box; transform-origin: bottom center; animation: bs-flame .6s ease-in-out infinite alternate; }
+@keyframes bs-flame { from { transform: scaleY(.85); } to { transform: scaleY(1.12); } }
+@keyframes bs-in { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@media (max-width: 760px) {
+  .bs-card { max-width: none; }
+  .bs-sticky { top: 66px; }
+}
+@media (prefers-reduced-motion: reduce) { .brunei-story { height: auto; } .bs-sticky { position: relative; height: 70vh; } .bs-flame { animation: none; } }
+
+/* Email chooser */
+.email-chooser { position: relative; display: inline-block; }
+.email-btn { background: none; border: 0; padding: 0; font: inherit; color: inherit; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; text-align: left; word-break: break-all; }
+.email-menu { position: absolute; left: 0; bottom: calc(100% + 8px); z-index: 70; min-width: 230px; background: #fff; border: 1px solid #f1d491; border-radius: 14px; padding: .4rem; box-shadow: 0 14px 30px rgba(0,0,0,.25); display: flex; flex-direction: column; }
+.contact-list .email-menu { top: calc(100% + 8px); bottom: auto; }
+.email-menu-title { font-size: .78rem; color: var(--muted); padding: .3rem .6rem; }
+.email-menu a, .email-menu button { display: block; text-align: left; background: none; border: 0; font: inherit; color: var(--maroon) !important; padding: .5rem .6rem; border-radius: 9px; text-decoration: none !important; cursor: pointer; font-size: .95rem; }
+.email-menu a:hover, .email-menu button:hover { background: var(--gold-soft); }
+.footer-email-chooser .email-btn { color: #fff; }
+.footer-col .follow-h { margin-top: 1.4rem; }
+@media (max-width: 760px) {
+  .bs-panel { padding-top: 1rem; }
+  .bs-card { padding: .8rem 1rem; max-width: 88%; }
+  .bs-card h2 { font-size: 1.25rem; }
+  .bs-card p { font-size: .92rem; line-height: 1.45; }
+  .bs-value { font-size: 1.25rem; }
+  .bs-stat { padding: .35rem .6rem; }
+  .bs-note { font-size: .72rem; max-width: 70%; }
+}
