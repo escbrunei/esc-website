@@ -68,9 +68,38 @@ export function parseFeed(xml) {
     if (!link) link = stripTags(tag(b, 'guid'));
     const date = stripTags(tag(b, 'pubDate') || tag(b, 'published') || tag(b, 'updated') || tag(b, 'dc:date'));
     const summary = truncate(stripTags(tag(b, 'description') || tag(b, 'summary') || ''));
-    if (title && /^https?:\/\//.test(link)) items.push({ title, url: link, publishedAt: date, summary });
+    const image = feedImage(b);
+    if (title && /^https?:\/\//.test(link)) items.push({ title, url: link, publishedAt: date, summary, image });
   }
   return items;
+}
+
+// Finds a picture for a feed item: media:content / media:thumbnail / enclosure / first <img>.
+function feedImage(b) {
+  const pats = [
+    /<media:content[^>]+url=["']([^"']+)["'][^>]*medium=["']image["']/i,
+    /<media:content[^>]+medium=["']image["'][^>]*url=["']([^"']+)["']/i,
+    /<media:thumbnail[^>]+url=["']([^"']+)["']/i,
+    /<media:content[^>]+url=["']([^"']+\.(?:jpe?g|png|webp|gif)(?:\?[^"']*)?)["']/i,
+    /<enclosure[^>]+url=["']([^"']+)["'][^>]*type=["']image\//i,
+    /<enclosure[^>]+type=["']image\/[^"']*["'][^>]*url=["']([^"']+)["']/i,
+    /<image>\s*<url>([^<]+)<\/url>/i,
+  ];
+  for (const re of pats) { const m = b.match(re); if (m) return cleanImg(m[1]); }
+  const html = decode(tag(b, 'content:encoded') || tag(b, 'description') || '');
+  const m = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+  return m ? cleanImg(m[1]) : '';
+}
+const cleanImg = (u) => { const v = decode(u).trim(); return /^https:\/\//.test(v) ? v : (/^http:\/\//.test(v) ? v.replace(/^http:/, 'https:') : ''); };
+
+// Reads the og:image (preview picture) from an article page.
+async function pageImage(url) {
+  const html = await get(url, { Accept: 'text/html' });
+  const head = html.slice(0, 200000);
+  const m = head.match(/<meta[^>]+(?:property|name)=["'](?:og:image(?::secure_url)?|twitter:image)["'][^>]*content=["']([^"']+)["']/i)
+    || head.match(/<meta[^>]+content=["']([^"']+)["'][^>]*(?:property|name)=["'](?:og:image|twitter:image)["']/i);
+  if (!m) return '';
+  try { return cleanImg(new URL(decode(m[1]), url).toString()); } catch { return ''; }
 }
 
 const MONTHS = 'January|February|March|April|May|June|July|August|September|October|November|December';
@@ -102,7 +131,7 @@ async function fetchSource(src) {
     if (!key) throw new Error('NEWS_API_KEY secret not set');
     const json = JSON.parse(await get(src.url, { 'X-Api-Key': key }));
     return (json.articles || []).map((a) => ({
-      title: a.title, url: a.url, publishedAt: a.publishedAt, summary: truncate(stripTags(a.description || '')), publisher: a.source?.name,
+      title: a.title, url: a.url, publishedAt: a.publishedAt, summary: truncate(stripTags(a.description || '')), image: cleanImg(a.urlToImage || ''), publisher: a.source?.name,
     }));
   }
   throw new Error(`Unknown format "${src.format}"`);
@@ -130,7 +159,7 @@ export async function main() {
           const t = new Date(r.publishedAt);
           return {
             id: '', region: src.region, kind: src.kind, title: r.title, publisher: r.publisher || src.publisher,
-            url: r.url, publishedAt: isNaN(t) ? null : t.toISOString(), summary: r.summary || '', sourceId: src.id,
+            url: r.url, publishedAt: isNaN(t) ? null : t.toISOString(), summary: r.summary || '', image: r.image || '', sourceId: src.id,
           };
         })
         .filter((i) => i.publishedAt && new Date(i.publishedAt).getTime() >= minDate);
@@ -160,6 +189,19 @@ export async function main() {
   all.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
   const perRegion = {};
   all = all.filter((i) => (perRegion[i.region] = (perRegion[i.region] || 0) + 1) <= (cfg.maxItemsPerRegion || 30));
+  // Items with no feed picture: reuse a picture found on an earlier run, else read the article's preview image.
+  const known = new Map(prevItems.filter((i) => i.image !== undefined).map((i) => [normUrl(i.url), i.image]));
+  let lookups = 0;
+  for (const i of all) {
+    if (i.image) continue;
+    const k = normUrl(i.url);
+    if (known.has(k)) { i.image = known.get(k); continue; }
+    if (lookups >= (cfg.maxImageLookupsPerRun || 30)) continue;
+    lookups++;
+    try { i.image = await pageImage(i.url); } catch { i.image = ''; }
+  }
+  console.log(`Looked up ${lookups} article preview images`);
+
   all.forEach((i, n) => { i.id = `${i.sourceId}-${Buffer.from(normUrl(i.url)).toString('base64url').slice(-16)}-${n}`; });
 
   const anySuccess = status.some((s) => s.ok);

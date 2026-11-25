@@ -110,18 +110,43 @@ function NewsItem({ item, sample }) {
   };
   return (
     <li className="card news-item">
-      <span className={`kind ${official ? 'kind-official' : 'kind-headline'}`}>{official ? 'Official release' : 'Headline'}</span>
-      <h3><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a></h3>
-      <p className="news-meta">
-        <span>{item.publisher}</span>
-        <span aria-hidden="true"> · </span>
-        <time dateTime={item.publishedAt}>{bruneiDateTime(item.publishedAt)}</time>
-      </p>
-      {item.summary && <p className="news-summary">{item.summary}</p>}
-      <div className="card-actions">
-        <a className="btn btn-small btn-ghost" href={item.url} target="_blank" rel="noopener noreferrer">Read original source</a>
-        <AskButton className="btn-small" context={context} />
+      <a className="news-thumb" href={item.url} target="_blank" rel="noopener noreferrer" tabIndex={-1} aria-hidden="true">
+        <Thumb src={item.image} publisher={item.publisher} official={official} />
+      </a>
+      <div className="news-body">
+        <span className={`kind ${official ? 'kind-official' : 'kind-headline'}`}>{official ? 'Official release' : 'Headline'}</span>
+        <h3><a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a></h3>
+        <p className="news-meta">
+          <span>{item.publisher}</span>
+          <span aria-hidden="true"> · </span>
+          <time dateTime={item.publishedAt}>{bruneiDateTime(item.publishedAt)}</time>
+        </p>
+        {item.summary && <p className="news-summary">{item.summary}</p>}
+        <div className="card-actions">
+          <a className="btn btn-small btn-ghost" href={item.url} target="_blank" rel="noopener noreferrer">Read original source</a>
+          <AskButton className="btn-small" context={context} />
+        </div>
       </div>
     </li>
+  );
+}
+
+const SKIP = new Set(['of', 'and', 'the', 'for', '&', '(sample)']);
+function initials(name = '') {
+  const words = name.replace(/[()]/g, ' ').split(/\s+/).filter((w) => w && !SKIP.has(w.toLowerCase()));
+  if (words.length === 1) return words[0].slice(0, 6).toUpperCase();
+  return words.map((w) => w[0]).join('').slice(0, 4).toUpperCase();
+}
+
+// Publisher's picture, or a branded tile when there is none or it fails to load.
+function Thumb({ src, publisher, official }) {
+  const [failed, setFailed] = useState(false);
+  if (src && !failed) {
+    return <img src={src} alt="" loading="lazy" referrerPolicy="no-referrer" onError={() => setFailed(true)} />;
+  }
+  return (
+    <span className={`thumb-fallback ${official ? 'official' : ''}`}>
+      <span>{initials(publisher) || 'ESC'}</span>
+    </span>
   );
 }
