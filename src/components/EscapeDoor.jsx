@@ -38,7 +38,7 @@ export default function EscapeDoor({ children }) {
   const [scale, setScale] = useState(1);
   useLayoutEffect(() => {
     const el = ref.current; if (!el) return undefined;
-    const fit = () => setScale(Math.max(el.clientWidth / 1200, (el.clientHeight * 0.62) / 300));
+    const fit = () => setScale(Math.max(el.clientWidth / 1200, 0.8));
     fit();
     const ro = new ResizeObserver(fit); ro.observe(el);
     return () => ro.disconnect();
@@ -48,6 +48,7 @@ export default function EscapeDoor({ children }) {
     <div className="escape-street" ref={ref}>
       <span className="cloud c1" /><span className="cloud c2" /><span className="cloud c3" /><span className="street-sun" />
       {children && <div className="street-cta">{children}</div>}
+      <div className="street-spacer" style={{ height: `${300 * scale}px` }} aria-hidden="true" />
       <div className="street-world" style={{ transform: `translateX(-50%) scale(${scale})` }}>
       <svg className="street-bg" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
         <Street />

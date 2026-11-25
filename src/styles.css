@@ -929,3 +929,11 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 @media (prefers-reduced-motion: reduce) { .obj-icon * { animation: none !important; } }
 /* centre the tagline exactly over the door */
 .escape-street .escape-tag { left: 185px !important; right: auto !important; width: max-content; }
+.street-cta { top: 17%; }
+@media (max-width: 640px) { .street-cta { top: 6%; } }
+/* Street section sizes to its content (no big empty sky) */
+.escape-street { height: auto !important; min-height: 0; display: flex; flex-direction: column; }
+.street-cta { position: relative !important; top: auto !important; left: auto !important; transform: none !important; margin: 0 auto; padding: 3.2rem 0 4.6rem; z-index: 5; }
+.street-spacer { flex: none; }
+.street-sun { top: 2.2rem; }
+@media (max-width: 640px) { .street-cta { padding: 2.2rem 0 1rem; } .street-spacer { margin-top: -40px; } }
