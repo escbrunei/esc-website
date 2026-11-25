@@ -1074,3 +1074,34 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 .merch-form-note { text-align: center; margin-top: 1.2rem; }
 @media (prefers-reduced-motion: reduce) { .turn-spin { transition: none; } }
 .merch-section .section-title::after { margin-left: auto; margin-right: auto; }
+
+/* Publications */
+.pub-tabs { display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center; margin-bottom: 1.2rem; }
+.pub-tab { display: inline-flex; align-items: center; gap: .5rem; border: 2px solid var(--maroon); background: var(--white); color: var(--maroon); border-radius: 999px; padding: .55rem 1.1rem; font: inherit; cursor: pointer; }
+.pub-tab.on, .pub-tab:hover { background: var(--maroon); color: var(--gold); }
+.pub-blurb { text-align: center; color: var(--muted); max-width: 640px; margin: 0 auto 1.4rem; }
+.pub-empty { text-align: center; }
+.pub-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 1.2rem; }
+.pub-card { display: flex; flex-direction: column; padding: 0; overflow: hidden; }
+.pub-cover { border: 0; padding: 0; background: #fbf4e6; cursor: pointer; aspect-ratio: 3 / 4; display: block; width: 100%; overflow: hidden; }
+.pub-cover > img { width: 100%; height: 100%; object-fit: cover; transition: transform .3s; }
+.pub-cover:hover > img, .pub-cover:hover .pub-cover-ph { transform: scale(1.03); }
+.pub-cover-ph { height: 100%; display: flex; flex-direction: column; justify-content: flex-end; gap: .4rem; padding: 1.2rem; text-align: left; background: var(--maroon); color: var(--gold); transition: transform .3s; position: relative; }
+.pub-cover-ph img { position: absolute; top: 1.1rem; left: 1.2rem; width: 44px; }
+.pub-cover-ph.bitesize { background: var(--gold); color: var(--maroon); }
+.pub-cover-ph.ihs-takeaways { background: #2f2a24; }
+.pub-cover-series { font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; opacity: .85; }
+.pub-cover-title { font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 1.45rem; line-height: 1.15; }
+.pub-body { padding: 1rem 1.1rem 1.2rem; display: flex; flex-direction: column; gap: .35rem; flex: 1; }
+.pub-body h3 { margin: 0; }
+.pub-date { margin: 0; font-size: .82rem; color: var(--maroon); }
+.pub-btns { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: auto; padding-top: .5rem; }
+.pdf-modal { position: fixed; inset: 0; z-index: 80; background: rgba(40,10,6,.65); display: grid; place-items: center; padding: 2vh 2vw; }
+.pdf-box { width: min(1100px, 100%); height: 94vh; background: var(--white); border-radius: 18px; overflow: hidden; display: flex; flex-direction: column; }
+.pdf-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: .7rem 1rem; background: var(--maroon); color: var(--gold); }
+.pdf-head h2 { margin: 0; font-size: 1.15rem; color: var(--gold); }
+.pdf-series { margin: 0; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: #f6dfb0; }
+.pdf-actions { display: flex; gap: .5rem; align-items: center; }
+.pdf-actions .btn-ghost { color: var(--gold); border-color: var(--gold); }
+.pdf-frame { flex: 1; width: 100%; border: 0; background: #eee; }
+.pdf-actions .btn:not(.btn-ghost) { background: var(--gold); color: var(--maroon); }

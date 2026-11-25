@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard.jsx';
 import Lab from './pages/Lab.jsx';
 import News from './pages/News.jsx';
 import Merch from './pages/Merch.jsx';
+import Publications from './pages/Publications.jsx';
 import ESynC from './pages/ESynC.jsx';
 import Events from './pages/Events.jsx';
 import Handshake from './pages/Handshake.jsx';
@@ -20,6 +21,7 @@ const PAGES = {
   '/dashboard': Dashboard,
   '/news': News,
   '/merch': Merch,
+  '/publications': Publications,
   '/lab': Lab,
   '/esync': ESynC,
   '/events': Events,

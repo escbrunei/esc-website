@@ -1,0 +1,30 @@
+{
+  "_howToEdit": "To publish a PDF: upload it to public/publications/<series folder>/ (e.g. public/publications/dpe-insight/q4-2025.pdf), then add an entry to that series' items below, newest first. file is the path from public/ (e.g. \"publications/dpe-insight/q4-2025.pdf\"). cover is optional (an image in public/images/...). date is YYYY-MM-DD.",
+  "_example": {
+    "title": "Brunei’s Economy in Q4 2025",
+    "date": "2026-03-01",
+    "summary": "Growth, inflation and trade in the final quarter of 2025.",
+    "file": "publications/dpe-insight/q4-2025.pdf",
+    "cover": ""
+  },
+  "series": [
+    {
+      "id": "dpe-insight",
+      "title": "DPE Insight Reports",
+      "blurb": "In-depth reports from Dewan Pelajar Ekonomi on Brunei’s economy and policy.",
+      "items": []
+    },
+    {
+      "id": "bitesize",
+      "title": "ESC Bitesize Series",
+      "blurb": "Short, easy reads that explain one economics idea at a time.",
+      "items": []
+    },
+    {
+      "id": "ihs-takeaways",
+      "title": "IHS Key Takeaways",
+      "blurb": "The main lessons from each session of The Invisible Handshake.",
+      "items": []
+    }
+  ]
+}
