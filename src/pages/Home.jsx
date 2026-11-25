@@ -22,8 +22,7 @@ export default function Home() {
             <p className="hero-org">Economic Students’ Chamber <span>(DPE) Brunei</span></p>
             <h1 className="hero-title">Empowering and Mobilising Aspiring Ekonomist</h1>
             <p className="lead">
-              ESC is a student-led, non-profit community for students interested in economics and policy.
-              We learn together, meet practitioners and join conversations about Brunei’s development.
+              A leading student-led economic association shaping future economists and advancing national development.
             </p>
             <div className="hero-actions">
               <a className="btn btn-gold btn-large" href="#/dashboard">Explore Brunei’s Economy</a>
