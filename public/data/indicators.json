@@ -1,48 +1,77 @@
 {
-  "_howToUpdate": "Edit the CSV file for an indicator, then update its source, unit and status here. Set \"status\" to \"official\" only when every figure in the CSV is a verified official figure. Use \"sample\" for placeholder figures.",
+  "_howToUpdate": "Edit the CSV for an indicator when DEPS publishes new figures, then update source, sourceUrl, latestPeriod and note here. Use status \"official\" only for verified official figures; use \"sample\" for placeholders.",
   "indicators": [
     {
       "id": "real-gdp-growth",
       "title": "Real GDP growth",
       "file": "real-gdp-growth.csv",
       "unit": "% change, year on year (constant prices)",
-      "source": "Department of Economic Planning and Statistics (DEPS)",
-      "sourceUrl": "https://deps.mofe.gov.bn/national-accounts/",
-      "status": "sample",
-      "series": [{ "column": "value", "label": "Real GDP growth" }]
+      "source": "Department of Economic Planning and Statistics (DEPS), GDP Q4 & Annual 2025 media release",
+      "sourceUrl": "https://www.deps.gov.bn/wp-content/uploads/2026/03/GDP_Q42025_PR.pdf",
+      "status": "official",
+      "series": [
+        {
+          "column": "value",
+          "label": "Real GDP growth"
+        }
+      ],
+      "latestPeriod": "2025 (released March 2026)",
+      "note": "Latest DEPS revisions. Q1 2026 growth was 0.3% year on year."
     },
     {
       "id": "inflation",
       "title": "Inflation (CPI)",
       "file": "inflation.csv",
       "unit": "% change in annual average CPI",
-      "source": "Department of Economic Planning and Statistics (DEPS)",
-      "sourceUrl": "https://deps.mofe.gov.bn/consumer-price-index-3/",
-      "status": "sample",
-      "series": [{ "column": "value", "label": "Inflation" }]
+      "source": "DEPS, Consumer Price Index annual releases (2021–2025); IMF 2023 Article IV report (2018–2020)",
+      "sourceUrl": "https://www.deps.gov.bn/wp-content/uploads/2026/01/CPI_DEC2025_PR.pdf",
+      "status": "official",
+      "series": [
+        {
+          "column": "value",
+          "label": "Inflation"
+        }
+      ],
+      "latestPeriod": "2025 (released January 2026)",
+      "note": "Annual average change in the CPI (Jan 2015 = 100)."
     },
     {
       "id": "unemployment",
       "title": "Unemployment rate",
       "file": "unemployment.csv",
       "unit": "% of labour force",
-      "source": "Department of Economic Planning and Statistics (DEPS), Labour Force Survey",
+      "source": "DEPS, Labour Force Survey 2025 Final Report",
       "sourceUrl": "https://deps.mofe.gov.bn/labour-force/",
-      "status": "sample",
-      "series": [{ "column": "value", "label": "Unemployment rate" }]
+      "status": "official",
+      "series": [
+        {
+          "column": "value",
+          "label": "Unemployment rate"
+        }
+      ],
+      "latestPeriod": "2025 (released July 2026)",
+      "note": "Population aged 18 and over. Shown from 2023 because earlier surveys used a different age basis."
     },
     {
       "id": "oil-vs-non-oil-gdp",
       "title": "Oil and gas vs non-oil and gas GDP",
       "file": "oil-vs-non-oil-gdp.csv",
       "unit": "% change, year on year (constant prices)",
-      "source": "Department of Economic Planning and Statistics (DEPS)",
-      "sourceUrl": "https://deps.mofe.gov.bn/national-accounts/",
-      "status": "sample",
+      "source": "DEPS, Brunei Darussalam Key Indicators 2024 and GDP Q4 & Annual 2025 media release",
+      "sourceUrl": "https://www.deps.gov.bn/wp-content/uploads/2026/03/GDP_Q42025_PR.pdf",
+      "status": "official",
       "series": [
-        { "column": "oil_and_gas", "label": "Oil and gas sector" },
-        { "column": "non_oil_and_gas", "label": "Non-oil and gas sector" }
-      ]
+        {
+          "column": "oil_and_gas",
+          "label": "Oil and gas sector"
+        },
+        {
+          "column": "non_oil_and_gas",
+          "label": "Non-oil and gas sector"
+        }
+      ],
+      "latestPeriod": "2025 (released March 2026)",
+      "note": "Growth at constant prices by sector."
     }
   ]
 }

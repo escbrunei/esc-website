@@ -86,9 +86,10 @@ function IndicatorCard({ ind, from, to }) {
       o.unit = ind.unit;
       o.source = ind.source;
       o.data_status = sample ? 'SAMPLE DATA - placeholder figures, not official statistics' : 'Official';
+      o.source_url = ind.sourceUrl;
       return o;
     });
-    const headers = ['year', ...ind.series.map((s) => s.column), 'unit', 'source', 'data_status'];
+    const headers = ['year', ...ind.series.map((s) => s.column), 'unit', 'source', 'source_url', 'data_status'];
     downloadText(`${ind.id}_${rangeText.replace('–', '-')}${sample ? '_SAMPLE' : ''}.csv`, toCSV(out, headers));
   };
 
@@ -123,6 +124,7 @@ function IndicatorCard({ ind, from, to }) {
         <div><dt>Source</dt><dd><a href={ind.sourceUrl} target="_blank" rel="noopener noreferrer">{ind.source}</a></dd></div>
         <div><dt>Unit</dt><dd>{ind.unit}</dd></div>
         <div><dt>Latest available period</dt><dd>{ind.latestPeriod}{sample ? ' (sample)' : ''}</dd></div>
+        {ind.note && <div><dt>Note</dt><dd>{ind.note}</dd></div>}
       </dl>
       <div className="card-actions">
         <button className="btn btn-small btn-ghost" onClick={download}>Download CSV</button>
