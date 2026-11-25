@@ -36,8 +36,8 @@ export default function Home() {
           </div>
           <div className="hero-art">
             <div className="hero-community">
-              <img className="hero-crest" src="images/esc-crest-v2.png" alt="Economic Students’ Chamber crest — Dewan Pelajar Ekonomi" width="320" height="320" />
               <HeroSociety />
+              <img className="hero-crest" src="images/esc-crest-v2.png" alt="Economic Students’ Chamber crest — Dewan Pelajar Ekonomi" width="320" height="320" />
             </div>
           </div>
         </div>
