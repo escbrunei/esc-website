@@ -45,7 +45,7 @@ export default function Merch() {
       <header className="mstore-hero">
         <p className="mstore-kicker">ESC Merch</p>
         <h1>Made for aspiring ekonomists.</h1>
-        <p className="mstore-lead">Drag to see the back.</p>
+        <p className="mstore-lead">Wear the Chamber, carry the Chamber.</p>
       </header>
       {SECTIONS.map((sec) => {
         const list = items.filter((i) => i.category === sec.key);

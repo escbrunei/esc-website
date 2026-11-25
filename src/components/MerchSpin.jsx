@@ -22,8 +22,8 @@ export default function MerchSpin({ frames, label }) {
 
   return (
     <div className="spin">
-      <div className="spin-stage" onPointerDown={down} onPointerMove={move} onPointerUp={up} onPointerCancel={up}
-        role="img" aria-label={`${label}. Drag to turn it.`}>
+      <div className={`spin-stage ${n > 2 ? 'draggable' : ''}`} {...(n > 2 ? { onPointerDown: down, onPointerMove: move, onPointerUp: up, onPointerCancel: up } : {})}
+        role="img" aria-label={label}>
         {frames.map((src, k) => (
           <img key={src} src={src} alt="" draggable="false" className={`spin-img ${k === i ? 'on' : ''}`} />
         ))}

@@ -1174,8 +1174,8 @@ strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0);
 
 /* Merch photo viewer */
 .spin { width: 100%; margin: 1.4rem 0 .6rem; }
-.spin-stage { position: relative; height: clamp(300px, 32vw, 430px); cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none; }
-.spin-stage:active { cursor: grabbing; }
+.spin-stage { position: relative; height: clamp(300px, 32vw, 430px); touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+.spin-stage.draggable { cursor: grab; } .spin-stage.draggable:active { cursor: grabbing; }
 .spin-img { position: absolute; inset: 0 6% 7% 6%; width: 88%; height: 93%; object-fit: contain; opacity: 0; transform: scale(.985); transition: opacity .45s ease, transform .6s ease; pointer-events: none; -webkit-user-drag: none; }
 .spin-img.on { opacity: 1; transform: none; }
 .spin-shadow { position: absolute; left: 24%; right: 24%; bottom: 2%; height: 16px; border-radius: 50%; background: radial-gradient(closest-side, rgba(0,0,0,.13), transparent); }
