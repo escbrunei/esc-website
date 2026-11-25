@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 /**
  * "ESCape the ordinary": a little street with shops and people walking by.
@@ -26,8 +26,20 @@ export default function EscapeDoor() {
   }, []);
   const replay = () => setRun((r) => r + 1);
 
+  // Scale the 1200x300 street so it fills the whole section (like background-size: cover).
+  const [scale, setScale] = useState(1);
+  useLayoutEffect(() => {
+    const el = ref.current; if (!el) return undefined;
+    const fit = () => setScale(Math.max(el.clientWidth / 1200, (el.clientHeight * 0.62) / 300));
+    fit();
+    const ro = new ResizeObserver(fit); ro.observe(el);
+    return () => ro.disconnect();
+  }, []);
+
   return (
     <div className="escape-street" ref={ref}>
+      <span className="cloud c1" /><span className="cloud c2" /><span className="cloud c3" /><span className="street-sun" />
+      <div className="street-world" style={{ transform: `translateX(-50%) scale(${scale})` }}>
       <svg className="street-bg" viewBox="0 0 1200 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
         <Street />
       </svg>
@@ -42,12 +54,13 @@ export default function EscapeDoor() {
         onMouseEnter={() => { if (run) replay(); }} aria-label="ESCape the ordinary: play the animation">
         <span className="escape-stage" aria-hidden="true">
           <span className="escape-frame" style={{ WebkitMaskImage: "url(images/esc-door-hd.png)", maskImage: "url(images/esc-door-hd.png)" }} />
-          <span className="escape-man"><span className="escape-cat"><img src="images/esync-robot.png" alt="" /></span></span>
+          <span className="escape-man"><span className="escape-cat"><img src="images/esc-cat.png" alt="" /></span></span>
           <span className="escape-door"><img src="images/esc-door-hd.png" alt="" /></span>
         </span>
+        <span className="escape-tag"><b>ESC</b>ape the ordinary</span>
       </button>
       <div className="street-curb" aria-hidden="true" />
-      <p className="escape-tag" aria-hidden="true"><b>ESC</b>ape the ordinary</p>
+      </div>
     </div>
   );
 }
@@ -68,7 +81,6 @@ function Person({ color, scale }) {
 function Street() {
   return (
     <>
-      <rect width="1200" height="260" fill="#fff8e8" />
       {/* far skyline */}
       <g fill="#f0dfd6">
         <rect x="40" y="70" width="70" height="160" /><rect x="300" y="50" width="60" height="180" /><rect x="820" y="60" width="80" height="170" /><rect x="1100" y="80" width="70" height="150" />

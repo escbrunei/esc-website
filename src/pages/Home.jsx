@@ -63,9 +63,11 @@ export default function Home() {
         </div>
       </section>
       <EconomyRoad targetEl={hover != null ? cardRefs.current[hover] : null} />
-      <section className="section container story-wrap" aria-labelledby="story-h">
-        <h2 id="story-h" className="section-title">Brunei’s economy at a glance</h2>
-        <p className="muted">Travel across Brunei with the arrows, or swipe. Every figure links to its official source.</p>
+      <section className="story-wrap" aria-labelledby="story-h">
+        <div className="container">
+          <h2 id="story-h" className="section-title">Brunei’s economy at a glance</h2>
+          <p className="muted">Travel across Brunei with the arrows, or swipe. Every figure links to its official source.</p>
+        </div>
         <BruneiStory />
       </section>
 
@@ -81,14 +83,12 @@ export default function Home() {
         </div>
       </section>
 
+      <EscapeDoor />
       <section className="section container join-cta">
-        <div className="join-grid">
-          <EscapeDoor />
-          <div className="join-text">
-            <h2>Be part of ESC</h2>
-            <p>Membership is open to students interested in economics and policy.</p>
-            <a className="btn btn-large" {...joinProps}>Join ESC</a>
-          </div>
+        <div className="join-text">
+          <h2>Be part of ESC</h2>
+          <p>Membership is open to students interested in economics and policy.</p>
+          <a className="btn btn-large" {...joinProps}>Join ESC</a>
         </div>
       </section>
     </>
