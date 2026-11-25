@@ -1,3 +1,4 @@
+import HeroVideo from '../components/HeroVideo.jsx';
 import React, { useState } from 'react';
 import AskButton from '../components/AskButton.jsx';
 import { toCSV, downloadText } from '../lib/csv.js';
@@ -20,7 +21,8 @@ const r1 = (x) => Math.round(x * 10) / 10;
 export default function Lab() {
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero video-hero">
+        <HeroVideo name="lab" />
         <div className="container">
           <p className="eyebrow">Economics Lab</p>
           <h1>Learn by doing</h1>

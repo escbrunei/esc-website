@@ -1,3 +1,4 @@
+import HeroVideo from '../components/HeroVideo.jsx';
 import React, { useEffect, useState } from 'react';
 import pubs from '../data/publications.json';
 import { CONFIG } from '../config.js';
@@ -73,7 +74,8 @@ export default function Publications() {
 
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero video-hero">
+        <HeroVideo name="publications" />
         <div className="container">
           <p className="eyebrow">ESC Publications</p>
           <h1>Publications</h1>

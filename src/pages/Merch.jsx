@@ -42,11 +42,13 @@ export default function Merch() {
   const items = (merch.items || []).filter((i) => i && i.name && i.views?.length);
   return (
     <div className="mstore">
-      <header className="mstore-hero">
-        <p className="mstore-kicker">ESC Merch</p>
-        <h1>Made for aspiring ekonomists.</h1>
-        <p className="mstore-lead">Wear the Chamber, carry the Chamber.</p>
-      </header>
+      <section className="page-hero">
+        <div className="container">
+          <p className="eyebrow">ESC Merch</p>
+          <h1>Made for aspiring ekonomists.</h1>
+          <p className="lead">Official ESC apparel and accessories.</p>
+        </div>
+      </section>
       {SECTIONS.map((sec) => {
         const list = items.filter((i) => i.category === sec.key);
         if (!list.length) return null;

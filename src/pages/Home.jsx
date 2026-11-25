@@ -3,7 +3,7 @@ import EconomyRoad from '../components/EconomyRoad.jsx';
 import FeatureIcon from '../components/FeatureIcon.jsx';
 import BruneiStory from '../components/BruneiStory.jsx';
 import EscapeDoor from '../components/EscapeDoor.jsx';
-import HeroSociety from '../components/HeroSociety.jsx';
+import HeroVideo from '../components/HeroVideo.jsx';
 import { getEvents } from '../lib/events.js';
 import { HANDSHAKE_INTRO } from './Handshake.jsx';
 import { bruneiDate } from '../lib/time.js';
@@ -16,7 +16,8 @@ export default function Home() {
   const next = getEvents().upcoming.find((e) => e.series === 'invisible-handshake');
   return (
     <>
-      <section className="hero">
+      <section className="hero video-hero">
+        <HeroVideo name="home" />
         <div className="container hero-grid">
           <div>
             <p className="hero-org">Economic Students’ Chamber <span>(DPE) Brunei</span></p>
@@ -27,12 +28,6 @@ export default function Home() {
             <div className="hero-actions">
               <a className="btn btn-gold btn-large" href="#/dashboard">Explore Brunei’s Economy</a>
               <a className="btn btn-outline-light btn-large" href="#/lab">Open Economics Lab</a>
-            </div>
-          </div>
-          <div className="hero-art">
-            <div className="hero-community">
-              <HeroSociety />
-              <img className="hero-crest" src="images/esc-crest-v2.png" alt="Economic Students’ Chamber crest — Dewan Pelajar Ekonomi" width="320" height="320" />
             </div>
           </div>
         </div>

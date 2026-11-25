@@ -1,3 +1,4 @@
+import HeroVideo from '../components/HeroVideo.jsx';
 import React, { useEffect, useMemo, useState } from 'react';
 import LineChart from '../components/LineChart.jsx';
 import AskButton from '../components/AskButton.jsx';
@@ -29,7 +30,8 @@ export default function Dashboard() {
 
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero video-hero">
+        <HeroVideo name="dashboard" />
         <div className="container">
           <p className="eyebrow">Brunei Economy Dashboard</p>
           <h1>Explore Brunei’s Economy</h1>
