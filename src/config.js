@@ -6,7 +6,7 @@ export const CONFIG = {
   LINKEDIN_NAME: 'Economic Students’ Chamber (DPE) Brunei',
   // Paste the official LinkedIn page URL here, e.g. 'https://www.linkedin.com/company/...'
   // Left empty, the site shows the page name without a link.
-  LINKEDIN_URL: '',
+  LINKEDIN_URL: 'https://bn.linkedin.com/company/escbrunei',
 
   // ESynC AI backend URL (your deployed server/esync-worker.js), e.g.
   // 'https://esync.your-account.workers.dev'. Leave empty until it is set up.
