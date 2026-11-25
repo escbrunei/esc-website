@@ -390,3 +390,28 @@ h1, h2, h3, .brand-mark, .brand-text, .footer-title, .avatar-initials, .thumb-fa
   .site-nav .nav-join { margin: .8rem 0 0; text-align: center; border-bottom: 0; border-radius: 999px; }
 }
 @media (min-width: 1121px) { .nav-toggle { display: none; } .site-nav { display: flex !important; position: static; flex-direction: row; background: none; box-shadow: none; padding: 0; } }
+
+/* Homepage headline: Glacial Indifference, italic */
+.hero h1.hero-title { font-family: var(--font-body); font-style: italic; font-weight: 400; font-synthesis: style; letter-spacing: 0; line-height: 1.12; font-size: clamp(2.1rem, 5.2vw, 3.6rem); }
+
+/* Crest rolls in from the right on page load */
+.hero { overflow: hidden; }
+.hero-crest { animation: crest-roll-in 1.6s cubic-bezier(.2,.8,.25,1) both; will-change: transform; }
+@keyframes crest-roll-in {
+  0%   { transform: translateX(110vw) rotate(540deg); opacity: 0; }
+  15%  { opacity: 1; }
+  100% { transform: translateX(0) rotate(0deg); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .hero-crest { animation: none; } }
+
+/* ===== No bold anywhere: emphasis comes from shapes instead ===== */
+*, *::before, *::after { font-weight: 400 !important; }
+strong, b { background: linear-gradient(transparent 58%, rgba(255,197,73,.6) 0); padding: 0 .12em; border-radius: 2px; }
+.hero strong, .page-hero strong, .site-footer strong, .msg.user strong, .chart-tooltip strong { background: none; padding: 0; text-decoration: underline; text-decoration-color: var(--gold); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+.section-title::after { content: ''; display: block; width: 56px; height: 5px; border-radius: 999px; background: var(--gold); margin-top: .5rem; }
+.section-title.sr-only::after { display: none; }
+.join-cta h2::after, .get-involved .section-title::after { margin-inline: auto; }
+.eyebrow { display: inline-block; background: rgba(255,197,73,.14); border: 1px solid rgba(255,197,73,.45); border-radius: 999px; padding: .2rem .75rem; }
+.feature h2, .chart-head h2, .event-card h3, .mandate h3 { position: relative; }
+.news-item h3 a { border-left: 4px solid var(--gold); padding-left: .6rem; display: inline-block; }
+.btn { letter-spacing: .01em; }
